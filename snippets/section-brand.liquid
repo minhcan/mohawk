@@ -1,0 +1,24 @@
+<!-- /templates/snippets/section-brand.liquid -->
+{% assign grid_item = settings.brand_grid_item %}
+{% if settings.enable_section_brand %}
+<div class="section-brand">
+	<div class="wrapper">
+		<div class="brands-carousel owl-carousel owl-theme " id="brands-carousel" data-mobile="[479,1]" data-tabletsmall="[768,3]" data-desktopsmall="[979,3]" data-desktop="[1199,{{grid_item}}]" data-items="{{grid_item}}" data-pagination="false" data-navigation="true" data-autoPlay={{ settings.brand_carousel_autoplay}}>
+			{% for i in (1..10) %}
+			{% capture _enable %}brand_carousel_enable_{{ i }}{% endcapture %}
+			{% capture _icon %}brand_logo_{{ i }}.jpg{% endcapture %}
+			{% capture _url %}brand_carousel_url_{{ i }}{% endcapture %}
+			{% assign enable = settings[_enable] %}
+
+			{% if enable %}
+			{% assign url = settings[_url] %}
+			<div class="text-center">
+				<a class="brand" href="{{url}}" title="">{{ _icon | asset_url | img_tag }}</a>
+			</div>
+			{% endif %}
+			{% endfor %}
+		</div>
+	</div>
+</div>	
+{% endif %}
+

@@ -1,0 +1,136 @@
+<!-- /templates/collection.list.liquid -->
+{% comment %}
+
+  By using a variation of the 'view all' parameter technique, you can create
+  a custom layout for any template by adding ?view=xxxx
+
+  In this example, you can have a list view of your collection page by going to
+  /collections/all?view=list
+
+  For more information on collection tags:
+    - http://docs.shopify.com/themes/liquid-variables/collection
+
+  For more information on the ?view parameter:
+    - http://docs.shopify.com/support/configuration/store-customization/can-i-show-more-than-50-products-on-my-homepage-can-i-add-a-view-all-function-to-my-collection-pages#add-view-all
+
+{% endcomment %}
+
+{% paginate collection.products by settings.nb_per_page %}
+
+
+{% comment %}
+  Use .grid--rev so that the collection tags appear below the products on mobile
+{% endcomment %}
+<div class="grid--rev">
+  <div class="grid__item large--three-quarters collection collection-list">
+      {% if collection.image != blank  or collection.description != blank %}
+          <header class="collection__info section-header">
+            {% if collection.image %}
+            <div class="collection__image">
+              <img src="{{ collection.image | img_url: 'master' }}" class="img-responsive" alt="{{collection.image}}">
+            </div>
+            {% endif %}
+            <div class="rte rte--header space-10">
+              {{ collection.description }}
+            </div>
+          </header>
+      {% endif %} 
+      <div class="collection__sort section-header">
+        <div class="section-header__right">
+          {% include 'collection-sorting' %}
+        </div>
+      </div>
+
+    <div class="grid-uniform grid">
+
+      <!-- begin product list output -->
+      {% for product in collection.products %}
+
+        {% assign on_sale = false %}
+        {% if product.compare_at_price > product.price %}
+          {% assign on_sale = true %}
+        {% endif %}
+
+        {% assign sold_out = true %}
+        {% if product.available %}
+          {% assign sold_out = false %}
+        {% endif %}
+        {% assign compare_price = product.compare_at_price %}
+        {% assign product_price = product.price %}
+
+        <div class="grid__item grid__item_range" data-price="{{product.price | money_without_currency }}">
+          <div class="grid large--display-table">
+            <div class="grid__item large--one-fifth large--display-table-cell medium--one-third">
+              <a href="{{ product.url | within: collection }}">
+                <img src="{{ product.featured_image.src | img_url: 'medium' }}" alt="{{ product.featured_image.alt | escape }}" class="grid__image">
+              </a>
+            </div>
+            <div class="grid__item large--four-fifths large--display-table-cell medium--two-thirds">
+                  <h4 class="h6 product-title">
+                    <a href="{{ product.url | within: collection }}" title="{{ product.title }}" >{{ product.title }}</a>
+                  </h4> 
+                  <div class="reviews-badge clearfix">
+                      <span class="shopify-product-reviews-badge" data-id="{{ product.id }}"></span>
+                  </div>  
+
+                  <div class="product-price">
+                    <span class="amout">
+                      {% capture price %}{{ product.price | money }}{% endcapture %}
+                      <span >{% if product.price_varies %}{{ 'products.general.from_text_html' | t: price: price }}{% else %}{{ price }}{% endif %}</span>
+                      {% if on_sale %} <del class="sale-price">{{ product.compare_at_price | money }}</del> 
+                      <span class="save_label">
+                        -{{ compare_price | minus: product_price | times: 100 | divided_by: compare_price | round  | append: '%' }}
+                      </span>
+                      {% endif %}
+                    </span>
+
+                  </div><!-- /.product-price -->
+
+                  <div class="rte">
+                    <p>{{ product.content | strip_html | truncatewords: 30 }}</p>
+                  </div>
+                  <div class="add-to-cart-action">
+                  <form method="post" action="/cart/add" class="add-to-cart">
+                      {% assign variantCount = product.variants | size %}
+                      <input type="hidden" name="id" value="{{ product.variants.first.id }}" />
+                      {% if sold_out %}
+                      <button class="add_to_cart disabled" type="submit" value="Submit" disabled>
+                                        <span>{{ 'products.product.sold_out' | t }}</span>
+                                 </button>
+                      {% else %}
+                      {% if variantCount > 1 %}
+                         <a class="add_to_cart " href="{{ product.url | within: collection }}" title="{{ product.title | escape }}">
+                                        <span class="select_options">{{ 'products.product.select_options' | t }}</span>
+                                    </a>
+                       {% else %}
+                        <button type="submit" name="add" class="add_to_cart">
+                          {{ 'products.product.add_to_cart' | t }}
+                          </button>
+                       {% endif %}
+                                 {% endif %}
+                  </form>
+                </div>
+
+            </div>
+          </div>
+        </div>
+
+      {% else %}
+
+        <div class="grid__item">
+          <p>{{ 'collections.general.no_matches' | t }}</p>
+        </div>
+
+      {% endfor %}
+      <!-- //product list output -->
+
+    </div>
+    {% include 'pagination'%}
+  </div>
+
+  <div class="sidebar grid__item large--one-quarter">
+    {% include 'collection-sidebar' %}
+  </div>
+</div>
+
+{% endpaginate %}

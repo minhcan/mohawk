@@ -1,0 +1,56 @@
+<!-- /templates/snippets/section-custom-top.liquid -->
+<div class="custom-top ">
+    {% capture b1 %}b1.jpg{% endcapture %}
+    {% capture b2 %}b2.jpg{% endcapture %}
+    {% capture b3 %}b3.jpg{% endcapture %}
+    {% capture b4 %}b4.jpg{% endcapture %}
+	{% capture b6 %}b6.jpg{% endcapture %}
+	<div class="grid--full">
+        <div class="grid__item large--one-half medium--one-half">
+            <a href="{{settings.b1_url}}" class="effect effect-v3" title="banner">
+            	{{ b1 | asset_url | img_tag }}
+                <div class="text {{settings.b1_position}}">
+                    <span class="text1">{{settings.b1_text_1}}</span><br>
+                    <span class="text2">{{settings.b1_text_2}}</span>
+                </div>
+            </a>
+        </div>
+        <div class="grid__item large--one-half medium--one-half">
+            <a href="{{settings.b2_url}}" class="effect effect-v3" title="banner">
+            	{{ b2 | asset_url | img_tag }}
+                <div class="text {{settings.b2_position}}">
+                    <span class="text1">{{settings.b2_text_1}}</span><br>
+                    <span class="text2">{{settings.b2_text_2}}</span>
+                </div>
+            </a>
+        </div>
+        <div class="grid__item large--one-third medium--one-third">
+            <a href="{{settings.b3_url}}" class="effect effect-v3" title="banner">
+                {{ b3 | asset_url | img_tag }}
+                <div class="text {{settings.b3_position}}">
+                    <span class="text1">{{settings.b3_text_1}}</span><br>
+                    <span class="text2">{{settings.b3_text_2}}</span>
+                </div>
+            </a>
+        </div>
+        <div class="grid__item large--one-third medium--one-third">
+            <a href="{{settings.b4_url}}" class="effect effect-v3" title="banner">
+                {{ b4 | asset_url | img_tag }}
+                <div class="text {{settings.b4_position}}">
+                    <span class="text1">{{settings.b4_text_1}}</span><br>
+                    <span class="text2">{{settings.b4_text_2}}</span>
+                </div>
+            </a>
+        </div>
+        <div class="grid__item large--one-third medium--one-third">
+            <a href="{{settings.b6_url}}" class="effect effect-v3" title="banner">
+            	{{ b6 | asset_url | img_tag }}
+                <div class="text {{settings.b6_position}}">
+                    <span class="text1">{{settings.b6_text_1}}</span><br>
+                    <span class="text2">{{settings.b6_text_2}}</span>
+                </div>
+            </a>
+        </div>
+    </div>
+
+</div>

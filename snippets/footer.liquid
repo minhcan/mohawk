@@ -1,0 +1,62 @@
+<!-- /snippets/footer.liquid -->
+<!-- footer-main -->
+<div class="site-footer__main grid">
+{% assign footer_menu_1 = settings.footer_menu_1%}
+{% assign footer_menu_2 = settings.footer_menu_2%}
+{% assign footer_menu_3 = settings.footer_menu_3%}
+	<div class="top-footer clearfix">
+		<div class="grid__item large--one-quarter medium--four-tenths">
+			<h4>{{settings.footer_contact_title}}</h4>
+		    <div class="footer_contact">
+		    	{{ settings.footer_contact }}
+		    </div>
+
+		</div>
+		<div class="grid__item large--one-sixth medium--two-tenths">
+			{% if settings.footer_menu_1_enable %}
+			 {% assign footer_menu = settings.footer_menu_1 %}
+	         {% assign footer_menu_title = settings.footer_menu_1_title %}
+	         {% include 'block-footer-links' with '1' %}
+			{% endif %}
+		</div>
+		<div class="grid__item large--one-sixth medium--two-tenths">
+			{% if settings.footer_menu_2_enable %}
+			 {% assign footer_menu = settings.footer_menu_2 %}
+	         {% assign footer_menu_title = settings.footer_menu_2_title %}
+	         {% include 'block-footer-links' with '2' %}
+			{% endif %}
+		</div>
+		<div class="grid__item large--one-sixth medium--two-tenths">
+			{% if settings.footer_menu_3_enable %}
+			 {% assign footer_menu = settings.footer_menu_3 %}
+	         {% assign footer_menu_title = settings.footer_menu_3_title %}
+	         {% include 'block-footer-links' with '3' %}
+			{% endif %}
+		</div>
+		<div class="grid__item large--one-quarter medium--three-quarters">
+			<div class="footer-newsletter clearfix">
+				{% if settings.footer_newsletter_enable %}
+					<h4>{{settings.footer_newsletter_title}}</h4>
+					<div class="footer_content">
+				    	{{ settings.footer_newsletter_content }}
+				    </div>
+					<div class="site-footer__newsletter">
+						{% if settings.newsletter_form_action != blank %}
+							{% assign form_action = settings.newsletter_form_action %}
+						{% else %}
+							{% assign form_action = '#' %}
+						{% endif %}
+						<form action="{{ form_action }}" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" target="_blank" class="form-horizontal">
+							<div class="newsletter-form">
+								<input type="email" value="{% if customer %}{{ customer.email }}{% endif %}" placeholder="{{ 'general.newsletter_form.newsletter_email' | t }}" name="EMAIL" id="mail" aria-label="{{ 'general.newsletter_form.newsletter_email' | t }}">
+								<input type="submit" class="btn" name="subscribe" id="subscribe" value="{{ 'general.newsletter_form.submit' | t }}">
+							</div>
+							
+						</form>
+					</div> <!-- end newsletter -->
+				{% endif %}
+			</div>
+		</div>
+	</div>
+	
+</div>

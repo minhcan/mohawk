@@ -1,0 +1,86 @@
+<!-- /templates/snippets/nav-menu.liquid -->
+<nav class="nav-bar text-left">
+		<div class="small--hide">
+		<!-- begin site-nav -->
+		<ul class="site-nav clearfix" id="AccessibleNav">
+			 {% for link in linklists.main-menu.links %}         
+                    {% assign hasMega = false %}
+                    {% assign itemMega = 0 %}
+                    {% assign link_title = link.title | downcase %}
+                        {% for i in (1..6) %}
+                        {% capture enable_megamenu_item %}enable_megamenu_item_{{ i }}{% endcapture %}
+                        {% capture megamenu_title %}megamenu_{{ i }}_parent{% endcapture %}
+                        {% assign megamenu_title = settings[megamenu_title] | strip | downcase %}
+                          {% if settings[enable_megamenu_item] == true %}
+                              {% if link_title == megamenu_title %}
+                                  {% assign hasMega = true %}
+                                  {% assign itemMega = i %}
+                              {% endif %}
+                            {% endif %}
+                        {% endfor %}
+  
+            {% if hasMega %}
+
+            {% include 'megamenu-items'%}
+
+            {% elsif linklists[link.handle] == empty %}
+  			
+  			  <li {% if link.active %}class=" site-nav--active"{% endif %}>
+	          <a href="{{ link.url }}" class="site-nav__link">{{ link.title }}</a>
+	        </li>
+             
+            {% else %}
+            
+           <!-- Menu level 1 --> 
+            <li class="has-dropdown site-nav--has-dropdown {% if link.active %} site-nav--active{% endif %}">
+            	  <a href="{{ link.url }}" class="site-nav__link">
+				            {{ link.title }}
+				             <span class="fa fa-angle-down" aria-hidden="true"></span>
+				   </a>
+             
+              <!-- Menu level 2 -->
+
+              <ul class=" site-nav__dropdown {{ link.title | downcase | handleize }}">
+             
+                {% for l in linklists[link.handle].links %}
+                <li{% if linklists[l.handle] != empty %} class="site-nav--has-dropdown has-dropdown-2 navbar--has-dropdown-2"{% endif %}><a href="{{ l.url }}">{{ l.title | escape }}</a>
+                    {% if linklists[l.handle] != empty %}
+                   <!-- Menu level 3 -->    
+                    <ul>
+                    
+                       {% for child_l in linklists[l.handle].links %}
+                       <li{% if linklists[child_l.handle] != empty %} class="site-nav--has-dropdown has-dropdown-2 navbar--has-dropdown-2"{% endif %}><a href="{{ child_l.url }}">{{ child_l.title | escape }}</a>
+                      
+                      {% if linklists[child_l.handle] != empty %}
+                          <!-- Menu level 4 -->    
+                          <ul class="site-nav__dropdown_2">
+                    
+                             {% for child_child_l in linklists[child_l.handle].links %}
+                             <li><a href="{{ child_child_l.url }}">{{ child_child_l.title | escape }}</a></li>                 
+                             {% endfor %} 
+                 
+                             </ul>
+                            {% endif %}
+                         
+                      </li>                 
+                       {% endfor %} 
+                 
+                    </ul>
+                    {% endif %}
+                
+                </li>
+                {% endfor %}  
+              
+              </ul>
+            
+            </li>
+            {% endif %}            
+                                        
+          {% endfor %}
+		</ul>
+
+			 <div class="site-header__search  medium--right large--right">
+		      {% include 'search-bar' %}
+		    </div> <!-- end search -->
+		</div>
+</nav>

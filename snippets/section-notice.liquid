@@ -1,0 +1,23 @@
+<!-- /templates/snippets/section-notice.liquid -->
+{% if settings.enable_section_notice %}
+ <div class="section-notice">
+  <div class="wrapper">
+		<div class="notice">
+			<div id="notice-carousel" class="owl-carousel owl-theme notice-carousel text-center" data-mobile="[479,1]" data-tabletsmall="[768,1]" data-desktopsmall="[979,1]" data-desktop="[1199,1]" data-pagination="false" data-navigation="false" data-autoplay={{ settings.notice_autoplay }} data-singleItem="true" data-items="1">
+			{% for i in (1..4) %}
+				{% capture text_notice %}notice_text_{{ i }}{% endcapture %}
+				{% capture enable_notice %}enable_notice_{{ i }}{% endcapture %}
+				{% assign enable_notice = settings[enable_notice] %}
+				{% if enable_notice %}
+				<div class="text-notice">
+					<div class="notice-text">
+						{{settings[text_notice]}}
+					</div>
+				</div>
+				{% endif %}
+			{% endfor %}	
+		</div>
+	</div>
+  </div>
+</div>
+{% endif %}

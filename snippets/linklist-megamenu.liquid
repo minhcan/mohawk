@@ -1,0 +1,10 @@
+<!-- /templates/snippets/linklist-megamenu.liquid -->
+{% assign list = linklists[linklist-megamenu] %}
+    <h3>{{ list.title | escape }}</h3>
+    <ul class="super">
+    {% for link in list.links %}
+      <li>
+        <a href="{{ link.url }}" title="{{ link.title | escape }}">{{ link.title | escape }}</a>
+      </li>
+    {% endfor %}
+    </ul>

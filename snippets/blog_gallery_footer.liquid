@@ -1,0 +1,15 @@
+<!-- /templates/snippets/blog_gallery_footer.liquid -->
+
+{% case _row_gallery %}
+  {% when '2' %}
+     {% capture _row_gallery_width %} one-half{% endcapture %}
+  {% when '3' %}
+     {% capture _row_gallery_width %} one-third{% endcapture %}
+  {% else %}
+     {% capture _row_gallery_width %} one-third {% endcapture %}
+{% endcase %}
+      {% if article.image %}
+        <a href="{{ article.image.src | img_url: 'original' }}" title="" class="gallery_width {{_row_gallery_width}}">
+          <img src="{{ article.image.src | img_url: 'original' }}" alt="" class="img-responsive">
+        </a>
+      {% endif %}

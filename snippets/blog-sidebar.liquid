@@ -1,0 +1,64 @@
+<!-- /snippets/blog-sidebar.liquid -->
+{% if settings.enable_recent_article %}
+<div class="widget widget-blog-recent">
+  <h4 class="widget__title">{{ 'blogs.sidebar.recent_articles' | t }}</h4>
+  <div class="widget__content">
+    {% for article in blogs[blog.handle].articles limit:3 %}
+      <div class="article clearfix">
+        <div class="post-thumbnail">
+          <a href="{{ article.url }}" title="post-thumbnail">
+            <img src="{{ article.image.src | img_url: 'original' }}" alt="alt" class="img-responsive">
+          </a>
+        </div>
+        <div class="entry-meta">
+          <a href="{{ article.url }}">{{ article.title }}</a>
+          <div class="date">
+              <i class="zmdi zmdi-time"></i><span>{{article.published_at | date: "%B %d, %Y" }}</span>
+          </div>
+        </div>
+        </div>
+    {% endfor %}
+  </div>
+</div>
+{% endif %}
+
+{% if settings.enable_categories %}
+<div class="widget widget-category">
+  <h4 class="widget__title">{{'collections.sidebar.category'|t}}</h4>
+  <div class="widget__content">
+  <ul class="menu">
+    
+    {% capture collection_title %}{{ collection.title }}{% endcapture %}
+    {% for collection in collections %}
+    <li {% if collection_title == collection.title %}class="filter--active" {% endif %}><a  href="{{ collection.url }}" title="{{ collection.title }}">{{ collection.title }} <span>({{collection.products_count}})</span></a></li>
+    {% endfor %}
+  </ul>
+  </div>
+</div><!-- end category sidebar -->
+{% endif %}
+{% if settings.enable_tags %}
+<div class="widget widget-blog-tags">
+{% if blog.all_tags.size > 0 %}
+  <h4 class="widget__title">{{ 'blogs.sidebar.tags' | t }}</h4>
+  <div class="widget__content">
+  <ul class="menu">
+    {% for tag in blog.all_tags %}
+      {% if current_tags contains tag %}
+      <li>{{ tag }}</li>
+      {% else %}
+      <li>{{ tag | link_to_tag: tag }}</li>
+      {% endif %}
+    {% endfor %}
+  </ul>
+  </div>
+{% endif %}
+</div>
+{% endif %}
+{% if settings.enable_instagram %}
+<div class="widget instagram">
+  <h4 class="widget__title">{{ settings.instagram_title }}</h4>
+  <div class="widget__content">
+      {{settings.instagram_content}}
+  </div>
+</div><!-- end category sidebar -->
+{% endif %}

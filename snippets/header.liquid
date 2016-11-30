@@ -1,0 +1,53 @@
+<!-- /snippets/header.liquid -->
+
+<div class="header-main clearfix">
+      {% if template == 'index' %}
+        <h1 class="site-header__logo large--left medium--left" itemscope itemtype="http://schema.org/Organization">
+      {% else %}
+        <div class="h1 site-header__logo large--left medium--left" itemscope itemtype="http://schema.org/Organization">
+      {% endif %}
+        {% if settings.logo_use_image %}
+          <a href="/" itemprop="url" class="site-header__logo-link">
+            <img src="{{ 'logo.png' | asset_url }}" alt="{{ shop.name }}" itemprop="logo">
+          </a>
+        {% else %}
+          <a href="/" itemprop="url">{{ shop.name }}</a>
+        {% endif %}
+      {% if template == 'index' %}
+        </h1>
+      {% else %}
+        </div>
+      {% endif %}
+
+        <div class="header-cart group-inline small--hide">
+          <a href="/cart" class="site-header__cart-toggle {% if settings.ajax_cart_method == "drawer" %} js-drawer-open-right {% endif %}" aria-controls="CartDrawer" aria-expanded="false">          
+              <span class="icon_cart"></span>
+            <span class="my-cart">
+                <span class="cart-text">{{ 'layout.customer.mycart' | t }}</span>
+                    <span id="CartCount">{{ cart.item_count }}  
+                </span>       
+                {{ 'layout.cart.items_count' | t: count: cart.item_count }}
+                 <span id="CartCost">{{ cart.total_price | money }}</span> 
+              </span>       
+          </a>
+        </div>
+
+        {% if settings.enable_header_phone %}
+         <div class="header-support group-inline medium-down--hide">         
+              <span class="icon_support"></span>
+              <div class="support_number">
+                <span class="title">{{settings.header_phone_title}} </span>
+                <span class="number">{{settings.header_phone_number}}</span>
+              </div>
+        </div>
+        {% endif %}
+        {% if settings.enable_free_delivery %}
+         <div class="header-support group-inline medium-down--hide ">         
+              <span class="icon_car"></span>
+              <div class="support_number">
+                <span class="title">{{settings.free_delivery_title}} </span>
+                <span class="number">{{settings.free_delivery_number}}</span>
+              </div>
+        </div>
+        {% endif %}
+</div>

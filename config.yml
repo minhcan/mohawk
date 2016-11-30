@@ -1,0 +1,12 @@
+---
+:api_key: 4618b9d129391b54a29993ac54883ab1
+:password: 2d3706d668dc1a8230711b4e9d9bb232
+:store: juno-mohawk.myshopify.com
+:theme_id: 
+:whitelist_files:
+- layout/
+- assets/
+- config/
+- snippets/
+- templates/
+- locales/

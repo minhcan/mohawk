@@ -1,0 +1,60 @@
+<!-- /snippets/footer0.liquid -->
+<!-- footer-top -->
+{% assign _enable = settings.enable_footer_top%}
+{% if _enable %}
+<div class="site-footer__main site-footer__main-top grid">
+	<div class="top-footer clearfix">
+		<div class="grid__item large--one-quarter medium--one-half">
+			<div class="custom-block"> 
+				<h4>{{settings.footer_custom_title}}</h4>
+			    <div class="footer_content">
+			    	{{ settings.footer_custom_content }}
+			    </div>
+			    {% if settings.show_social %}
+					<div class="social-footer ">
+						{% include 'social'%}
+					</div>
+				{% endif %}	
+			</div>
+		</div>
+		<div class="grid__item large--one-quarter medium--one-half">
+			<div class="photo_gallery"> 
+				<h4>{{settings.footer_gallery_title}}</h4>
+			    <div class="footer_content">
+			    	{% assign blogs_gallery = blogs[settings.blogs_gallery_select].articles %}
+			    	{% assign _row_gallery = settings.blogs_gallery_num %}
+					{% assign _limit_gallery = settings.blogs_gallery_limit | plus:0 %}
+
+			    	<div class="gallery_post clearfix">
+						{% for article in blogs_gallery limit: _limit_gallery %}
+								 {% include 'blog_gallery_footer' width 'gallery' %}
+						{% endfor %}
+					</div>
+			    </div>	
+			</div>	
+		</div>
+		<div class="grid__item large--one-quarter medium--one-half">
+			<div class="twitter"> 
+				<h4>{{settings.footer_twitter_title}}</h4>
+			    <div class="footer_content">
+			    	{{ settings.twitter_widget}}
+			    </div>	
+			</div>	
+		</div>
+		<div class="grid__item large--one-quarter medium--one-half">
+			<h4>{{settings.footer_blog_title}}</h4>
+			    <div class="footer_content">
+
+					{% assign blogs_home = blogs[settings.home_blogs_select].articles %}
+					{% assign _limit = settings.home_blogs_limit | plus:0 %}
+
+			    	<div class="latest-posts">
+						{% for article in blogs_home limit: _limit %}
+								 {% include 'blog_block_footer' width 'footer' %}
+						{% endfor %}
+					</div>
+			    </div>	
+		</div>
+	</div>
+</div>
+{% endif %}

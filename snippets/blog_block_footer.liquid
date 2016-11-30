@@ -1,0 +1,20 @@
+<!-- /templates/snippets/blog_block_footer.liquid -->
+  <div class="latest-posts-body clearfix">
+      {% if article.image %}
+      <div class="post-thumbnail">
+        <a href="{{ article.url }}" title="">
+          <img src="{{ article.image.src | img_url: 'original' }}" alt="" class="img-responsive">
+        </a>
+      </div>
+      {% endif %}
+      <div class="entry-meta">
+        <div class="entry-content clearfix">
+          <h4 class="entry-title">
+            <a href="{{ article.url }}" title="{{ article.title }}">{{ article.title }}</a>
+          </h4>
+          <div class="date">
+            <i class="zmdi zmdi-time"></i><span>{{article.published_at | date: "%B %d, %Y" }}</span>
+          </div>
+        </div>       
+      </div>
+  </div>

@@ -1,0 +1,27 @@
+<!-- /templates/snippets/feature-box.liquid -->
+<div class="box-feature widget clearfix">
+	{% for i in (1..4) %}
+		{% capture _enable %}enable_box_{{ i }}{% endcapture %}
+		{% capture _icon %}icon_{{ i }}.png{% endcapture %}
+		{% capture _title %}title_services_{{ i }}{% endcapture %}
+		{% capture _des %}des_services_{{ i }}{% endcapture %}
+		{% capture _url %}feature_url_{{ i }}{% endcapture %}
+		{% assign enable = settings[_enable] %}
+		{% if enable %}
+		{% assign url = settings[_url] %}
+			<div class="feature-box">
+				<div class="fbox-icon">
+					{{ _icon | asset_url | img_tag }}
+				</div>
+				<div class="fbox-content">
+					<div class="fbox-body">
+						<h4>
+						<a href="{{ settings.[_url]}}">
+						{{settings.[_title]}}</a></h4>
+					</div>
+					<p class="description"> {{settings.[_des]}} </p>
+				</div>
+			</div>		
+		{% endif %}
+	{% endfor %}
+</div>

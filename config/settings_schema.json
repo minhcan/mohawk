@@ -1,0 +1,6708 @@
+[
+  {
+    "name": "theme_info",
+    "logo": "https:\/\/cdn.shopify.com\/s\/files\/1\/1430\/8830\/files\/logo2.png",
+    "settings": [
+      {
+        "type": "header",
+        "content": "Food Store Shopify Theme 1.0"
+      },
+      {
+        "type": "paragraph",
+        "content": "Documentation: [http:\/\/junothemes.com](http:\/\/junothemes.com)"
+      },
+      {
+        "type": "paragraph",
+        "content": "If you need any assistance, please contact [support@junothemes.com](mailto:support@junothemes.com)"
+      }
+    ]
+  },
+  {
+    "name": "Colors",
+    "settings": [
+      {
+        "type": "paragraph",
+        "content": "Use class=\"color\" on a an input tag to bring up the color picker. Only a few colors have been included here as an example."
+      },
+      {
+        "type": "header",
+        "content": "General colors"
+      },
+      {
+        "type": "color",
+        "id": "color_default",
+        "label": "Default",
+        "default": "#c83a3a",
+        "info": "Used for text links hover, and hover buttons"
+      },
+       {
+        "type": "color",
+        "id": "color_primary",
+        "label": "primary",
+        "default": "#7db641",
+        "info": "Used for some text links hover, and hover buttons"
+      },
+      {
+        "type": "color",
+        "id": "color_borders",
+        "label": "Borders",
+        "default": "#e1e1e1"
+      },
+      {
+        "type": "color",
+        "id": "color_link",
+        "label": "Links",
+        "default": "#000000"
+      },
+      {
+        "type": "header",
+        "content": "Body"
+      },
+      {
+        "type": "color",
+        "id": "color_heading_text",
+        "label": "Heading",
+        "default": "#000000"
+      },
+      {
+        "type": "color",
+        "id": "color_body_text",
+        "label": "Text",
+        "default": "#666666"
+      },
+      {
+        "type": "header",
+        "content": "Header"
+      },
+      {
+        "type": "color",
+        "id": "topbar_background_color",
+        "label": " Topbar Background",
+        "default": "#e4dcd2"
+      },
+      {
+        "type": "color",
+        "id": "header_background_color",
+        "label": " Header Background",
+        "default": "#f6eee3"
+      },
+      {
+        "type": "color",
+        "id": "menu_background_color",
+        "label": " Menu Background",
+        "default": "#b39770"
+      },
+      {
+        "type": "color",
+        "id": "color_topbar_text",
+        "label": "Topbar Text color",
+        "default": "#000000"
+      },
+      {
+        "type": "color",
+        "id": "color_nav_text",
+        "label": "Text Nav Menu",
+        "default": "#000"
+      },
+      {
+        "type": "color",
+        "id": "color_sub_nav_bg",
+        "label": "Background Sub Nav",
+        "default": "#fff"
+      },
+      {
+        "type": "color",
+        "id": "color_sub_nav_text",
+        "label": "Text Sub Nav",
+        "default": "#999999"
+      },
+      {
+        "type": "header",
+        "content": "Footer"
+      },
+      {
+        "type": "paragraph",
+        "content": "Footer Top"
+      },
+      {
+        "type": "color",
+        "id": "color_footer_bg",
+        "label": "Background footer top",
+        "default": "#f9f9f9"
+      },
+      {
+        "type": "color",
+        "id": "color_footer_title_text",
+        "label": "Title color",
+        "default": "#000"
+      },
+      {
+        "type": "color",
+        "id": "color_footer_text",
+        "label": "Text",
+        "default": "#666666"
+      },
+      {
+        "type": "paragraph",
+        "content": "Footer Bottom"
+      },
+      {
+        "type": "color",
+        "id": "color_footer_bg_bottom",
+        "label": "Background footer bottom",
+        "default": "#292929"
+      },
+      {
+        "type": "color",
+        "id": "copyright_text_color",
+        "label": "Copyright Text color",
+        "default": "#000000"
+      },
+      {
+        "type": "header",
+        "content": "Other Options"
+      },
+      {
+        "type": "color",
+        "id": "color_cart",
+        "label": "Color Header cart",
+        "default": "#7db641"
+      },
+      {
+        "type": "color",
+        "id": "color_support",
+        "label": "Color Header Icon Suport & Text",
+        "default": "#f84f4f"
+      },
+      {
+        "type": "color",
+        "id": "color_price",
+        "label": "Price Color",
+        "default": "#f94b4b"
+      },
+      {
+        "type": "color",
+        "id": "bg_save_label",
+        "label": "Background Save Label",
+        "default": "#f13340"
+      }
+    ]
+  },
+  {
+    "name": "Fonts",
+    "settings": [
+      {
+        "type": "select",
+        "id": "body_font",
+        "options": [
+          {
+            "value": "Roboto Slab",
+            "label": "Roboto Slab"
+          },
+          {
+            "value": "Roboto",
+            "label": "Roboto"
+          },
+          {
+            "value": "Segoe UI Regular",
+            "label": "Segoe UI Regular"
+          },
+          {
+            "value": "Work Sans",
+            "label": "Work Sans"
+          },
+          {
+            "value": "Raleway",
+            "label": "Raleway"
+          }
+        ],
+        "label": "Body Font Family",
+        "default": "Roboto Slab"
+      },
+      {
+        "type": "select",
+        "id": "heading_font",
+        "options": [
+          {
+            "value": "Roboto Slab",
+            "label": "Roboto Slab"
+          },
+          {
+            "value": "Roboto",
+            "label": "Roboto"
+          },
+          {
+            "value": "Segoe UI Regular",
+            "label": "Segoe UI Regular"
+          },
+          {
+            "value": "Work Sans",
+            "label": "Work Sans"
+          },
+          {
+            "value": "Raleway",
+            "label": "Raleway"
+          }
+        ],
+        "label": "Heading Font Family",
+        "default": "Roboto Slab"
+      },
+      {
+        "type": "select",
+        "id": "menu_font",
+        "options": [
+          {
+            "value": "Roboto Slab",
+            "label": "Roboto Slab"
+          },
+          {
+            "value": "Roboto",
+            "label": "Roboto"
+          },
+          {
+            "value": "Segoe UI Regular",
+            "label": "Segoe UI Regular"
+          },
+          {
+            "value": "Work Sans",
+            "label": "Work Sans"
+          },
+          {
+            "value": "Raleway",
+            "label": "Raleway"
+          }
+        ],
+        "label": "Menu Font Family",
+        "default": "Roboto Slab"
+      },
+      {
+        "type": "select",
+        "id": "product_font",
+        "options": [
+          {
+            "value": "Roboto Slab",
+            "label": "Roboto Slab"
+          },
+          {
+            "value": "Roboto",
+            "label": "Roboto"
+          },
+          {
+            "value": "Segoe UI Regular",
+            "label": "Segoe UI Regular"
+          },
+          {
+            "value": "Work Sans",
+            "label": "Work Sans"
+          },
+          {
+            "value": "Raleway",
+            "label": "Raleway"
+          }
+        ],
+        "label": "Product Name Font Family",
+        "default": "Roboto Slab"
+      },
+      {
+        "type": "select",
+        "id": "button_font",
+        "options": [
+          {
+            "value": "Roboto Slab",
+            "label": "Roboto Slab"
+          },
+          {
+            "value": "Roboto",
+            "label": "Roboto"
+          },
+          {
+            "value": "Segoe UI Regular",
+            "label": "Segoe UI Regular"
+          },
+          {
+            "value": "Work Sans",
+            "label": "Work Sans"
+          },
+          {
+            "value": "Raleway",
+            "label": "Raleway"
+          }
+        ],
+        "label": "Button Font Family",
+        "default": "Roboto Slab"
+      }
+    ]
+  },
+  {
+    "name": "General Settings",
+    "settings": [
+      {
+        "type": "checkbox",
+        "id": "enable_medium_layout",
+        "label": "Enable Medium Layout",
+        "default": false
+      },
+      {
+        "type": "header",
+        "content": "Settings Newsletter"
+      },
+      {
+        "type": "text",
+        "id": "newsletter_form_action",
+        "label": "MailChimp form action URL",
+        "info": "[Where do I find my MailChimp form action URL?](http:\/\/docs.shopify.com\/support\/configuration\/store-customization\/where-do-i-get-my-mailchimp-form-action)"
+      },
+      {
+        "type": "checkbox",
+        "id": "display_backtop",
+        "label": "Display button Backtop?",
+        "default": true
+      }
+     
+    ]
+  },
+  {
+    "name": "MegaMenu",
+    "settings": [
+      {
+        "type": "header",
+        "content": "***Mega Menu 1***"
+      },
+      {
+        "type": "checkbox",
+        "id": "enable_megamenu_item_1",
+        "label": "Enable Megamenu item  1"
+      },
+      {
+        "type": "text",
+        "id": "megamenu_1_parent",
+        "label": "Menu item 1",
+        "info": "(*) Enter \"Link Name\" of \"Navigation \/ Main Menu\" into Menu item 1 box"
+      },
+      {
+        "type": "link_list",
+        "id": "widget_linklist_megamenu_1_1",
+        "label": "USE MENU 1:",
+        "info": "Will not be used if set to None"
+      },
+      {
+        "type": "select",
+        "id": "menuitem_col_link_1_1",
+        "label": "Set width for Menu 1",
+        "options": [
+          {
+            "value": "one-twelfth",
+            "label": "1\/12 (8.33%)"
+          },
+          {
+            "value": "two-twelfths",
+            "label": "2\/12 (16.66%)"
+          },
+          {
+            "value": "three-twelfths",
+            "label": "3\/12 (25%)"
+          },
+          {
+            "value": "four-twelfths",
+            "label": "4\/12 (33.33%)"
+          },
+          {
+            "value": "five-twelfths",
+            "label": "5\/12 (41.66%)"
+          },
+          {
+            "value": "six-twelfths",
+            "label": "6\/12 (50%)"
+          },
+          {
+            "value": "seven-twelfths",
+            "label": "7\/12 (58.33%)"
+          },
+          {
+            "value": "eight-twelfths",
+            "label": "8\/12 (66.66%)"
+          },
+          {
+            "value": "nine-twelfths",
+            "label": "9\/12 (75%)"
+          },
+          {
+            "value": "ten-twelfths",
+            "label": "10\/12 (83.33%)"
+          },
+          {
+            "value": "eleven-twelfths",
+            "label": "11\/12 (91.66%)"
+          },
+          {
+            "value": "one-whole",
+            "label": "12\/12 (100%)"
+          }
+        ],
+        "info": "Set width of the item column."
+      },
+      {
+        "type": "link_list",
+        "id": "widget_linklist_megamenu_2_1",
+        "label": "USE MENU 2:",
+        "info": "Will not be used if set to None"
+      },
+      {
+        "type": "select",
+        "id": "menuitem_col_link_2_1",
+        "label": "Set width for Menu 1",
+        "options": [
+          {
+            "value": "one-twelfth",
+            "label": "1\/12 (8.33%)"
+          },
+          {
+            "value": "two-twelfths",
+            "label": "2\/12 (16.66%)"
+          },
+          {
+            "value": "three-twelfths",
+            "label": "3\/12 (25%)"
+          },
+          {
+            "value": "four-twelfths",
+            "label": "4\/12 (33.33%)"
+          },
+          {
+            "value": "five-twelfths",
+            "label": "5\/12 (41.66%)"
+          },
+          {
+            "value": "six-twelfths",
+            "label": "6\/12 (50%)"
+          },
+          {
+            "value": "seven-twelfths",
+            "label": "7\/12 (58.33%)"
+          },
+          {
+            "value": "eight-twelfths",
+            "label": "8\/12 (66.66%)"
+          },
+          {
+            "value": "nine-twelfths",
+            "label": "9\/12 (75%)"
+          },
+          {
+            "value": "ten-twelfths",
+            "label": "10\/12 (83.33%)"
+          },
+          {
+            "value": "eleven-twelfths",
+            "label": "11\/12 (91.66%)"
+          },
+          {
+            "value": "one-whole",
+            "label": "12\/12 (100%)"
+          }
+        ],
+        "info": "Set width of the item column."
+      },
+      {
+        "type": "link_list",
+        "id": "widget_linklist_megamenu_3_1",
+        "label": "USE MENU 3:",
+        "info": "Will not be used if set to None"
+      },
+      {
+        "type": "select",
+        "id": "menuitem_col_link_3_1",
+        "label": "Set width for Menu 1",
+        "options": [
+          {
+            "value": "one-twelfth",
+            "label": "1\/12 (8.33%)"
+          },
+          {
+            "value": "two-twelfths",
+            "label": "2\/12 (16.66%)"
+          },
+          {
+            "value": "three-twelfths",
+            "label": "3\/12 (25%)"
+          },
+          {
+            "value": "four-twelfths",
+            "label": "4\/12 (33.33%)"
+          },
+          {
+            "value": "five-twelfths",
+            "label": "5\/12 (41.66%)"
+          },
+          {
+            "value": "six-twelfths",
+            "label": "6\/12 (50%)"
+          },
+          {
+            "value": "seven-twelfths",
+            "label": "7\/12 (58.33%)"
+          },
+          {
+            "value": "eight-twelfths",
+            "label": "8\/12 (66.66%)"
+          },
+          {
+            "value": "nine-twelfths",
+            "label": "9\/12 (75%)"
+          },
+          {
+            "value": "ten-twelfths",
+            "label": "10\/12 (83.33%)"
+          },
+          {
+            "value": "eleven-twelfths",
+            "label": "11\/12 (91.66%)"
+          },
+          {
+            "value": "one-whole",
+            "label": "12\/12 (100%)"
+          }
+        ],
+        "info": "Set width of the item column."
+      },
+      {
+        "type": "link_list",
+        "id": "widget_linklist_megamenu_4_1",
+        "label": "USE MENU 4:",
+        "info": "Will not be used if set to None"
+      },
+      {
+        "type": "select",
+        "id": "menuitem_col_link_4_1",
+        "label": "Set width for Menu 4",
+        "options": [
+          {
+            "value": "one-twelfth",
+            "label": "1\/12 (8.33%)"
+          },
+          {
+            "value": "two-twelfths",
+            "label": "2\/12 (16.66%)"
+          },
+          {
+            "value": "three-twelfths",
+            "label": "3\/12 (25%)"
+          },
+          {
+            "value": "four-twelfths",
+            "label": "4\/12 (33.33%)"
+          },
+          {
+            "value": "five-twelfths",
+            "label": "5\/12 (41.66%)"
+          },
+          {
+            "value": "six-twelfths",
+            "label": "6\/12 (50%)"
+          },
+          {
+            "value": "seven-twelfths",
+            "label": "7\/12 (58.33%)"
+          },
+          {
+            "value": "eight-twelfths",
+            "label": "8\/12 (66.66%)"
+          },
+          {
+            "value": "nine-twelfths",
+            "label": "9\/12 (75%)"
+          },
+          {
+            "value": "ten-twelfths",
+            "label": "10\/12 (83.33%)"
+          },
+          {
+            "value": "eleven-twelfths",
+            "label": "11\/12 (91.66%)"
+          },
+          {
+            "value": "one-whole",
+            "label": "12\/12 (100%)"
+          }
+        ],
+        "info": "Set width of the item column."
+      },
+      {
+        "type": "link_list",
+        "id": "widget_linklist_megamenu_5_1",
+        "label": "USE MENU 5:",
+        "info": "Will not be used if set to None"
+      },
+      {
+        "type": "select",
+        "id": "menuitem_col_link_5_1",
+        "label": "Set width for Menu 5",
+        "options": [
+          {
+            "value": "one-twelfth",
+            "label": "1\/12 (8.33%)"
+          },
+          {
+            "value": "two-twelfths",
+            "label": "2\/12 (16.66%)"
+          },
+          {
+            "value": "three-twelfths",
+            "label": "3\/12 (25%)"
+          },
+          {
+            "value": "four-twelfths",
+            "label": "4\/12 (33.33%)"
+          },
+          {
+            "value": "five-twelfths",
+            "label": "5\/12 (41.66%)"
+          },
+          {
+            "value": "six-twelfths",
+            "label": "6\/12 (50%)"
+          },
+          {
+            "value": "seven-twelfths",
+            "label": "7\/12 (58.33%)"
+          },
+          {
+            "value": "eight-twelfths",
+            "label": "8\/12 (66.66%)"
+          },
+          {
+            "value": "nine-twelfths",
+            "label": "9\/12 (75%)"
+          },
+          {
+            "value": "ten-twelfths",
+            "label": "10\/12 (83.33%)"
+          },
+          {
+            "value": "eleven-twelfths",
+            "label": "11\/12 (91.66%)"
+          },
+          {
+            "value": "one-whole",
+            "label": "12\/12 (100%)"
+          }
+        ],
+        "info": "Set width of the item column."
+      },
+      {
+        "type": "header",
+        "content": "Custom html"
+      },
+      {
+        "type": "checkbox",
+        "id": "enable_custom_menu_1",
+        "label": "Display Custom html"
+      },
+      {
+        "type": "textarea",
+        "id": "widget_custom_megamenu_1",
+        "label": "Add html",
+        "info": "Use any html here but you would need to edit css if layout breaks. You can embed videos for Youtube, Vimeo etc."
+      },
+      {
+        "type": "select",
+        "id": "menuitem_col_link_6_1",
+        "label": "Set width for custom html",
+        "options": [
+          {
+            "value": "one-twelfth",
+            "label": "1\/12 (8.33%)"
+          },
+          {
+            "value": "two-twelfths",
+            "label": "2\/12 (16.66%)"
+          },
+          {
+            "value": "three-twelfths",
+            "label": "3\/12 (25%)"
+          },
+          {
+            "value": "four-twelfths",
+            "label": "4\/12 (33.33%)"
+          },
+          {
+            "value": "five-twelfths",
+            "label": "5\/12 (41.66%)"
+          },
+          {
+            "value": "six-twelfths",
+            "label": "6\/12 (50%)"
+          },
+          {
+            "value": "seven-twelfths",
+            "label": "7\/12 (58.33%)"
+          },
+          {
+            "value": "eight-twelfths",
+            "label": "8\/12 (66.66%)"
+          },
+          {
+            "value": "nine-twelfths",
+            "label": "9\/12 (75%)"
+          },
+          {
+            "value": "ten-twelfths",
+            "label": "10\/12 (83.33%)"
+          },
+          {
+            "value": "eleven-twelfths",
+            "label": "11\/12 (91.66%)"
+          },
+          {
+            "value": "one-whole",
+            "label": "12\/12 (100%)"
+          }
+        ],
+        "info": "Set width of the item column."
+      },
+      {
+        "type": "header",
+        "content": "***Mega Menu 2***"
+      },
+      {
+        "type": "checkbox",
+        "id": "enable_megamenu_item_2",
+        "label": "Enable Megamenu item  2"
+      },
+      {
+        "type": "text",
+        "id": "megamenu_2_parent",
+        "label": "Menu item 2",
+        "info": "(*) Enter \"Link Name\" of \"Navigation \/ Main Menu\" into Menu item 2 box"
+      },
+      {
+        "type": "link_list",
+        "id": "widget_linklist_megamenu_1_2",
+        "label": "USE MENU 1:",
+        "info": "Will not be used if set to None"
+      },
+      {
+        "type": "select",
+        "id": "menuitem_col_link_1_2",
+        "label": "Set width for Menu 1",
+        "options": [
+          {
+            "value": "one-twelfth",
+            "label": "1\/12 (8.33%)"
+          },
+          {
+            "value": "two-twelfths",
+            "label": "2\/12 (16.66%)"
+          },
+          {
+            "value": "three-twelfths",
+            "label": "3\/12 (25%)"
+          },
+          {
+            "value": "four-twelfths",
+            "label": "4\/12 (33.33%)"
+          },
+          {
+            "value": "five-twelfths",
+            "label": "5\/12 (41.66%)"
+          },
+          {
+            "value": "six-twelfths",
+            "label": "6\/12 (50%)"
+          },
+          {
+            "value": "seven-twelfths",
+            "label": "7\/12 (58.33%)"
+          },
+          {
+            "value": "eight-twelfths",
+            "label": "8\/12 (66.66%)"
+          },
+          {
+            "value": "nine-twelfths",
+            "label": "9\/12 (75%)"
+          },
+          {
+            "value": "ten-twelfths",
+            "label": "10\/12 (83.33%)"
+          },
+          {
+            "value": "eleven-twelfths",
+            "label": "11\/12 (91.66%)"
+          },
+          {
+            "value": "one-whole",
+            "label": "12\/12 (100%)"
+          }
+        ],
+        "info": "Set width of the item column."
+      },
+      {
+        "type": "link_list",
+        "id": "widget_linklist_megamenu_2_2",
+        "label": "USE MENU 2:",
+        "info": "Will not be used if set to None"
+      },
+      {
+        "type": "select",
+        "id": "menuitem_col_link_2_2",
+        "label": "Set width for Menu 1",
+        "options": [
+          {
+            "value": "one-twelfth",
+            "label": "1\/12 (8.33%)"
+          },
+          {
+            "value": "two-twelfths",
+            "label": "2\/12 (16.66%)"
+          },
+          {
+            "value": "three-twelfths",
+            "label": "3\/12 (25%)"
+          },
+          {
+            "value": "four-twelfths",
+            "label": "4\/12 (33.33%)"
+          },
+          {
+            "value": "five-twelfths",
+            "label": "5\/12 (41.66%)"
+          },
+          {
+            "value": "six-twelfths",
+            "label": "6\/12 (50%)"
+          },
+          {
+            "value": "seven-twelfths",
+            "label": "7\/12 (58.33%)"
+          },
+          {
+            "value": "eight-twelfths",
+            "label": "8\/12 (66.66%)"
+          },
+          {
+            "value": "nine-twelfths",
+            "label": "9\/12 (75%)"
+          },
+          {
+            "value": "ten-twelfths",
+            "label": "10\/12 (83.33%)"
+          },
+          {
+            "value": "eleven-twelfths",
+            "label": "11\/12 (91.66%)"
+          },
+          {
+            "value": "one-whole",
+            "label": "12\/12 (100%)"
+          }
+        ],
+        "info": "Set width of the item column."
+      },
+      {
+        "type": "link_list",
+        "id": "widget_linklist_megamenu_3_2",
+        "label": "USE MENU 3:",
+        "info": "Will not be used if set to None"
+      },
+      {
+        "type": "select",
+        "id": "menuitem_col_link_3_2",
+        "label": "Set width for Menu 1",
+        "options": [
+          {
+            "value": "one-twelfth",
+            "label": "1\/12 (8.33%)"
+          },
+          {
+            "value": "two-twelfths",
+            "label": "2\/12 (16.66%)"
+          },
+          {
+            "value": "three-twelfths",
+            "label": "3\/12 (25%)"
+          },
+          {
+            "value": "four-twelfths",
+            "label": "4\/12 (33.33%)"
+          },
+          {
+            "value": "five-twelfths",
+            "label": "5\/12 (41.66%)"
+          },
+          {
+            "value": "six-twelfths",
+            "label": "6\/12 (50%)"
+          },
+          {
+            "value": "seven-twelfths",
+            "label": "7\/12 (58.33%)"
+          },
+          {
+            "value": "eight-twelfths",
+            "label": "8\/12 (66.66%)"
+          },
+          {
+            "value": "nine-twelfths",
+            "label": "9\/12 (75%)"
+          },
+          {
+            "value": "ten-twelfths",
+            "label": "10\/12 (83.33%)"
+          },
+          {
+            "value": "eleven-twelfths",
+            "label": "11\/12 (91.66%)"
+          },
+          {
+            "value": "one-whole",
+            "label": "12\/12 (100%)"
+          }
+        ],
+        "info": "Set width of the item column."
+      },
+      {
+        "type": "link_list",
+        "id": "widget_linklist_megamenu_4_2",
+        "label": "USE MENU 4:",
+        "info": "Will not be used if set to None"
+      },
+      {
+        "type": "select",
+        "id": "menuitem_col_link_4_2",
+        "label": "Set width for Menu 4",
+        "options": [
+          {
+            "value": "one-twelfth",
+            "label": "1\/12 (8.33%)"
+          },
+          {
+            "value": "two-twelfths",
+            "label": "2\/12 (16.66%)"
+          },
+          {
+            "value": "three-twelfths",
+            "label": "3\/12 (25%)"
+          },
+          {
+            "value": "four-twelfths",
+            "label": "4\/12 (33.33%)"
+          },
+          {
+            "value": "five-twelfths",
+            "label": "5\/12 (41.66%)"
+          },
+          {
+            "value": "six-twelfths",
+            "label": "6\/12 (50%)"
+          },
+          {
+            "value": "seven-twelfths",
+            "label": "7\/12 (58.33%)"
+          },
+          {
+            "value": "eight-twelfths",
+            "label": "8\/12 (66.66%)"
+          },
+          {
+            "value": "nine-twelfths",
+            "label": "9\/12 (75%)"
+          },
+          {
+            "value": "ten-twelfths",
+            "label": "10\/12 (83.33%)"
+          },
+          {
+            "value": "eleven-twelfths",
+            "label": "11\/12 (91.66%)"
+          },
+          {
+            "value": "one-whole",
+            "label": "12\/12 (100%)"
+          }
+        ],
+        "info": "Set width of the item column."
+      },
+      {
+        "type": "link_list",
+        "id": "widget_linklist_megamenu_5_2",
+        "label": "USE MENU 5:",
+        "info": "Will not be used if set to None"
+      },
+      {
+        "type": "select",
+        "id": "menuitem_col_link_5_2",
+        "label": "Set width for Menu 5",
+        "options": [
+          {
+            "value": "one-twelfth",
+            "label": "1\/12 (8.33%)"
+          },
+          {
+            "value": "two-twelfths",
+            "label": "2\/12 (16.66%)"
+          },
+          {
+            "value": "three-twelfths",
+            "label": "3\/12 (25%)"
+          },
+          {
+            "value": "four-twelfths",
+            "label": "4\/12 (33.33%)"
+          },
+          {
+            "value": "five-twelfths",
+            "label": "5\/12 (41.66%)"
+          },
+          {
+            "value": "six-twelfths",
+            "label": "6\/12 (50%)"
+          },
+          {
+            "value": "seven-twelfths",
+            "label": "7\/12 (58.33%)"
+          },
+          {
+            "value": "eight-twelfths",
+            "label": "8\/12 (66.66%)"
+          },
+          {
+            "value": "nine-twelfths",
+            "label": "9\/12 (75%)"
+          },
+          {
+            "value": "ten-twelfths",
+            "label": "10\/12 (83.33%)"
+          },
+          {
+            "value": "eleven-twelfths",
+            "label": "11\/12 (91.66%)"
+          },
+          {
+            "value": "one-whole",
+            "label": "12\/12 (100%)"
+          }
+        ],
+        "info": "Set width of the item column."
+      },
+      {
+        "type": "header",
+        "content": "Custom html"
+      },
+      {
+        "type": "checkbox",
+        "id": "enable_custom_menu_2",
+        "label": "Display Custom html"
+      },
+      {
+        "type": "textarea",
+        "id": "widget_custom_megamenu_2",
+        "label": "Add html",
+        "info": "Use any html here but you would need to edit css if layout breaks. You can embed videos for Youtube, Vimeo etc."
+      },
+      {
+        "type": "select",
+        "id": "menuitem_col_link_6_2",
+        "label": "Set width for custom html",
+        "options": [
+          {
+            "value": "one-twelfth",
+            "label": "1\/12 (8.33%)"
+          },
+          {
+            "value": "two-twelfths",
+            "label": "2\/12 (16.66%)"
+          },
+          {
+            "value": "three-twelfths",
+            "label": "3\/12 (25%)"
+          },
+          {
+            "value": "four-twelfths",
+            "label": "4\/12 (33.33%)"
+          },
+          {
+            "value": "five-twelfths",
+            "label": "5\/12 (41.66%)"
+          },
+          {
+            "value": "six-twelfths",
+            "label": "6\/12 (50%)"
+          },
+          {
+            "value": "seven-twelfths",
+            "label": "7\/12 (58.33%)"
+          },
+          {
+            "value": "eight-twelfths",
+            "label": "8\/12 (66.66%)"
+          },
+          {
+            "value": "nine-twelfths",
+            "label": "9\/12 (75%)"
+          },
+          {
+            "value": "ten-twelfths",
+            "label": "10\/12 (83.33%)"
+          },
+          {
+            "value": "eleven-twelfths",
+            "label": "11\/12 (91.66%)"
+          },
+          {
+            "value": "one-whole",
+            "label": "12\/12 (100%)"
+          }
+        ],
+        "info": "Set width of the item column."
+      },
+      {
+        "type": "header",
+        "content": "***Mega Menu 3***"
+      },
+      {
+        "type": "checkbox",
+        "id": "enable_megamenu_item_3",
+        "label": "Enable Megamenu item  3"
+      },
+      {
+        "type": "text",
+        "id": "megamenu_3_parent",
+        "label": "Menu item 3",
+        "info": "(*) Enter \"Link Name\" of \"Navigation \/ Main Menu\" into Menu item 3 box"
+      },
+      {
+        "type": "link_list",
+        "id": "widget_linklist_megamenu_1_3",
+        "label": "USE MENU 1:",
+        "info": "Will not be used if set to None"
+      },
+      {
+        "type": "select",
+        "id": "menuitem_col_link_1_3",
+        "label": "Set width for Menu 1",
+        "options": [
+          {
+            "value": "one-twelfth",
+            "label": "1\/12 (8.33%)"
+          },
+          {
+            "value": "two-twelfths",
+            "label": "2\/12 (16.66%)"
+          },
+          {
+            "value": "three-twelfths",
+            "label": "3\/12 (25%)"
+          },
+          {
+            "value": "four-twelfths",
+            "label": "4\/12 (33.33%)"
+          },
+          {
+            "value": "five-twelfths",
+            "label": "5\/12 (41.66%)"
+          },
+          {
+            "value": "six-twelfths",
+            "label": "6\/12 (50%)"
+          },
+          {
+            "value": "seven-twelfths",
+            "label": "7\/12 (58.33%)"
+          },
+          {
+            "value": "eight-twelfths",
+            "label": "8\/12 (66.66%)"
+          },
+          {
+            "value": "nine-twelfths",
+            "label": "9\/12 (75%)"
+          },
+          {
+            "value": "ten-twelfths",
+            "label": "10\/12 (83.33%)"
+          },
+          {
+            "value": "eleven-twelfths",
+            "label": "11\/12 (91.66%)"
+          },
+          {
+            "value": "one-whole",
+            "label": "12\/12 (100%)"
+          }
+        ],
+        "info": "Set width of the item column."
+      },
+      {
+        "type": "link_list",
+        "id": "widget_linklist_megamenu_2_3",
+        "label": "USE MENU 2:",
+        "info": "Will not be used if set to None"
+      },
+      {
+        "type": "select",
+        "id": "menuitem_col_link_2_3",
+        "label": "Set width for Menu 1",
+        "options": [
+          {
+            "value": "one-twelfth",
+            "label": "1\/12 (8.33%)"
+          },
+          {
+            "value": "two-twelfths",
+            "label": "2\/12 (16.66%)"
+          },
+          {
+            "value": "three-twelfths",
+            "label": "3\/12 (25%)"
+          },
+          {
+            "value": "four-twelfths",
+            "label": "4\/12 (33.33%)"
+          },
+          {
+            "value": "five-twelfths",
+            "label": "5\/12 (41.66%)"
+          },
+          {
+            "value": "six-twelfths",
+            "label": "6\/12 (50%)"
+          },
+          {
+            "value": "seven-twelfths",
+            "label": "7\/12 (58.33%)"
+          },
+          {
+            "value": "eight-twelfths",
+            "label": "8\/12 (66.66%)"
+          },
+          {
+            "value": "nine-twelfths",
+            "label": "9\/12 (75%)"
+          },
+          {
+            "value": "ten-twelfths",
+            "label": "10\/12 (83.33%)"
+          },
+          {
+            "value": "eleven-twelfths",
+            "label": "11\/12 (91.66%)"
+          },
+          {
+            "value": "one-whole",
+            "label": "12\/12 (100%)"
+          }
+        ],
+        "info": "Set width of the item column."
+      },
+      {
+        "type": "link_list",
+        "id": "widget_linklist_megamenu_3_3",
+        "label": "USE MENU 3:",
+        "info": "Will not be used if set to None"
+      },
+      {
+        "type": "select",
+        "id": "menuitem_col_link_3_3",
+        "label": "Set width for Menu 1",
+        "options": [
+          {
+            "value": "one-twelfth",
+            "label": "1\/12 (8.33%)"
+          },
+          {
+            "value": "two-twelfths",
+            "label": "2\/12 (16.66%)"
+          },
+          {
+            "value": "three-twelfths",
+            "label": "3\/12 (25%)"
+          },
+          {
+            "value": "four-twelfths",
+            "label": "4\/12 (33.33%)"
+          },
+          {
+            "value": "five-twelfths",
+            "label": "5\/12 (41.66%)"
+          },
+          {
+            "value": "six-twelfths",
+            "label": "6\/12 (50%)"
+          },
+          {
+            "value": "seven-twelfths",
+            "label": "7\/12 (58.33%)"
+          },
+          {
+            "value": "eight-twelfths",
+            "label": "8\/12 (66.66%)"
+          },
+          {
+            "value": "nine-twelfths",
+            "label": "9\/12 (75%)"
+          },
+          {
+            "value": "ten-twelfths",
+            "label": "10\/12 (83.33%)"
+          },
+          {
+            "value": "eleven-twelfths",
+            "label": "11\/12 (91.66%)"
+          },
+          {
+            "value": "one-whole",
+            "label": "12\/12 (100%)"
+          }
+        ],
+        "info": "Set width of the item column."
+      },
+      {
+        "type": "link_list",
+        "id": "widget_linklist_megamenu_4_3",
+        "label": "USE MENU 4:",
+        "info": "Will not be used if set to None"
+      },
+      {
+        "type": "select",
+        "id": "menuitem_col_link_4_3",
+        "label": "Set width for Menu 4",
+        "options": [
+          {
+            "value": "one-twelfth",
+            "label": "1\/12 (8.33%)"
+          },
+          {
+            "value": "two-twelfths",
+            "label": "2\/12 (16.66%)"
+          },
+          {
+            "value": "three-twelfths",
+            "label": "3\/12 (25%)"
+          },
+          {
+            "value": "four-twelfths",
+            "label": "4\/12 (33.33%)"
+          },
+          {
+            "value": "five-twelfths",
+            "label": "5\/12 (41.66%)"
+          },
+          {
+            "value": "six-twelfths",
+            "label": "6\/12 (50%)"
+          },
+          {
+            "value": "seven-twelfths",
+            "label": "7\/12 (58.33%)"
+          },
+          {
+            "value": "eight-twelfths",
+            "label": "8\/12 (66.66%)"
+          },
+          {
+            "value": "nine-twelfths",
+            "label": "9\/12 (75%)"
+          },
+          {
+            "value": "ten-twelfths",
+            "label": "10\/12 (83.33%)"
+          },
+          {
+            "value": "eleven-twelfths",
+            "label": "11\/12 (91.66%)"
+          },
+          {
+            "value": "one-whole",
+            "label": "12\/12 (100%)"
+          }
+        ],
+        "info": "Set width of the item column."
+      },
+      {
+        "type": "link_list",
+        "id": "widget_linklist_megamenu_5_3",
+        "label": "USE MENU 5:",
+        "info": "Will not be used if set to None"
+      },
+      {
+        "type": "select",
+        "id": "menuitem_col_link_5_3",
+        "label": "Set width for Menu 5",
+        "options": [
+          {
+            "value": "one-twelfth",
+            "label": "1\/12 (8.33%)"
+          },
+          {
+            "value": "two-twelfths",
+            "label": "2\/12 (16.66%)"
+          },
+          {
+            "value": "three-twelfths",
+            "label": "3\/12 (25%)"
+          },
+          {
+            "value": "four-twelfths",
+            "label": "4\/12 (33.33%)"
+          },
+          {
+            "value": "five-twelfths",
+            "label": "5\/12 (41.66%)"
+          },
+          {
+            "value": "six-twelfths",
+            "label": "6\/12 (50%)"
+          },
+          {
+            "value": "seven-twelfths",
+            "label": "7\/12 (58.33%)"
+          },
+          {
+            "value": "eight-twelfths",
+            "label": "8\/12 (66.66%)"
+          },
+          {
+            "value": "nine-twelfths",
+            "label": "9\/12 (75%)"
+          },
+          {
+            "value": "ten-twelfths",
+            "label": "10\/12 (83.33%)"
+          },
+          {
+            "value": "eleven-twelfths",
+            "label": "11\/12 (91.66%)"
+          },
+          {
+            "value": "one-whole",
+            "label": "12\/12 (100%)"
+          }
+        ],
+        "info": "Set width of the item column."
+      },
+      {
+        "type": "header",
+        "content": "Custom html"
+      },
+      {
+        "type": "checkbox",
+        "id": "enable_custom_menu_3",
+        "label": "Display Custom html"
+      },
+      {
+        "type": "textarea",
+        "id": "widget_custom_megamenu_3",
+        "label": "Add html",
+        "info": "Use any html here but you would need to edit css if layout breaks. You can embed videos for Youtube, Vimeo etc."
+      },
+      {
+        "type": "select",
+        "id": "menuitem_col_link_6_3",
+        "label": "Set width for custom html",
+        "options": [
+          {
+            "value": "one-twelfth",
+            "label": "1\/12 (8.33%)"
+          },
+          {
+            "value": "two-twelfths",
+            "label": "2\/12 (16.66%)"
+          },
+          {
+            "value": "three-twelfths",
+            "label": "3\/12 (25%)"
+          },
+          {
+            "value": "four-twelfths",
+            "label": "4\/12 (33.33%)"
+          },
+          {
+            "value": "five-twelfths",
+            "label": "5\/12 (41.66%)"
+          },
+          {
+            "value": "six-twelfths",
+            "label": "6\/12 (50%)"
+          },
+          {
+            "value": "seven-twelfths",
+            "label": "7\/12 (58.33%)"
+          },
+          {
+            "value": "eight-twelfths",
+            "label": "8\/12 (66.66%)"
+          },
+          {
+            "value": "nine-twelfths",
+            "label": "9\/12 (75%)"
+          },
+          {
+            "value": "ten-twelfths",
+            "label": "10\/12 (83.33%)"
+          },
+          {
+            "value": "eleven-twelfths",
+            "label": "11\/12 (91.66%)"
+          },
+          {
+            "value": "one-whole",
+            "label": "12\/12 (100%)"
+          }
+        ],
+        "info": "Set width of the item column."
+      },
+      {
+        "type": "header",
+        "content": "***Mega Menu 4***"
+      },
+      {
+        "type": "checkbox",
+        "id": "enable_megamenu_item_4",
+        "label": "Enable Megamenu item  4"
+      },
+      {
+        "type": "text",
+        "id": "megamenu_4_parent",
+        "label": "Menu item 4",
+        "info": "(*) Enter \"Link Name\" of \"Navigation \/ Main Menu\" into Menu item 4 box"
+      },
+      {
+        "type": "link_list",
+        "id": "widget_linklist_megamenu_1_4",
+        "label": "USE MENU 1:",
+        "info": "Will not be used if set to None"
+      },
+      {
+        "type": "select",
+        "id": "menuitem_col_link_1_4",
+        "label": "Set width for Menu 1",
+        "options": [
+          {
+            "value": "one-twelfth",
+            "label": "1\/12 (8.33%)"
+          },
+          {
+            "value": "two-twelfths",
+            "label": "2\/12 (16.66%)"
+          },
+          {
+            "value": "three-twelfths",
+            "label": "3\/12 (25%)"
+          },
+          {
+            "value": "four-twelfths",
+            "label": "4\/12 (33.33%)"
+          },
+          {
+            "value": "five-twelfths",
+            "label": "5\/12 (41.66%)"
+          },
+          {
+            "value": "six-twelfths",
+            "label": "6\/12 (50%)"
+          },
+          {
+            "value": "seven-twelfths",
+            "label": "7\/12 (58.33%)"
+          },
+          {
+            "value": "eight-twelfths",
+            "label": "8\/12 (66.66%)"
+          },
+          {
+            "value": "nine-twelfths",
+            "label": "9\/12 (75%)"
+          },
+          {
+            "value": "ten-twelfths",
+            "label": "10\/12 (83.33%)"
+          },
+          {
+            "value": "eleven-twelfths",
+            "label": "11\/12 (91.66%)"
+          },
+          {
+            "value": "one-whole",
+            "label": "12\/12 (100%)"
+          }
+        ],
+        "info": "Set width of the item column."
+      },
+      {
+        "type": "link_list",
+        "id": "widget_linklist_megamenu_2_4",
+        "label": "USE MENU 2:",
+        "info": "Will not be used if set to None"
+      },
+      {
+        "type": "select",
+        "id": "menuitem_col_link_2_4",
+        "label": "Set width for Menu 1",
+        "options": [
+          {
+            "value": "one-twelfth",
+            "label": "1\/12 (8.33%)"
+          },
+          {
+            "value": "two-twelfths",
+            "label": "2\/12 (16.66%)"
+          },
+          {
+            "value": "three-twelfths",
+            "label": "3\/12 (25%)"
+          },
+          {
+            "value": "four-twelfths",
+            "label": "4\/12 (33.33%)"
+          },
+          {
+            "value": "five-twelfths",
+            "label": "5\/12 (41.66%)"
+          },
+          {
+            "value": "six-twelfths",
+            "label": "6\/12 (50%)"
+          },
+          {
+            "value": "seven-twelfths",
+            "label": "7\/12 (58.33%)"
+          },
+          {
+            "value": "eight-twelfths",
+            "label": "8\/12 (66.66%)"
+          },
+          {
+            "value": "nine-twelfths",
+            "label": "9\/12 (75%)"
+          },
+          {
+            "value": "ten-twelfths",
+            "label": "10\/12 (83.33%)"
+          },
+          {
+            "value": "eleven-twelfths",
+            "label": "11\/12 (91.66%)"
+          },
+          {
+            "value": "one-whole",
+            "label": "12\/12 (100%)"
+          }
+        ],
+        "info": "Set width of the item column."
+      },
+      {
+        "type": "link_list",
+        "id": "widget_linklist_megamenu_3_4",
+        "label": "USE MENU 3:",
+        "info": "Will not be used if set to None"
+      },
+      {
+        "type": "select",
+        "id": "menuitem_col_link_3_4",
+        "label": "Set width for Menu 1",
+        "options": [
+          {
+            "value": "one-twelfth",
+            "label": "1\/12 (8.33%)"
+          },
+          {
+            "value": "two-twelfths",
+            "label": "2\/12 (16.66%)"
+          },
+          {
+            "value": "three-twelfths",
+            "label": "3\/12 (25%)"
+          },
+          {
+            "value": "four-twelfths",
+            "label": "4\/12 (33.33%)"
+          },
+          {
+            "value": "five-twelfths",
+            "label": "5\/12 (41.66%)"
+          },
+          {
+            "value": "six-twelfths",
+            "label": "6\/12 (50%)"
+          },
+          {
+            "value": "seven-twelfths",
+            "label": "7\/12 (58.33%)"
+          },
+          {
+            "value": "eight-twelfths",
+            "label": "8\/12 (66.66%)"
+          },
+          {
+            "value": "nine-twelfths",
+            "label": "9\/12 (75%)"
+          },
+          {
+            "value": "ten-twelfths",
+            "label": "10\/12 (83.33%)"
+          },
+          {
+            "value": "eleven-twelfths",
+            "label": "11\/12 (91.66%)"
+          },
+          {
+            "value": "one-whole",
+            "label": "12\/12 (100%)"
+          }
+        ],
+        "info": "Set width of the item column."
+      },
+      {
+        "type": "link_list",
+        "id": "widget_linklist_megamenu_4_4",
+        "label": "USE MENU 4:",
+        "info": "Will not be used if set to None"
+      },
+      {
+        "type": "select",
+        "id": "menuitem_col_link_4_4",
+        "label": "Set width for Menu 4",
+        "options": [
+          {
+            "value": "one-twelfth",
+            "label": "1\/12 (8.33%)"
+          },
+          {
+            "value": "two-twelfths",
+            "label": "2\/12 (16.66%)"
+          },
+          {
+            "value": "three-twelfths",
+            "label": "3\/12 (25%)"
+          },
+          {
+            "value": "four-twelfths",
+            "label": "4\/12 (33.33%)"
+          },
+          {
+            "value": "five-twelfths",
+            "label": "5\/12 (41.66%)"
+          },
+          {
+            "value": "six-twelfths",
+            "label": "6\/12 (50%)"
+          },
+          {
+            "value": "seven-twelfths",
+            "label": "7\/12 (58.33%)"
+          },
+          {
+            "value": "eight-twelfths",
+            "label": "8\/12 (66.66%)"
+          },
+          {
+            "value": "nine-twelfths",
+            "label": "9\/12 (75%)"
+          },
+          {
+            "value": "ten-twelfths",
+            "label": "10\/12 (83.33%)"
+          },
+          {
+            "value": "eleven-twelfths",
+            "label": "11\/12 (91.66%)"
+          },
+          {
+            "value": "one-whole",
+            "label": "12\/12 (100%)"
+          }
+        ],
+        "info": "Set width of the item column."
+      },
+      {
+        "type": "link_list",
+        "id": "widget_linklist_megamenu_5_4",
+        "label": "USE MENU 5:",
+        "info": "Will not be used if set to None"
+      },
+      {
+        "type": "select",
+        "id": "menuitem_col_link_5_4",
+        "label": "Set width for Menu 5",
+        "options": [
+          {
+            "value": "one-twelfth",
+            "label": "1\/12 (8.33%)"
+          },
+          {
+            "value": "two-twelfths",
+            "label": "2\/12 (16.66%)"
+          },
+          {
+            "value": "three-twelfths",
+            "label": "3\/12 (25%)"
+          },
+          {
+            "value": "four-twelfths",
+            "label": "4\/12 (33.33%)"
+          },
+          {
+            "value": "five-twelfths",
+            "label": "5\/12 (41.66%)"
+          },
+          {
+            "value": "six-twelfths",
+            "label": "6\/12 (50%)"
+          },
+          {
+            "value": "seven-twelfths",
+            "label": "7\/12 (58.33%)"
+          },
+          {
+            "value": "eight-twelfths",
+            "label": "8\/12 (66.66%)"
+          },
+          {
+            "value": "nine-twelfths",
+            "label": "9\/12 (75%)"
+          },
+          {
+            "value": "ten-twelfths",
+            "label": "10\/12 (83.33%)"
+          },
+          {
+            "value": "eleven-twelfths",
+            "label": "11\/12 (91.66%)"
+          },
+          {
+            "value": "one-whole",
+            "label": "12\/12 (100%)"
+          }
+        ],
+        "info": "Set width of the item column."
+      },
+      {
+        "type": "header",
+        "content": "Custom html"
+      },
+      {
+        "type": "checkbox",
+        "id": "enable_custom_menu_4",
+        "label": "Display Custom html"
+      },
+      {
+        "type": "textarea",
+        "id": "widget_custom_megamenu_4",
+        "label": "Add html",
+        "info": "Use any html here but you would need to edit css if layout breaks. You can embed videos for Youtube, Vimeo etc."
+      },
+      {
+        "type": "select",
+        "id": "menuitem_col_link_6_4",
+        "label": "Set width for custom html",
+        "options": [
+          {
+            "value": "one-twelfth",
+            "label": "1\/12 (8.33%)"
+          },
+          {
+            "value": "two-twelfths",
+            "label": "2\/12 (16.66%)"
+          },
+          {
+            "value": "three-twelfths",
+            "label": "3\/12 (25%)"
+          },
+          {
+            "value": "four-twelfths",
+            "label": "4\/12 (33.33%)"
+          },
+          {
+            "value": "five-twelfths",
+            "label": "5\/12 (41.66%)"
+          },
+          {
+            "value": "six-twelfths",
+            "label": "6\/12 (50%)"
+          },
+          {
+            "value": "seven-twelfths",
+            "label": "7\/12 (58.33%)"
+          },
+          {
+            "value": "eight-twelfths",
+            "label": "8\/12 (66.66%)"
+          },
+          {
+            "value": "nine-twelfths",
+            "label": "9\/12 (75%)"
+          },
+          {
+            "value": "ten-twelfths",
+            "label": "10\/12 (83.33%)"
+          },
+          {
+            "value": "eleven-twelfths",
+            "label": "11\/12 (91.66%)"
+          },
+          {
+            "value": "one-whole",
+            "label": "12\/12 (100%)"
+          }
+        ],
+        "info": "Set width of the item column."
+      },
+      {
+        "type": "header",
+        "content": "***Mega Menu 5***"
+      },
+      {
+        "type": "checkbox",
+        "id": "enable_megamenu_item_5",
+        "label": "Enable Megamenu item  5"
+      },
+      {
+        "type": "text",
+        "id": "megamenu_5_parent",
+        "label": "Menu item 5",
+        "info": "(*) Enter \"Link Name\" of \"Navigation \/ Main Menu\" into Menu item 5 box"
+      },
+      {
+        "type": "header",
+        "content": "Custom megamenu html"
+      },
+      {
+        "type": "textarea",
+        "id": "megamenu_custom_html_5",
+        "label": "Add html",
+        "info": "Use any html here but you would need to edit css if layout breaks. "
+      },
+      {
+        "type": "header",
+        "content": "***Mega Menu 6***"
+      },
+      {
+        "type": "checkbox",
+        "id": "enable_megamenu_item_6",
+        "label": "Enable Megamenu item  6"
+      },
+      {
+        "type": "text",
+        "id": "megamenu_6_parent",
+        "label": "Menu item 6",
+        "info": "(*) Enter \"Link Name\" of \"Navigation \/ Main Menu\" into Menu item 6 box"
+      },
+      {
+        "type": "header",
+        "content": "Custom megamenu html"
+      },
+      {
+        "type": "textarea",
+        "id": "megamenu_custom_html_6",
+        "label": "Add html",
+        "info": "Use any html here but you would need to edit css if layout breaks. "
+      }
+    ]
+  },
+  {
+    "name": "Header",
+    "settings": [
+      {
+        "type": "header",
+        "content": "Logo"
+      },
+      {
+        "type": "checkbox",
+        "id": "logo_use_image",
+        "label": "Use custom logo"
+      },
+      {
+        "type": "image",
+        "id": "logo.png",
+        "label": "Custom logo",
+        "max-width": 450,
+        "max-height": 200,
+        "info": "Maximum logo dimensions are 450px wide by 200px high. The uploaded file will be resized to fit within those constraints."
+      },
+      {
+        "type": "text",
+        "id": "logo_max_width",
+        "label": "Max logo width",
+        "default": "450",
+        "info": "Defined in pixels. Do not add the 'px' unit."
+      },
+      {
+        "type": "header",
+        "content": "Favicon"
+      },
+      {
+        "type": "checkbox",
+        "id": "favicon_enable",
+        "label": "Use custom icon"
+      },
+      {
+        "type": "image",
+        "id": "favicon.png",
+        "label": "16 x 16px png",
+        "max-width": 16,
+        "max-height": 16
+      },
+      {
+        "type": "header",
+        "content": "Header Phone"
+      },
+      {
+        "type": "checkbox",
+        "id": "enable_header_phone",
+        "label": "Enable Header Phone",
+        "default": true
+      },
+      {
+        "type": "text",
+        "id": "header_phone_title",
+        "label": "Title",
+        "default": "Support"
+      },
+      {
+        "type": "text",
+        "id": "header_phone_number",
+        "label": "Number contact",
+        "default": "0 123 456 789"
+      },
+      {
+        "type": "header",
+        "content": "Header FREE DELIVERY"
+      },
+      {
+        "type": "checkbox",
+        "id": "enable_free_delivery",
+        "label": "Enable Header FREE DELIVERY",
+        "default": true
+      },
+      {
+        "type": "text",
+        "id": "free_delivery_title",
+        "label": "Title",
+        "default": "FREE DELIVERY"
+      },
+      {
+        "type": "text",
+        "id": "free_delivery_number",
+        "label": "Number contact",
+        "default": "0 123 456 789"
+      }
+      
+    ]
+  },
+  {
+    "name": "Footer",
+    "settings": [
+      {
+        "type": "header",
+        "content": "***Footer Top***"
+      },
+      {
+        "type": "checkbox",
+        "id": "enable_footer_top",
+        "label": "Display Footer Top?",
+        "default": true
+      },
+      {
+        "type": "header",
+        "content": "Block About Us"
+      },
+      {
+        "type": "text",
+        "id": "footer_custom_title",
+        "label": "Custom Title",
+        "default": "Custom Block"
+      },
+      {
+        "type": "textarea",
+        "id": "footer_custom_content",
+        "label": "Custom Content"
+      },
+      {
+        "type": "header",
+        "content": "Block Gallery"
+      },
+      {
+        "type": "text",
+        "id": "footer_gallery_title",
+        "label": "Gallery Title",
+        "default": "Photo Gallery"
+      },
+      {
+        "type": "blog",
+        "id": "blogs_gallery_select",
+        "label": "Blog",
+        "info": "Select blog for Blog Gallery"
+      },
+      {
+        "type": "select",
+        "id": "blogs_gallery_num",
+        "label": "Number of Blog per row",
+        "options": [
+          {
+            "value": "2",
+            "label": "2"
+          },
+          {
+            "value": "3",
+            "label": "3"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "id": "blogs_gallery_limit",
+        "label": "Limit",
+        "default": "6",
+        "info": "Default: 6"
+      },
+      {
+        "type": "header",
+        "content": "Block Twitter"
+      },
+      {
+        "type": "text",
+        "id": "footer_twitter_title",
+        "label": "Twitter Title",
+        "default": "Twitter"
+      },
+      {
+        "type": "textarea",
+        "id": "twitter_widget",
+        "label": "Custom html"
+      },
+      {
+        "type": "text",
+        "id": "height_twitter",
+        "label": "Twitter height",
+        "default": "250px",
+        "info": "i.e \"250px\"."
+      },
+      {
+        "type": "header",
+        "content": "Block Lastest blog"
+      },
+      {
+        "type": "text",
+        "id": "footer_blog_title",
+        "label": "Title",
+        "default": "Lastest blog"
+      },
+      {
+        "type": "blog",
+        "id": "home_blogs_select",
+        "label": "Blog",
+        "info": "Select blog for Block"
+      },
+      {
+        "type": "text",
+        "id": "home_blogs_limit",
+        "label": "Limit",
+        "default": "3",
+        "info": "Default: 3"
+      },
+      {
+        "type": "header",
+        "content": "***Footer Main***"
+      },
+      {
+        "type": "text",
+        "id": "footer_contact_title",
+        "label": "Contact title"
+      },
+      {
+        "type": "textarea",
+        "id": "footer_contact",
+        "label": "Contact",
+        "info": "custom html"
+      },
+      {
+        "type": "header",
+        "content": "Menu 1"
+      },
+      {
+        "type": "checkbox",
+        "id": "footer_menu_1_enable",
+        "label": "Enable menu "
+      },
+      {
+        "type": "text",
+        "id": "footer_menu_1_title",
+        "label": "Title"
+      },
+      {
+        "type": "link_list",
+        "id": "footer_menu_1",
+        "label": "Menu"
+      },
+      {
+        "type": "header",
+        "content": "Menu 2"
+      },
+      {
+        "type": "checkbox",
+        "id": "footer_menu_2_enable",
+        "label": "Enable menu "
+      },
+      {
+        "type": "text",
+        "id": "footer_menu_2_title",
+        "label": "Title"
+      },
+      {
+        "type": "link_list",
+        "id": "footer_menu_2",
+        "label": "Menu"
+      },
+      {
+        "type": "header",
+        "content": "Menu 3"
+      },
+      {
+        "type": "checkbox",
+        "id": "footer_menu_3_enable",
+        "label": "Enable menu "
+      },
+      {
+        "type": "text",
+        "id": "footer_menu_3_title",
+        "label": "Title"
+      },
+      {
+        "type": "link_list",
+        "id": "footer_menu_3",
+        "label": "Menu"
+      },
+      {
+        "type": "header",
+        "content": "Newsletter"
+      },
+      {
+        "type": "checkbox",
+        "id": "footer_newsletter_enable",
+        "label": "Show newsletter field"
+      },
+      {
+        "type": "text",
+        "id": "footer_newsletter_title",
+        "label": "Title"
+      },
+      {
+        "type": "textarea",
+        "id": "footer_newsletter_content",
+        "label": "Short Description Newsletter"
+      },
+      {
+        "type": "header",
+        "content": "***Footer Bottom***"
+      },
+      {
+        "type": "header",
+        "content": "Footer Menu"
+      },
+      {
+        "type": "link_list",
+        "id": "footer_menu_4",
+        "label": "Menu"
+      },
+      {
+        "type": "header",
+        "content": "Copyright"
+      },
+      {
+        "type": "textarea",
+        "id": "copyright_content",
+        "label": "Custom html"
+      },
+      {
+        "type": "header",
+        "content": "Payment Methods"
+      },
+      {
+        "type": "text",
+        "id": "footer_payment_title",
+        "label": "Title"
+      },
+      {
+        "type": "checkbox",
+        "id": "payment_enable_1",
+        "label": "Enable Payment 1"
+      },
+      {
+        "type": "image",
+        "id": "payment1.png",
+        "label": "Icon Payment 1"
+      },
+      {
+        "type": "text",
+        "id": "payment_url1",
+        "label": "Url 1"
+      },
+      {
+        "type": "checkbox",
+        "id": "payment_enable_2",
+        "label": "Enable Payment 2"
+      },
+      {
+        "type": "image",
+        "id": "payment2.png",
+        "label": "Icon Payment 2"
+      },
+      {
+        "type": "text",
+        "id": "payment_url2",
+        "label": "Url 2"
+      },
+      {
+        "type": "checkbox",
+        "id": "payment_enable_3",
+        "label": "Enable Payment 3"
+      },
+      {
+        "type": "image",
+        "id": "payment3.png",
+        "label": "Icon Payment 3"
+      },
+      {
+        "type": "text",
+        "id": "payment_url3",
+        "label": "Url 3"
+      },
+      {
+        "type": "checkbox",
+        "id": "payment_enable_4",
+        "label": "Enable Payment 4"
+      },
+      {
+        "type": "image",
+        "id": "payment4.png",
+        "label": "Icon Payment 4"
+      },
+      {
+        "type": "text",
+        "id": "payment_url4",
+        "label": "Url 4"
+      },
+      {
+        "type": "checkbox",
+        "id": "payment_enable_5",
+        "label": "Enable Payment 5"
+      },
+      {
+        "type": "image",
+        "id": "payment5.png",
+        "label": "Icon Payment 5"
+      },
+      {
+        "type": "text",
+        "id": "payment_url5",
+        "label": "Url 5"
+      },
+      {
+        "type": "checkbox",
+        "id": "payment_enable_6",
+        "label": "Enable Payment 6"
+      },
+      {
+        "type": "image",
+        "id": "payment6.png",
+        "label": "Icon Payment 6"
+      },
+      {
+        "type": "text",
+        "id": "payment_url6",
+        "label": "Url 6"
+      },
+      {
+        "type": "checkbox",
+        "id": "payment_enable_7",
+        "label": "Enable Payment 7"
+      },
+      {
+        "type": "image",
+        "id": "payment7.png",
+        "label": "Icon Payment 7"
+      },
+      {
+        "type": "text",
+        "id": "payment_url7",
+        "label": "Url 7"
+      }
+    ]
+  },
+  {
+    "name": "Popup Newsletter",
+    "settings": [
+      {
+        "type": "checkbox",
+        "id": "popup_newsletter_enable",
+        "label": "Enable"
+      },
+      {
+        "type": "image",
+        "id": "popup_newsletter_image.jpg",
+        "label": "Image"
+      },
+      {
+        "type": "text",
+        "id": "popup_newsletter_title",
+        "label": "Title"
+      },
+      {
+        "type": "text",
+        "id": "popup_newsletter_subtitle",
+        "label": "Sub Title"
+      },
+      {
+        "type": "textarea",
+        "id": "popup_newsletter_description",
+        "label": "Description"
+      },
+      {
+        "type": "select",
+        "id": "newsletter_popup_seconds",
+        "label": "Seconds until popup is displayed",
+        "options": [
+          {
+            "value": "0",
+            "label": "0 seconds"
+          },
+          {
+            "value": "2",
+            "label": "2 seconds"
+          },
+          {
+            "value": "5",
+            "label": "5 seconds"
+          },
+          {
+            "value": "10",
+            "label": "10 seconds"
+          },
+          {
+            "value": "30",
+            "label": "30 seconds"
+          },
+          {
+            "value": "60",
+            "label": "60 seconds"
+          },
+          {
+            "value": "120",
+            "label": "120 seconds"
+          }
+        ],
+        "default": "2"
+      },
+      {
+        "type": "select",
+        "id": "newsletter_popup_days",
+        "label": "Days until popup is displayed again",
+        "options": [
+          {
+            "value": "0",
+            "label": "Test Mode"
+          },
+          {
+            "value": "2",
+            "label": "2 days"
+          },
+          {
+            "value": "7",
+            "label": "7 days"
+          },
+          {
+            "value": "14",
+            "label": "14 days"
+          },
+          {
+            "value": "30",
+            "label": "30 days"
+          },
+          {
+            "value": "90",
+            "label": "90 days"
+          },
+          {
+            "value": "365",
+            "label": "365 days"
+          }
+        ],
+        "default": "30"
+      }
+    ]
+  },
+  {
+    "name": "Cart page",
+    "settings": [
+      {
+        "type": "checkbox",
+        "id": "cart_notes_enable",
+        "label": "Enable cart notes"
+      },
+      {
+        "type": "checkbox",
+        "id": "cart_vendor_enable",
+        "label": "Show product vendor"
+      },
+      {
+        "type": "select",
+        "id": "ajax_cart_method",
+        "label": "Cart type",
+        "options": [
+          {
+            "value": "drawer",
+            "label": "Drawer"
+          },
+          {
+            "value": "page",
+            "label": "Page"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Social media",
+    "settings": [
+      {
+        "type": "checkbox",
+        "id": "show_social",
+        "label": "Show in footer",
+        "default": true
+      },
+      {
+        "type": "text",
+        "id": "social_facebook_link",
+        "label": "Facebook",
+        "info": "https:\/\/www.facebook.com\/shopify"
+      },
+      {
+        "type": "text",
+        "id": "social_twitter_link",
+        "label": "Twitter",
+        "info": "https:\/\/twitter.com\/shopify"
+      },
+      {
+        "type": "text",
+        "id": "social_pinterest_link",
+        "label": "Pinterest",
+        "info": "https:\/\/www.pinterest.com\/shopify"
+      },
+      {
+        "type": "text",
+        "id": "social_instagram_link",
+        "label": "Instagram",
+        "info": "https:\/\/instagram.com\/shopify"
+      },
+      {
+        "type": "text",
+        "id": "social_google_plus_link",
+        "label": "Google plus",
+        "info": "https:\/\/plus.google.com\/+shopify"
+      },
+      {
+        "type": "text",
+        "id": "social_tumblr_link",
+        "label": "Tumblr",
+        "info": "http:\/\/shopify.tumblr.com"
+      },
+      {
+        "type": "text",
+        "id": "social_youtube_link",
+        "label": "Youtube",
+        "info": "https:\/\/www.youtube.com\/user\/shopify"
+      },
+      {
+        "type": "text",
+        "id": "social_vimeo_link",
+        "label": "Vimeo",
+        "info": "https:\/\/vimeo.com\/shopify"
+      }
+    ]
+  },
+  {
+    "name": "Social Sharing",
+    "settings": [
+      {
+        "type": "text",
+        "id": "twittercard_handle",
+        "label": "Twitter Handle",
+        "default": "@"
+      },
+      {
+        "type": "checkbox",
+        "id": "social_sharing_products",
+        "label": "Enable sharing for products"
+      },
+      {
+        "type": "checkbox",
+        "id": "social_sharing_blog",
+        "label": "Enable sharing for blog articles"
+      },
+      {
+        "type": "select",
+        "id": "social_sharing_style",
+        "label": "Button Style",
+        "options": [
+          {
+            "value": "is-default",
+            "label": "Normal"
+          },
+          {
+            "value": "is-large",
+            "label": "Large"
+          },
+          {
+            "value": "is-clean",
+            "label": "Clean"
+          }
+        ]
+      },
+      {
+        "type": "checkbox",
+        "id": "share_primary_color",
+        "label": "Enable Monochrome Button Colors",
+        "info": "This will override default social button colors"
+      },
+      {
+        "type": "select",
+        "id": "share_choose_color",
+        "label": "Choose Monochrome Button Colors",
+        "options": [
+          {
+            "value": "$colorBtnPrimary",
+            "label": "Same as primary button color"
+          },
+          {
+            "value": "$colorBtnSecondary",
+            "label": "Same as secondary button color"
+          },
+          {
+            "value": "black",
+            "label": "Black"
+          }
+        ],
+        "info": "Choose override color"
+      },
+      {
+        "type": "checkbox",
+        "id": "share_facebook",
+        "label": "Share on Facebook"
+      },
+      {
+        "type": "checkbox",
+        "id": "share_twitter",
+        "label": "Tweet on Twitter"
+      },
+      {
+        "type": "checkbox",
+        "id": "share_pinterest",
+        "label": "Pin on Pinterest"
+      },
+      {
+        "type": "checkbox",
+        "id": "share_fancy",
+        "label": "Add to Fancy"
+      },
+      {
+        "type": "checkbox",
+        "id": "share_google",
+        "label": "+1 on Google Plus"
+      }
+    ]
+  },
+  {
+    "name": "Position in homepage",
+    "settings": [
+      {
+        "type": "header",
+        "content": "Position Section"
+      },
+      {
+        "type": "paragraph",
+        "content": "Choose your home page sections and their order."
+      },
+      {
+        "type": "select",
+        "id": "home_section_1",
+        "label": "Section 1",
+        "options": [
+          {
+            "value": "",
+            "label": "None"
+          },
+          {
+            "value": "section-slideshow",
+            "label": "Slideshow"
+          },
+          {
+            "value": "section-banner-2-col-top",
+            "label": "Banner top"
+          },
+          {
+            "value": "section-product-new",
+            "label": "Top Seller"
+          },
+           {
+            "value": "section-product-new2",
+            "label": "Featured Product"
+          },
+          {
+            "value": "section-banner-3-col-2",
+            "label": "Banner Bottom"
+          }
+        ]
+      },
+      {
+        "type": "select",
+        "id": "home_section_2",
+        "label": "Section 2",
+        "options": [
+          {
+            "value": "",
+            "label": "None"
+          },
+          {
+            "value": "section-slideshow",
+            "label": "Slideshow"
+          },
+          {
+            "value": "section-banner-2-col-top",
+            "label": "Banner top"
+          },
+          {
+            "value": "section-product-new",
+            "label": "Top Seller"
+          },
+           {
+            "value": "section-product-new2",
+            "label": "Featured Product"
+          },
+          {
+            "value": "section-banner-3-col-2",
+            "label": "Banner Bottom"
+          }
+        ]
+      },
+      {
+        "type": "select",
+        "id": "home_section_3",
+        "label": "Section 3",
+        "options": [
+          {
+            "value": "",
+            "label": "None"
+          },
+          {
+            "value": "section-slideshow",
+            "label": "Slideshow"
+          },
+          {
+            "value": "section-banner-2-col-top",
+            "label": "Banner top"
+          },
+          {
+            "value": "section-product-new",
+            "label": "Top Seller"
+          },
+           {
+            "value": "section-product-new2",
+            "label": "Featured Product"
+          },
+          {
+            "value": "section-banner-3-col-2",
+            "label": "Banner Bottom"
+          }
+        ]
+      },
+      {
+        "type": "select",
+        "id": "home_section_4",
+        "label": "Section 4",
+        "options": [
+          {
+            "value": "",
+            "label": "None"
+          },
+          {
+            "value": "section-slideshow",
+            "label": "Slideshow"
+          },
+          {
+            "value": "section-banner-2-col-top",
+            "label": "Banner top"
+          },
+          {
+            "value": "section-product-new",
+            "label": "Top Seller"
+          },
+           {
+            "value": "section-product-new2",
+            "label": "Featured Product"
+          },
+          {
+            "value": "section-banner-3-col-2",
+            "label": "Banner Bottom"
+          }
+        ]
+      },
+      {
+        "type": "select",
+        "id": "home_section_5",
+        "label": "Section 5",
+        "options": [
+          {
+            "value": "",
+            "label": "None"
+          },
+          {
+            "value": "section-slideshow",
+            "label": "Slideshow"
+          },
+          {
+            "value": "section-banner-2-col-top",
+            "label": "Banner top"
+          },
+          {
+            "value": "section-product-new",
+            "label": "Top Seller"
+          },
+          {
+            "value": "section-product-new2",
+            "label": "Featured Product"
+          },
+          {
+            "value": "section-banner-3-col-2",
+            "label": "Banner Bottom"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Home page - Slideshow",
+    "settings": [
+      {
+        "type": "header",
+        "content": "Main setting"
+      },
+      {
+        "type": "select",
+        "id": "slideshow_time",
+        "label": "Delay",
+        "options": [
+          {
+            "value": "1000",
+            "label": "1 seconds"
+          },
+          {
+            "value": "2000",
+            "label": "2 seconds"
+          },
+          {
+            "value": "3000",
+            "label": "3 seconds"
+          },
+          {
+            "value": "4000",
+            "label": "4 seconds"
+          },
+          {
+            "value": "5000",
+            "label": "5 seconds"
+          },
+          {
+            "value": "6000",
+            "label": "6 seconds"
+          },
+          {
+            "value": "7000",
+            "label": "7 seconds"
+          },
+          {
+            "value": "8000",
+            "label": "8 seconds"
+          },
+          {
+            "value": "9000",
+            "label": "9 seconds"
+          },
+          {
+            "value": "10000",
+            "label": "10 seconds"
+          }
+        ],
+        "default": "8000"
+      },
+      {
+        "type": "text",
+        "id": "slider_startwidth",
+        "label": "Start width",
+        "default": "776",
+        "info": "Default : 776"
+      },
+      {
+        "type": "text",
+        "id": "slider_startheight",
+        "label": "Start height",
+        "default": "510",
+        "info": "Default : 510"
+      },
+      {
+        "type": "header",
+        "content": "Item 1"
+      },
+      {
+        "type": "checkbox",
+        "id": "slide_1_enable",
+        "label": "Enable item 1?",
+        "default": true
+      },
+      {
+        "type": "select",
+        "id": "slide_1_transition",
+        "label": "Transition Effects",
+        "options": [
+          {
+            "value": "random",
+            "label": "Random"
+          },
+          {
+            "value": "slideup",
+            "label": "Slide To Top"
+          },
+          {
+            "value": "slidedown",
+            "label": "Slide To Bottom"
+          },
+          {
+            "value": "slideright",
+            "label": "Slide To Right"
+          },
+          {
+            "value": "slideleft",
+            "label": "Slide To Left"
+          },
+          {
+            "value": "slidehorizontal",
+            "label": "Slide Horizontal"
+          },
+          {
+            "value": "slidevertical",
+            "label": "Slide Vertical"
+          },
+          {
+            "value": "boxslide",
+            "label": "Slide Boxes"
+          },
+          {
+            "value": "slotslide-horizontal",
+            "label": "Slide Slots Horizontal"
+          },
+          {
+            "value": "slotslide-vertical",
+            "label": "Slide Slots Vertical"
+          },
+          {
+            "value": "boxfade",
+            "label": "Fade Boxes"
+          },
+          {
+            "value": "slotfade-horizontal",
+            "label": "Fade Slots Horizontal"
+          },
+          {
+            "value": "slotfade-vertical",
+            "label": "Fade Slots Vertical"
+          },
+          {
+            "value": "fadefromright",
+            "label": "Fade and Slide from Right"
+          },
+          {
+            "value": "fadefromleft",
+            "label": "Fade and Slide from Left"
+          },
+          {
+            "value": "fadefromtop",
+            "label": "Fade and Slide from Top"
+          },
+          {
+            "value": "fadefrombottom",
+            "label": "Fade and Slide from Bottom"
+          },
+          {
+            "value": "fadetoleftfadefromright",
+            "label": "Fade To Left and Fade From Right"
+          },
+          {
+            "value": "fadetorightfadefromleft",
+            "label": "Fade To Right and Fade From Left"
+          },
+          {
+            "value": "Fade To Top and Fade From Bottom",
+            "label": "fadetotopfadefrombottom"
+          },
+          {
+            "value": "fadetobottomfadefromtop",
+            "label": "Fade To Bottom and Fade From Top"
+          },
+          {
+            "value": "parallaxtoright",
+            "label": "Parallax to Right"
+          },
+          {
+            "value": "parallaxtoleft",
+            "label": "Parallax to Left"
+          },
+          {
+            "value": "parallaxtotop",
+            "label": "Parallax to Top"
+          },
+          {
+            "value": "parallaxtobottom",
+            "label": "Parallax to Bottom"
+          },
+          {
+            "value": "scaledownfromright",
+            "label": "Zoom Out and Fade From Right"
+          },
+          {
+            "value": "scaledownfromleft",
+            "label": "Zoom Out and Fade From Left"
+          },
+          {
+            "value": "scaledownfromtop",
+            "label": "Zoom Out and Fade From Top"
+          },
+          {
+            "value": "scaledownfrombottom",
+            "label": "Zoom Out and Fade From Bottom"
+          },
+          {
+            "value": "zoomout",
+            "label": "Zoom Out"
+          },
+          {
+            "value": "zoomin",
+            "label": "Zoom In"
+          },
+          {
+            "value": "slotzoom-horizontal",
+            "label": "Zoom Slots Horizontal"
+          },
+          {
+            "value": "slotzoom-vertical",
+            "label": "Zoom Slots Vertical"
+          },
+          {
+            "value": "fade",
+            "label": "Fade"
+          },
+          {
+            "value": "curtain-1",
+            "label": "Curtain from Left"
+          },
+          {
+            "value": "curtain-2",
+            "label": "Curtain from Right"
+          },
+          {
+            "value": "curtain-3",
+            "label": "Curtain from Middle"
+          },
+          {
+            "value": "3dcurtain-horizontal",
+            "label": "3D Curtain Horizontal"
+          },
+          {
+            "value": "3dcurtain-vertical",
+            "label": "3D Curtain Vertical"
+          },
+          {
+            "value": "cube",
+            "label": "Cube Vertical"
+          },
+          {
+            "value": "cube-horizontal",
+            "label": "Cube Horizontal"
+          },
+          {
+            "value": "incube",
+            "label": "In Cube Vertical"
+          },
+          {
+            "value": "incube-horizontal",
+            "label": "In Cube Horizontal"
+          },
+          {
+            "value": "turnoff",
+            "label": "TurnOff Horizontal"
+          },
+          {
+            "value": "turnoff-vertical",
+            "label": "TurnOff Vertical"
+          },
+          {
+            "value": "papercut",
+            "label": "Paper Cut"
+          },
+          {
+            "value": "flyin",
+            "label": "Fly In"
+          }
+        ],
+        "default": "random"
+      },
+      {
+        "type": "image",
+        "id": "slide1_image.jpg",
+        "label": "Slide 1 Image"
+      },
+      {
+        "type": "text",
+        "id": "slide_1_heading",
+        "label": "I A - Heading",
+        "default": "TRF AUTUMN WINTER 14"
+      },
+      {
+        "type": "select",
+        "id": "slide_1_headingEffect",
+        "label": "I A - Heading Effect",
+        "options": [
+          {
+            "value": "sft",
+            "label": "Short from Top"
+          },
+          {
+            "value": "sfb",
+            "label": "Short from Bottom"
+          },
+          {
+            "value": "sfr",
+            "label": "Short from Right"
+          },
+          {
+            "value": "sfl",
+            "label": "Short from Left"
+          },
+          {
+            "value": "lft",
+            "label": "Long from Top"
+          },
+          {
+            "value": "lfb",
+            "label": "Long from Bottom"
+          },
+          {
+            "value": "lfr",
+            "label": "Long from Right"
+          },
+          {
+            "value": "lfl",
+            "label": "Long from Left"
+          },
+          {
+            "value": "skewfromright",
+            "label": "Skew from Right"
+          },
+          {
+            "value": "skewfromleft",
+            "label": "Skew from Left"
+          },
+          {
+            "value": "skewfromleftshort",
+            "label": "Skew from Left Short"
+          },
+          {
+            "value": "skewfromrightshort",
+            "label": "Skew from Right Short"
+          }
+        ],
+        "default": "sfb"
+      },
+      {
+        "type": "text",
+        "id": "slide_1_heading_y",
+        "label": "I A - Heading top position",
+        "default": "100"
+      },
+      {
+        "type": "text",
+        "id": "slide_1_heading_x",
+        "label": "I A - Heading left position",
+        "default": "center"
+      },
+      {
+        "type": "text",
+        "id": "slide_1_heading_spacing",
+        "label": "I A - Heading letter spacing",
+        "default": "9px"
+      },
+      {
+        "type": "text",
+        "id": "slide_1_text",
+        "label": "I B - Text",
+        "default": "NEW ARRIVAL"
+      },
+      {
+        "type": "select",
+        "id": "slide_1_textEffect",
+        "label": "I B - Text Effect",
+        "options": [
+          {
+            "value": "sft",
+            "label": "Short from Top"
+          },
+          {
+            "value": "sfb",
+            "label": "Short from Bottom"
+          },
+          {
+            "value": "sfr",
+            "label": "Short from Right"
+          },
+          {
+            "value": "sfl",
+            "label": "Short from Left"
+          },
+          {
+            "value": "lft",
+            "label": "Long from Top"
+          },
+          {
+            "value": "lfb",
+            "label": "Long from Bottom"
+          },
+          {
+            "value": "lfr",
+            "label": "Long from Right"
+          },
+          {
+            "value": "lfl",
+            "label": "Long from Left"
+          },
+          {
+            "value": "skewfromright",
+            "label": "Skew from Right"
+          },
+          {
+            "value": "skewfromleft",
+            "label": "Skew from Left"
+          },
+          {
+            "value": "skewfromleftshort",
+            "label": "Skew from Left Short"
+          },
+          {
+            "value": "skewfromrightshort",
+            "label": "Skew from Right Short"
+          }
+        ],
+        "default": "sfb"
+      },
+      {
+        "type": "text",
+        "id": "slide_1_text_y",
+        "label": "I B - Text top position",
+        "default": "150"
+      },
+      {
+        "type": "text",
+        "id": "slide_1_text_x",
+        "label": "I B - Text left position",
+        "default": "center"
+      },
+      {
+        "type": "text",
+        "id": "slide_1_text_spacing",
+        "label": "I B - Text letter spacing",
+        "default": "28px"
+      },
+      {
+        "type": "checkbox",
+        "id": "slide_1_show_category",
+        "label": "Show category button?"
+      },
+      {
+        "type": "text",
+        "id": "slide_1_button_category",
+        "label": "I C - Button text",
+        "default": "Browse category"
+      },
+      {
+        "type": "text",
+        "id": "slide_1_button_category_link",
+        "label": "Category url",
+        "default": "#"
+      },
+      {
+        "type": "text",
+        "id": "slide_1_category_y",
+        "label": "Category button top position",
+        "default": "450"
+      },
+      {
+        "type": "text",
+        "id": "slide_1_category_x",
+        "label": "Category button left position",
+        "default": "850"
+      },
+      {
+        "type": "text",
+        "id": "slide_1_button_text",
+        "label": "I C - Button text",
+        "default": "Shop now"
+      },
+      {
+        "type": "select",
+        "id": "slide_1_buttonEffect",
+        "label": "I C - Button Effect",
+        "options": [
+          {
+            "value": "sft",
+            "label": "Short from Top"
+          },
+          {
+            "value": "sfb",
+            "label": "Short from Bottom"
+          },
+          {
+            "value": "sfr",
+            "label": "Short from Right"
+          },
+          {
+            "value": "sfl",
+            "label": "Short from Left"
+          },
+          {
+            "value": "lft",
+            "label": "Long from Top"
+          },
+          {
+            "value": "lfb",
+            "label": "Long from Bottom"
+          },
+          {
+            "value": "lfr",
+            "label": "Long from Right"
+          },
+          {
+            "value": "lfl",
+            "label": "Long from Left"
+          },
+          {
+            "value": "skewfromright",
+            "label": "Skew from Right"
+          },
+          {
+            "value": "skewfromleft",
+            "label": "Skew from Left"
+          },
+          {
+            "value": "skewfromleftshort",
+            "label": "Skew from Left Short"
+          },
+          {
+            "value": "skewfromrightshort",
+            "label": "Skew from Right Short"
+          }
+        ],
+        "default": "sfb"
+      },
+      {
+        "type": "text",
+        "id": "slide_1_button_link",
+        "label": "I C - Button link",
+        "default": "#"
+      },
+      {
+        "type": "text",
+        "id": "slide_1_button_y",
+        "label": "I C - Button top position",
+        "default": "450"
+      },
+      {
+        "type": "text",
+        "id": "slide_1_button_x",
+        "label": "I C - Button left position",
+        "default": "center"
+      },
+      {
+        "type": "color",
+        "id": "slide_1_heading_color",
+        "label": "I A - Heading color",
+        "default": "#ffffff"
+      },
+      {
+        "type": "color",
+        "id": "slide_1_text_color",
+        "label": "I B - Text color",
+        "default": "#ffffff"
+      },
+      {
+        "type": "color",
+        "id": "slide_1_button_color",
+        "label": "I C - Button color",
+        "default": "#ffffff"
+      },
+      {
+        "type": "text",
+        "id": "slide_1_heading_font_size",
+        "label": "I A - Heading font size",
+        "default": "20px"
+      },
+      {
+        "type": "text",
+        "id": "slide_1_text_font_size",
+        "label": "I B - Text font size",
+        "default": "110px"
+      },
+      {
+        "type": "text",
+        "id": "slide_1_button_size",
+        "label": "I C - Button font size",
+        "default": "14px"
+      },
+      {
+        "type": "header",
+        "content": "Item 2"
+      },
+      {
+        "type": "checkbox",
+        "id": "slide_2_enable",
+        "label": "Enable item 2?",
+        "default": true
+      },
+      {
+        "type": "select",
+        "id": "slide_2_transition",
+        "label": "Transition Effects",
+        "options": [
+          {
+            "value": "random",
+            "label": "Random"
+          },
+          {
+            "value": "slideup",
+            "label": "Slide To Top"
+          },
+          {
+            "value": "slidedown",
+            "label": "Slide To Bottom"
+          },
+          {
+            "value": "slideright",
+            "label": "Slide To Right"
+          },
+          {
+            "value": "slideleft",
+            "label": "Slide To Left"
+          },
+          {
+            "value": "slidehorizontal",
+            "label": "Slide Horizontal"
+          },
+          {
+            "value": "slidevertical",
+            "label": "Slide Vertical"
+          },
+          {
+            "value": "boxslide",
+            "label": "Slide Boxes"
+          },
+          {
+            "value": "slotslide-horizontal",
+            "label": "Slide Slots Horizontal"
+          },
+          {
+            "value": "slotslide-vertical",
+            "label": "Slide Slots Vertical"
+          },
+          {
+            "value": "boxfade",
+            "label": "Fade Boxes"
+          },
+          {
+            "value": "slotfade-horizontal",
+            "label": "Fade Slots Horizontal"
+          },
+          {
+            "value": "slotfade-vertical",
+            "label": "Fade Slots Vertical"
+          },
+          {
+            "value": "fadefromright",
+            "label": "Fade and Slide from Right"
+          },
+          {
+            "value": "fadefromleft",
+            "label": "Fade and Slide from Left"
+          },
+          {
+            "value": "fadefromtop",
+            "label": "Fade and Slide from Top"
+          },
+          {
+            "value": "fadefrombottom",
+            "label": "Fade and Slide from Bottom"
+          },
+          {
+            "value": "fadetoleftfadefromright",
+            "label": "Fade To Left and Fade From Right"
+          },
+          {
+            "value": "fadetorightfadefromleft",
+            "label": "Fade To Right and Fade From Left"
+          },
+          {
+            "value": "Fade To Top and Fade From Bottom",
+            "label": "fadetotopfadefrombottom"
+          },
+          {
+            "value": "fadetobottomfadefromtop",
+            "label": "Fade To Bottom and Fade From Top"
+          },
+          {
+            "value": "parallaxtoright",
+            "label": "Parallax to Right"
+          },
+          {
+            "value": "parallaxtoleft",
+            "label": "Parallax to Left"
+          },
+          {
+            "value": "parallaxtotop",
+            "label": "Parallax to Top"
+          },
+          {
+            "value": "parallaxtobottom",
+            "label": "Parallax to Bottom"
+          },
+          {
+            "value": "scaledownfromright",
+            "label": "Zoom Out and Fade From Right"
+          },
+          {
+            "value": "scaledownfromleft",
+            "label": "Zoom Out and Fade From Left"
+          },
+          {
+            "value": "scaledownfromtop",
+            "label": "Zoom Out and Fade From Top"
+          },
+          {
+            "value": "scaledownfrombottom",
+            "label": "Zoom Out and Fade From Bottom"
+          },
+          {
+            "value": "zoomout",
+            "label": "Zoom Out"
+          },
+          {
+            "value": "zoomin",
+            "label": "Zoom In"
+          },
+          {
+            "value": "slotzoom-horizontal",
+            "label": "Zoom Slots Horizontal"
+          },
+          {
+            "value": "slotzoom-vertical",
+            "label": "Zoom Slots Vertical"
+          },
+          {
+            "value": "fade",
+            "label": "Fade"
+          },
+          {
+            "value": "curtain-1",
+            "label": "Curtain from Left"
+          },
+          {
+            "value": "curtain-2",
+            "label": "Curtain from Right"
+          },
+          {
+            "value": "curtain-3",
+            "label": "Curtain from Middle"
+          },
+          {
+            "value": "3dcurtain-horizontal",
+            "label": "3D Curtain Horizontal"
+          },
+          {
+            "value": "3dcurtain-vertical",
+            "label": "3D Curtain Vertical"
+          },
+          {
+            "value": "cube",
+            "label": "Cube Vertical"
+          },
+          {
+            "value": "cube-horizontal",
+            "label": "Cube Horizontal"
+          },
+          {
+            "value": "incube",
+            "label": "In Cube Vertical"
+          },
+          {
+            "value": "incube-horizontal",
+            "label": "In Cube Horizontal"
+          },
+          {
+            "value": "turnoff",
+            "label": "TurnOff Horizontal"
+          },
+          {
+            "value": "turnoff-vertical",
+            "label": "TurnOff Vertical"
+          },
+          {
+            "value": "papercut",
+            "label": "Paper Cut"
+          },
+          {
+            "value": "flyin",
+            "label": "Fly In"
+          }
+        ],
+        "default": "random"
+      },
+      {
+        "type": "image",
+        "id": "slide2_image.jpg",
+        "label": "Slide 2 Image"
+      },
+      {
+        "type": "text",
+        "id": "slide_2_heading",
+        "label": "II A - Heading",
+        "default": "TRF AUTUMN WINTER 14"
+      },
+      {
+        "type": "select",
+        "id": "slide_2_headingEffect",
+        "label": "II A - Heading Effect",
+        "options": [
+          {
+            "value": "sft",
+            "label": "Short from Top"
+          },
+          {
+            "value": "sfb",
+            "label": "Short from Bottom"
+          },
+          {
+            "value": "sfr",
+            "label": "Short from Right"
+          },
+          {
+            "value": "sfl",
+            "label": "Short from Left"
+          },
+          {
+            "value": "lft",
+            "label": "Long from Top"
+          },
+          {
+            "value": "lfb",
+            "label": "Long from Bottom"
+          },
+          {
+            "value": "lfr",
+            "label": "Long from Right"
+          },
+          {
+            "value": "lfl",
+            "label": "Long from Left"
+          },
+          {
+            "value": "skewfromright",
+            "label": "Skew from Right"
+          },
+          {
+            "value": "skewfromleft",
+            "label": "Skew from Left"
+          },
+          {
+            "value": "skewfromleftshort",
+            "label": "Skew from Left Short"
+          },
+          {
+            "value": "skewfromrightshort",
+            "label": "Skew from Right Short"
+          }
+        ],
+        "default": "sfb"
+      },
+      {
+        "type": "text",
+        "id": "slide_2_heading_y",
+        "label": "II A - Heading top position",
+        "default": "200"
+      },
+      {
+        "type": "text",
+        "id": "slide_2_heading_x",
+        "label": "II A - Heading left position",
+        "default": "center"
+      },
+      {
+        "type": "text",
+        "id": "slide_2_heading_spacing",
+        "label": "II A - Heading letter spacing",
+        "default": "9px"
+      },
+      {
+        "type": "text",
+        "id": "slide_2_text",
+        "label": "II B - Text",
+        "default": "NEW ARRIVAL"
+      },
+      {
+        "type": "select",
+        "id": "slide_2_textEffect",
+        "label": "II B - Text Effect",
+        "options": [
+          {
+            "value": "sft",
+            "label": "Short from Top"
+          },
+          {
+            "value": "sfb",
+            "label": "Short from Bottom"
+          },
+          {
+            "value": "sfr",
+            "label": "Short from Right"
+          },
+          {
+            "value": "sfl",
+            "label": "Short from Left"
+          },
+          {
+            "value": "lft",
+            "label": "Long from Top"
+          },
+          {
+            "value": "lfb",
+            "label": "Long from Bottom"
+          },
+          {
+            "value": "lfr",
+            "label": "Long from Right"
+          },
+          {
+            "value": "lfl",
+            "label": "Long from Left"
+          },
+          {
+            "value": "skewfromright",
+            "label": "Skew from Right"
+          },
+          {
+            "value": "skewfromleft",
+            "label": "Skew from Left"
+          },
+          {
+            "value": "skewfromleftshort",
+            "label": "Skew from Left Short"
+          },
+          {
+            "value": "skewfromrightshort",
+            "label": "Skew from Right Short"
+          }
+        ],
+        "default": "sfb"
+      },
+      {
+        "type": "text",
+        "id": "slide_2_text_y",
+        "label": "II B - Text top position",
+        "default": "150"
+      },
+      {
+        "type": "text",
+        "id": "slide_2_text_x",
+        "label": "II B - Text left position",
+        "default": "center"
+      },
+      {
+        "type": "text",
+        "id": "slide_2_text_spacing",
+        "label": "II B - Text letter spacing",
+        "default": "28px"
+      },
+      {
+        "type": "checkbox",
+        "id": "slide_2_show_category",
+        "label": "Show category button?"
+      },
+      {
+        "type": "text",
+        "id": "slide_2_category_y",
+        "label": "Category button top position",
+        "default": "450"
+      },
+      {
+        "type": "text",
+        "id": "slide_2_category_x",
+        "label": "Category button left position",
+        "default": "850"
+      },
+      {
+        "type": "text",
+        "id": "slide_2_button_category",
+        "label": "I C - Button text",
+        "default": "Browse category"
+      },
+      {
+        "type": "text",
+        "id": "slide_2_button_category_link",
+        "label": "Category url",
+        "default": "#"
+      },
+      {
+        "type": "text",
+        "id": "slide_2_button_text",
+        "label": "II C - Button text",
+        "default": "Shop now"
+      },
+      {
+        "type": "select",
+        "id": "slide_2_buttonEffect",
+        "label": "II C - Button Effect",
+        "options": [
+          {
+            "value": "sft",
+            "label": "Short from Top"
+          },
+          {
+            "value": "sfb",
+            "label": "Short from Bottom"
+          },
+          {
+            "value": "sfr",
+            "label": "Short from Right"
+          },
+          {
+            "value": "sfl",
+            "label": "Short from Left"
+          },
+          {
+            "value": "lft",
+            "label": "Long from Top"
+          },
+          {
+            "value": "lfb",
+            "label": "Long from Bottom"
+          },
+          {
+            "value": "lfr",
+            "label": "Long from Right"
+          },
+          {
+            "value": "lfl",
+            "label": "Long from Left"
+          },
+          {
+            "value": "skewfromright",
+            "label": "Skew from Right"
+          },
+          {
+            "value": "skewfromleft",
+            "label": "Skew from Left"
+          },
+          {
+            "value": "skewfromleftshort",
+            "label": "Skew from Left Short"
+          },
+          {
+            "value": "skewfromrightshort",
+            "label": "Skew from Right Short"
+          }
+        ],
+        "default": "sfb"
+      },
+      {
+        "type": "text",
+        "id": "slide_2_button_link",
+        "label": "II C - Button link",
+        "default": "#"
+      },
+      {
+        "type": "text",
+        "id": "slide_2_button_y",
+        "label": "II C - Button top position",
+        "default": "450"
+      },
+      {
+        "type": "text",
+        "id": "slide_2_button_x",
+        "label": "II C - Button left position",
+        "default": "center"
+      },
+      {
+        "type": "color",
+        "id": "slide_2_heading_color",
+        "label": "II A - Heading color",
+        "default": "#ffffff"
+      },
+      {
+        "type": "color",
+        "id": "slide_2_text_color",
+        "label": "II B - Text color",
+        "default": "#ffffff"
+      },
+      {
+        "type": "color",
+        "id": "slide_2_button_color",
+        "label": "II C - Button color",
+        "default": "#ffffff"
+      },
+      {
+        "type": "text",
+        "id": "slide_2_heading_font_size",
+        "label": "II A - Heading font size",
+        "default": "20px"
+      },
+      {
+        "type": "text",
+        "id": "slide_2_text_font_size",
+        "label": "II B - Text font size",
+        "default": "110px"
+      },
+      {
+        "type": "text",
+        "id": "slide_2_button_size",
+        "label": "II C - Button font size",
+        "default": "14px"
+      },
+      {
+        "type": "header",
+        "content": "Item 3"
+      },
+      {
+        "type": "checkbox",
+        "id": "slide_3_enable",
+        "label": "Enable item 3?",
+        "default": true
+      },
+      {
+        "type": "select",
+        "id": "slide_3_transition",
+        "label": "Transition Effects",
+        "options": [
+          {
+            "value": "random",
+            "label": "Random"
+          },
+          {
+            "value": "slideup",
+            "label": "Slide To Top"
+          },
+          {
+            "value": "slidedown",
+            "label": "Slide To Bottom"
+          },
+          {
+            "value": "slideright",
+            "label": "Slide To Right"
+          },
+          {
+            "value": "slideleft",
+            "label": "Slide To Left"
+          },
+          {
+            "value": "slidehorizontal",
+            "label": "Slide Horizontal"
+          },
+          {
+            "value": "slidevertical",
+            "label": "Slide Vertical"
+          },
+          {
+            "value": "boxslide",
+            "label": "Slide Boxes"
+          },
+          {
+            "value": "slotslide-horizontal",
+            "label": "Slide Slots Horizontal"
+          },
+          {
+            "value": "slotslide-vertical",
+            "label": "Slide Slots Vertical"
+          },
+          {
+            "value": "boxfade",
+            "label": "Fade Boxes"
+          },
+          {
+            "value": "slotfade-horizontal",
+            "label": "Fade Slots Horizontal"
+          },
+          {
+            "value": "slotfade-vertical",
+            "label": "Fade Slots Vertical"
+          },
+          {
+            "value": "fadefromright",
+            "label": "Fade and Slide from Right"
+          },
+          {
+            "value": "fadefromleft",
+            "label": "Fade and Slide from Left"
+          },
+          {
+            "value": "fadefromtop",
+            "label": "Fade and Slide from Top"
+          },
+          {
+            "value": "fadefrombottom",
+            "label": "Fade and Slide from Bottom"
+          },
+          {
+            "value": "fadetoleftfadefromright",
+            "label": "Fade To Left and Fade From Right"
+          },
+          {
+            "value": "fadetorightfadefromleft",
+            "label": "Fade To Right and Fade From Left"
+          },
+          {
+            "value": "Fade To Top and Fade From Bottom",
+            "label": "fadetotopfadefrombottom"
+          },
+          {
+            "value": "fadetobottomfadefromtop",
+            "label": "Fade To Bottom and Fade From Top"
+          },
+          {
+            "value": "parallaxtoright",
+            "label": "Parallax to Right"
+          },
+          {
+            "value": "parallaxtoleft",
+            "label": "Parallax to Left"
+          },
+          {
+            "value": "parallaxtotop",
+            "label": "Parallax to Top"
+          },
+          {
+            "value": "parallaxtobottom",
+            "label": "Parallax to Bottom"
+          },
+          {
+            "value": "scaledownfromright",
+            "label": "Zoom Out and Fade From Right"
+          },
+          {
+            "value": "scaledownfromleft",
+            "label": "Zoom Out and Fade From Left"
+          },
+          {
+            "value": "scaledownfromtop",
+            "label": "Zoom Out and Fade From Top"
+          },
+          {
+            "value": "scaledownfrombottom",
+            "label": "Zoom Out and Fade From Bottom"
+          },
+          {
+            "value": "zoomout",
+            "label": "Zoom Out"
+          },
+          {
+            "value": "zoomin",
+            "label": "Zoom In"
+          },
+          {
+            "value": "slotzoom-horizontal",
+            "label": "Zoom Slots Horizontal"
+          },
+          {
+            "value": "slotzoom-vertical",
+            "label": "Zoom Slots Vertical"
+          },
+          {
+            "value": "fade",
+            "label": "Fade"
+          },
+          {
+            "value": "curtain-1",
+            "label": "Curtain from Left"
+          },
+          {
+            "value": "curtain-2",
+            "label": "Curtain from Right"
+          },
+          {
+            "value": "curtain-3",
+            "label": "Curtain from Middle"
+          },
+          {
+            "value": "3dcurtain-horizontal",
+            "label": "3D Curtain Horizontal"
+          },
+          {
+            "value": "3dcurtain-vertical",
+            "label": "3D Curtain Vertical"
+          },
+          {
+            "value": "cube",
+            "label": "Cube Vertical"
+          },
+          {
+            "value": "cube-horizontal",
+            "label": "Cube Horizontal"
+          },
+          {
+            "value": "incube",
+            "label": "In Cube Vertical"
+          },
+          {
+            "value": "incube-horizontal",
+            "label": "In Cube Horizontal"
+          },
+          {
+            "value": "turnoff",
+            "label": "TurnOff Horizontal"
+          },
+          {
+            "value": "turnoff-vertical",
+            "label": "TurnOff Vertical"
+          },
+          {
+            "value": "papercut",
+            "label": "Paper Cut"
+          },
+          {
+            "value": "flyin",
+            "label": "Fly In"
+          }
+        ],
+        "default": "random"
+      },
+      {
+        "type": "image",
+        "id": "slide3_image.jpg",
+        "label": "Slide 3 Image"
+      },
+      {
+        "type": "text",
+        "id": "slide_3_heading",
+        "label": "III A - Heading",
+        "default": "TRF AUTUMN WINTER 14"
+      },
+      {
+        "type": "select",
+        "id": "slide_3_headingEffect",
+        "label": "III A - Heading Effect",
+        "options": [
+          {
+            "value": "sft",
+            "label": "Short from Top"
+          },
+          {
+            "value": "sfb",
+            "label": "Short from Bottom"
+          },
+          {
+            "value": "sfr",
+            "label": "Short from Right"
+          },
+          {
+            "value": "sfl",
+            "label": "Short from Left"
+          },
+          {
+            "value": "lft",
+            "label": "Long from Top"
+          },
+          {
+            "value": "lfb",
+            "label": "Long from Bottom"
+          },
+          {
+            "value": "lfr",
+            "label": "Long from Right"
+          },
+          {
+            "value": "lfl",
+            "label": "Long from Left"
+          },
+          {
+            "value": "skewfromright",
+            "label": "Skew from Right"
+          },
+          {
+            "value": "skewfromleft",
+            "label": "Skew from Left"
+          },
+          {
+            "value": "skewfromleftshort",
+            "label": "Skew from Left Short"
+          },
+          {
+            "value": "skewfromrightshort",
+            "label": "Skew from Right Short"
+          }
+        ],
+        "default": "sfb"
+      },
+      {
+        "type": "text",
+        "id": "slide_3_heading_y",
+        "label": "III A - Heading top position",
+        "default": "200"
+      },
+      {
+        "type": "text",
+        "id": "slide_3_heading_x",
+        "label": "III A - Heading left position",
+        "default": "center"
+      },
+      {
+        "type": "text",
+        "id": "slide_3_heading_spacing",
+        "label": "III A - Heading letter spacing",
+        "default": "9px"
+      },
+      {
+        "type": "text",
+        "id": "slide_3_text",
+        "label": "III B - Text",
+        "default": "NEW ARRIVAL"
+      },
+      {
+        "type": "select",
+        "id": "slide_3_textEffect",
+        "label": "III B - Text Effect",
+        "options": [
+          {
+            "value": "sft",
+            "label": "Short from Top"
+          },
+          {
+            "value": "sfb",
+            "label": "Short from Bottom"
+          },
+          {
+            "value": "sfr",
+            "label": "Short from Right"
+          },
+          {
+            "value": "sfl",
+            "label": "Short from Left"
+          },
+          {
+            "value": "lft",
+            "label": "Long from Top"
+          },
+          {
+            "value": "lfb",
+            "label": "Long from Bottom"
+          },
+          {
+            "value": "lfr",
+            "label": "Long from Right"
+          },
+          {
+            "value": "lfl",
+            "label": "Long from Left"
+          },
+          {
+            "value": "skewfromright",
+            "label": "Skew from Right"
+          },
+          {
+            "value": "skewfromleft",
+            "label": "Skew from Left"
+          },
+          {
+            "value": "skewfromleftshort",
+            "label": "Skew from Left Short"
+          },
+          {
+            "value": "skewfromrightshort",
+            "label": "Skew from Right Short"
+          }
+        ],
+        "default": "sfb"
+      },
+      {
+        "type": "text",
+        "id": "slide_3_text_y",
+        "label": "III B - Text top position",
+        "default": "150"
+      },
+      {
+        "type": "text",
+        "id": "slide_3_text_x",
+        "label": "III B - Text left position",
+        "default": "center"
+      },
+      {
+        "type": "text",
+        "id": "slide_3_text_spacing",
+        "label": "III B - Text letter spacing",
+        "default": "28px"
+      },
+      {
+        "type": "checkbox",
+        "id": "slide_3_show_category",
+        "label": "Show category button?"
+      },
+      {
+        "type": "text",
+        "id": "slide_3_category_y",
+        "label": "Category button top position",
+        "default": "450"
+      },
+      {
+        "type": "text",
+        "id": "slide_3_category_x",
+        "label": "Category button left position",
+        "default": "850"
+      },
+      {
+        "type": "text",
+        "id": "slide_3_button_category",
+        "label": "I C - Button text",
+        "default": "Browse category"
+      },
+      {
+        "type": "text",
+        "id": "slide_3_button_category_link",
+        "label": "Category url",
+        "default": "#"
+      },
+      {
+        "type": "text",
+        "id": "slide_3_button_text",
+        "label": "III C - Button text",
+        "default": "Shop now"
+      },
+      {
+        "type": "select",
+        "id": "slide_3_buttonEffect",
+        "label": "III C - Button Effect",
+        "options": [
+          {
+            "value": "sft",
+            "label": "Short from Top"
+          },
+          {
+            "value": "sfb",
+            "label": "Short from Bottom"
+          },
+          {
+            "value": "sfr",
+            "label": "Short from Right"
+          },
+          {
+            "value": "sfl",
+            "label": "Short from Left"
+          },
+          {
+            "value": "lft",
+            "label": "Long from Top"
+          },
+          {
+            "value": "lfb",
+            "label": "Long from Bottom"
+          },
+          {
+            "value": "lfr",
+            "label": "Long from Right"
+          },
+          {
+            "value": "lfl",
+            "label": "Long from Left"
+          },
+          {
+            "value": "skewfromright",
+            "label": "Skew from Right"
+          },
+          {
+            "value": "skewfromleft",
+            "label": "Skew from Left"
+          },
+          {
+            "value": "skewfromleftshort",
+            "label": "Skew from Left Short"
+          },
+          {
+            "value": "skewfromrightshort",
+            "label": "Skew from Right Short"
+          }
+        ],
+        "default": "sfb"
+      },
+      {
+        "type": "text",
+        "id": "slide_3_button_link",
+        "label": "III C - Button link",
+        "default": "#"
+      },
+      {
+        "type": "text",
+        "id": "slide_3_button_y",
+        "label": "III C - Button top position",
+        "default": "450"
+      },
+      {
+        "type": "text",
+        "id": "slide_3_button_x",
+        "label": "III C - Button left position",
+        "default": "center"
+      },
+      {
+        "type": "color",
+        "id": "slide_3_heading_color",
+        "label": "III A - Heading color",
+        "default": "#ffffff"
+      },
+      {
+        "type": "color",
+        "id": "slide_3_text_color",
+        "label": "III B - Text color",
+        "default": "#ffffff"
+      },
+      {
+        "type": "color",
+        "id": "slide_3_button_color",
+        "label": "III C - Button color",
+        "default": "#ffffff"
+      },
+      {
+        "type": "text",
+        "id": "slide_3_heading_font_size",
+        "label": "III A - Heading font size",
+        "default": "20px"
+      },
+      {
+        "type": "text",
+        "id": "slide_3_text_font_size",
+        "label": "III B - Text font size",
+        "default": "110px"
+      },
+      {
+        "type": "text",
+        "id": "slide_3_button_size",
+        "label": "III C - Button font size",
+        "default": "14px"
+      },
+      {
+        "type": "header",
+        "content": "Item 4"
+      },
+      {
+        "type": "checkbox",
+        "id": "slide_4_enable",
+        "label": "Enable item 4?",
+        "default": true
+      },
+      {
+        "type": "select",
+        "id": "slide_4_transition",
+        "label": "Transition Effects",
+        "options": [
+          {
+            "value": "random",
+            "label": "Random"
+          },
+          {
+            "value": "slideup",
+            "label": "Slide To Top"
+          },
+          {
+            "value": "slidedown",
+            "label": "Slide To Bottom"
+          },
+          {
+            "value": "slideright",
+            "label": "Slide To Right"
+          },
+          {
+            "value": "slideleft",
+            "label": "Slide To Left"
+          },
+          {
+            "value": "slidehorizontal",
+            "label": "Slide Horizontal"
+          },
+          {
+            "value": "slidevertical",
+            "label": "Slide Vertical"
+          },
+          {
+            "value": "boxslide",
+            "label": "Slide Boxes"
+          },
+          {
+            "value": "slotslide-horizontal",
+            "label": "Slide Slots Horizontal"
+          },
+          {
+            "value": "slotslide-vertical",
+            "label": "Slide Slots Vertical"
+          },
+          {
+            "value": "boxfade",
+            "label": "Fade Boxes"
+          },
+          {
+            "value": "slotfade-horizontal",
+            "label": "Fade Slots Horizontal"
+          },
+          {
+            "value": "slotfade-vertical",
+            "label": "Fade Slots Vertical"
+          },
+          {
+            "value": "fadefromright",
+            "label": "Fade and Slide from Right"
+          },
+          {
+            "value": "fadefromleft",
+            "label": "Fade and Slide from Left"
+          },
+          {
+            "value": "fadefromtop",
+            "label": "Fade and Slide from Top"
+          },
+          {
+            "value": "fadefrombottom",
+            "label": "Fade and Slide from Bottom"
+          },
+          {
+            "value": "fadetoleftfadefromright",
+            "label": "Fade To Left and Fade From Right"
+          },
+          {
+            "value": "fadetorightfadefromleft",
+            "label": "Fade To Right and Fade From Left"
+          },
+          {
+            "value": "Fade To Top and Fade From Bottom",
+            "label": "fadetotopfadefrombottom"
+          },
+          {
+            "value": "fadetobottomfadefromtop",
+            "label": "Fade To Bottom and Fade From Top"
+          },
+          {
+            "value": "parallaxtoright",
+            "label": "Parallax to Right"
+          },
+          {
+            "value": "parallaxtoleft",
+            "label": "Parallax to Left"
+          },
+          {
+            "value": "parallaxtotop",
+            "label": "Parallax to Top"
+          },
+          {
+            "value": "parallaxtobottom",
+            "label": "Parallax to Bottom"
+          },
+          {
+            "value": "scaledownfromright",
+            "label": "Zoom Out and Fade From Right"
+          },
+          {
+            "value": "scaledownfromleft",
+            "label": "Zoom Out and Fade From Left"
+          },
+          {
+            "value": "scaledownfromtop",
+            "label": "Zoom Out and Fade From Top"
+          },
+          {
+            "value": "scaledownfrombottom",
+            "label": "Zoom Out and Fade From Bottom"
+          },
+          {
+            "value": "zoomout",
+            "label": "Zoom Out"
+          },
+          {
+            "value": "zoomin",
+            "label": "Zoom In"
+          },
+          {
+            "value": "slotzoom-horizontal",
+            "label": "Zoom Slots Horizontal"
+          },
+          {
+            "value": "slotzoom-vertical",
+            "label": "Zoom Slots Vertical"
+          },
+          {
+            "value": "fade",
+            "label": "Fade"
+          },
+          {
+            "value": "curtain-1",
+            "label": "Curtain from Left"
+          },
+          {
+            "value": "curtain-2",
+            "label": "Curtain from Right"
+          },
+          {
+            "value": "curtain-3",
+            "label": "Curtain from Middle"
+          },
+          {
+            "value": "3dcurtain-horizontal",
+            "label": "3D Curtain Horizontal"
+          },
+          {
+            "value": "3dcurtain-vertical",
+            "label": "3D Curtain Vertical"
+          },
+          {
+            "value": "cube",
+            "label": "Cube Vertical"
+          },
+          {
+            "value": "cube-horizontal",
+            "label": "Cube Horizontal"
+          },
+          {
+            "value": "incube",
+            "label": "In Cube Vertical"
+          },
+          {
+            "value": "incube-horizontal",
+            "label": "In Cube Horizontal"
+          },
+          {
+            "value": "turnoff",
+            "label": "TurnOff Horizontal"
+          },
+          {
+            "value": "turnoff-vertical",
+            "label": "TurnOff Vertical"
+          },
+          {
+            "value": "papercut",
+            "label": "Paper Cut"
+          },
+          {
+            "value": "flyin",
+            "label": "Fly In"
+          }
+        ],
+        "default": "random"
+      },
+      {
+        "type": "image",
+        "id": "slide4_image.jpg",
+        "label": "Slide 4 Image"
+      },
+      {
+        "type": "text",
+        "id": "slide_4_heading",
+        "label": "IIII A - Heading",
+        "default": "TRF AUTUMN WINTER 14"
+      },
+      {
+        "type": "select",
+        "id": "slide_4_headingEffect",
+        "label": "IIII A - Heading Effect",
+        "options": [
+          {
+            "value": "sft",
+            "label": "Short from Top"
+          },
+          {
+            "value": "sfb",
+            "label": "Short from Bottom"
+          },
+          {
+            "value": "sfr",
+            "label": "Short from Right"
+          },
+          {
+            "value": "sfl",
+            "label": "Short from Left"
+          },
+          {
+            "value": "lft",
+            "label": "Long from Top"
+          },
+          {
+            "value": "lfb",
+            "label": "Long from Bottom"
+          },
+          {
+            "value": "lfr",
+            "label": "Long from Right"
+          },
+          {
+            "value": "lfl",
+            "label": "Long from Left"
+          },
+          {
+            "value": "skewfromright",
+            "label": "Skew from Right"
+          },
+          {
+            "value": "skewfromleft",
+            "label": "Skew from Left"
+          },
+          {
+            "value": "skewfromleftshort",
+            "label": "Skew from Left Short"
+          },
+          {
+            "value": "skewfromrightshort",
+            "label": "Skew from Right Short"
+          }
+        ],
+        "default": "sfb"
+      },
+      {
+        "type": "text",
+        "id": "slide_4_heading_y",
+        "label": "IIII A - Heading top position",
+        "default": "200"
+      },
+      {
+        "type": "text",
+        "id": "slide_4_heading_x",
+        "label": "IIII A - Heading left position",
+        "default": "center"
+      },
+      {
+        "type": "text",
+        "id": "slide_4_heading_spacing",
+        "label": "IIII A - Heading letter spacing",
+        "default": "9px"
+      },
+      {
+        "type": "text",
+        "id": "slide_4_text",
+        "label": "IIII B - Text",
+        "default": "NEW ARRIVAL"
+      },
+      {
+        "type": "select",
+        "id": "slide_4_textEffect",
+        "label": "IIII B - Text Effect",
+        "options": [
+          {
+            "value": "sft",
+            "label": "Short from Top"
+          },
+          {
+            "value": "sfb",
+            "label": "Short from Bottom"
+          },
+          {
+            "value": "sfr",
+            "label": "Short from Right"
+          },
+          {
+            "value": "sfl",
+            "label": "Short from Left"
+          },
+          {
+            "value": "lft",
+            "label": "Long from Top"
+          },
+          {
+            "value": "lfb",
+            "label": "Long from Bottom"
+          },
+          {
+            "value": "lfr",
+            "label": "Long from Right"
+          },
+          {
+            "value": "lfl",
+            "label": "Long from Left"
+          },
+          {
+            "value": "skewfromright",
+            "label": "Skew from Right"
+          },
+          {
+            "value": "skewfromleft",
+            "label": "Skew from Left"
+          },
+          {
+            "value": "skewfromleftshort",
+            "label": "Skew from Left Short"
+          },
+          {
+            "value": "skewfromrightshort",
+            "label": "Skew from Right Short"
+          }
+        ],
+        "default": "sfb"
+      },
+      {
+        "type": "text",
+        "id": "slide_4_text_y",
+        "label": "IIII B - Text top position",
+        "default": "150"
+      },
+      {
+        "type": "text",
+        "id": "slide_4_text_x",
+        "label": "IIII B - Text left position",
+        "default": "center"
+      },
+      {
+        "type": "text",
+        "id": "slide_4_text_spacing",
+        "label": "IIII B - Text letter spacing",
+        "default": "28px"
+      },
+      {
+        "type": "checkbox",
+        "id": "slide_4_show_category",
+        "label": "Show category button?"
+      },
+      {
+        "type": "text",
+        "id": "slide_4_category_y",
+        "label": "Category button top position",
+        "default": "450"
+      },
+      {
+        "type": "text",
+        "id": "slide_4_category_x",
+        "label": "Category button left position",
+        "default": "850"
+      },
+      {
+        "type": "text",
+        "id": "slide_4_button_category",
+        "label": "I C - Button text",
+        "default": "Browse category"
+      },
+      {
+        "type": "text",
+        "id": "slide_4_button_category_link",
+        "label": "Category url",
+        "default": "#"
+      },
+      {
+        "type": "text",
+        "id": "slide_4_button_text",
+        "label": "IIII C - Button text",
+        "default": "Shop now"
+      },
+      {
+        "type": "select",
+        "id": "slide_4_buttonEffect",
+        "label": "IIII C - Button Effect",
+        "options": [
+          {
+            "value": "sft",
+            "label": "Short from Top"
+          },
+          {
+            "value": "sfb",
+            "label": "Short from Bottom"
+          },
+          {
+            "value": "sfr",
+            "label": "Short from Right"
+          },
+          {
+            "value": "sfl",
+            "label": "Short from Left"
+          },
+          {
+            "value": "lft",
+            "label": "Long from Top"
+          },
+          {
+            "value": "lfb",
+            "label": "Long from Bottom"
+          },
+          {
+            "value": "lfr",
+            "label": "Long from Right"
+          },
+          {
+            "value": "lfl",
+            "label": "Long from Left"
+          },
+          {
+            "value": "skewfromright",
+            "label": "Skew from Right"
+          },
+          {
+            "value": "skewfromleft",
+            "label": "Skew from Left"
+          },
+          {
+            "value": "skewfromleftshort",
+            "label": "Skew from Left Short"
+          },
+          {
+            "value": "skewfromrightshort",
+            "label": "Skew from Right Short"
+          }
+        ],
+        "default": "sfb"
+      },
+      {
+        "type": "text",
+        "id": "slide_4_button_link",
+        "label": "IIII C - Button link",
+        "default": "#"
+      },
+      {
+        "type": "text",
+        "id": "slide_4_button_y",
+        "label": "IIII C - Button top position",
+        "default": "450"
+      },
+      {
+        "type": "text",
+        "id": "slide_4_button_x",
+        "label": "IIII C - Button left position",
+        "default": "center"
+      },
+      {
+        "type": "color",
+        "id": "slide_4_heading_color",
+        "label": "IIII A - Heading color",
+        "default": "#ffffff"
+      },
+      {
+        "type": "color",
+        "id": "slide_4_text_color",
+        "label": "IIII B - Text color",
+        "default": "#ffffff"
+      },
+      {
+        "type": "color",
+        "id": "slide_4_button_color",
+        "label": "IIII C - Button color",
+        "default": "#ffffff"
+      },
+      {
+        "type": "text",
+        "id": "slide_4_heading_font_size",
+        "label": "IIII A - Heading font size",
+        "default": "20px"
+      },
+      {
+        "type": "text",
+        "id": "slide_4_text_font_size",
+        "label": "IIII B - Text font size",
+        "default": "110px"
+      },
+      {
+        "type": "text",
+        "id": "slide_4_button_size",
+        "label": "IIII C - Button font size",
+        "default": "14px"
+      },
+      {
+        "type": "header",
+        "content": "Item 5"
+      },
+      {
+        "type": "checkbox",
+        "id": "slide_5_enable",
+        "label": "Enable item 5?",
+        "default": true
+      },
+      {
+        "type": "select",
+        "id": "slide_5_transition",
+        "label": "Transition Effects",
+        "options": [
+          {
+            "value": "random",
+            "label": "Random"
+          },
+          {
+            "value": "slideup",
+            "label": "Slide To Top"
+          },
+          {
+            "value": "slidedown",
+            "label": "Slide To Bottom"
+          },
+          {
+            "value": "slideright",
+            "label": "Slide To Right"
+          },
+          {
+            "value": "slideleft",
+            "label": "Slide To Left"
+          },
+          {
+            "value": "slidehorizontal",
+            "label": "Slide Horizontal"
+          },
+          {
+            "value": "slidevertical",
+            "label": "Slide Vertical"
+          },
+          {
+            "value": "boxslide",
+            "label": "Slide Boxes"
+          },
+          {
+            "value": "slotslide-horizontal",
+            "label": "Slide Slots Horizontal"
+          },
+          {
+            "value": "slotslide-vertical",
+            "label": "Slide Slots Vertical"
+          },
+          {
+            "value": "boxfade",
+            "label": "Fade Boxes"
+          },
+          {
+            "value": "slotfade-horizontal",
+            "label": "Fade Slots Horizontal"
+          },
+          {
+            "value": "slotfade-vertical",
+            "label": "Fade Slots Vertical"
+          },
+          {
+            "value": "fadefromright",
+            "label": "Fade and Slide from Right"
+          },
+          {
+            "value": "fadefromleft",
+            "label": "Fade and Slide from Left"
+          },
+          {
+            "value": "fadefromtop",
+            "label": "Fade and Slide from Top"
+          },
+          {
+            "value": "fadefrombottom",
+            "label": "Fade and Slide from Bottom"
+          },
+          {
+            "value": "fadetoleftfadefromright",
+            "label": "Fade To Left and Fade From Right"
+          },
+          {
+            "value": "fadetorightfadefromleft",
+            "label": "Fade To Right and Fade From Left"
+          },
+          {
+            "value": "Fade To Top and Fade From Bottom",
+            "label": "fadetotopfadefrombottom"
+          },
+          {
+            "value": "fadetobottomfadefromtop",
+            "label": "Fade To Bottom and Fade From Top"
+          },
+          {
+            "value": "parallaxtoright",
+            "label": "Parallax to Right"
+          },
+          {
+            "value": "parallaxtoleft",
+            "label": "Parallax to Left"
+          },
+          {
+            "value": "parallaxtotop",
+            "label": "Parallax to Top"
+          },
+          {
+            "value": "parallaxtobottom",
+            "label": "Parallax to Bottom"
+          },
+          {
+            "value": "scaledownfromright",
+            "label": "Zoom Out and Fade From Right"
+          },
+          {
+            "value": "scaledownfromleft",
+            "label": "Zoom Out and Fade From Left"
+          },
+          {
+            "value": "scaledownfromtop",
+            "label": "Zoom Out and Fade From Top"
+          },
+          {
+            "value": "scaledownfrombottom",
+            "label": "Zoom Out and Fade From Bottom"
+          },
+          {
+            "value": "zoomout",
+            "label": "Zoom Out"
+          },
+          {
+            "value": "zoomin",
+            "label": "Zoom In"
+          },
+          {
+            "value": "slotzoom-horizontal",
+            "label": "Zoom Slots Horizontal"
+          },
+          {
+            "value": "slotzoom-vertical",
+            "label": "Zoom Slots Vertical"
+          },
+          {
+            "value": "fade",
+            "label": "Fade"
+          },
+          {
+            "value": "curtain-1",
+            "label": "Curtain from Left"
+          },
+          {
+            "value": "curtain-2",
+            "label": "Curtain from Right"
+          },
+          {
+            "value": "curtain-3",
+            "label": "Curtain from Middle"
+          },
+          {
+            "value": "3dcurtain-horizontal",
+            "label": "3D Curtain Horizontal"
+          },
+          {
+            "value": "3dcurtain-vertical",
+            "label": "3D Curtain Vertical"
+          },
+          {
+            "value": "cube",
+            "label": "Cube Vertical"
+          },
+          {
+            "value": "cube-horizontal",
+            "label": "Cube Horizontal"
+          },
+          {
+            "value": "incube",
+            "label": "In Cube Vertical"
+          },
+          {
+            "value": "incube-horizontal",
+            "label": "In Cube Horizontal"
+          },
+          {
+            "value": "turnoff",
+            "label": "TurnOff Horizontal"
+          },
+          {
+            "value": "turnoff-vertical",
+            "label": "TurnOff Vertical"
+          },
+          {
+            "value": "papercut",
+            "label": "Paper Cut"
+          },
+          {
+            "value": "flyin",
+            "label": "Fly In"
+          }
+        ],
+        "default": "random"
+      },
+      {
+        "type": "image",
+        "id": "slide5_image.jpg",
+        "label": "Slide 5 Image"
+      },
+      {
+        "type": "text",
+        "id": "slide_5_heading",
+        "label": "IIIII A - Heading",
+        "default": "TRF AUTUMN WINTER 14"
+      },
+      {
+        "type": "select",
+        "id": "slide_5_headingEffect",
+        "label": "IIIII A - Heading Effect",
+        "options": [
+          {
+            "value": "sft",
+            "label": "Short from Top"
+          },
+          {
+            "value": "sfb",
+            "label": "Short from Bottom"
+          },
+          {
+            "value": "sfr",
+            "label": "Short from Right"
+          },
+          {
+            "value": "sfl",
+            "label": "Short from Left"
+          },
+          {
+            "value": "lft",
+            "label": "Long from Top"
+          },
+          {
+            "value": "lfb",
+            "label": "Long from Bottom"
+          },
+          {
+            "value": "lfr",
+            "label": "Long from Right"
+          },
+          {
+            "value": "lfl",
+            "label": "Long from Left"
+          },
+          {
+            "value": "skewfromright",
+            "label": "Skew from Right"
+          },
+          {
+            "value": "skewfromleft",
+            "label": "Skew from Left"
+          },
+          {
+            "value": "skewfromleftshort",
+            "label": "Skew from Left Short"
+          },
+          {
+            "value": "skewfromrightshort",
+            "label": "Skew from Right Short"
+          }
+        ],
+        "default": "sfb"
+      },
+      {
+        "type": "text",
+        "id": "slide_5_heading_y",
+        "label": "IIIII A - Heading top position",
+        "default": "200"
+      },
+      {
+        "type": "text",
+        "id": "slide_5_heading_x",
+        "label": "IIIII A - Heading left position",
+        "default": "center"
+      },
+      {
+        "type": "text",
+        "id": "slide_5_heading_spacing",
+        "label": "IIIII A - Heading letter spacing",
+        "default": "9px"
+      },
+      {
+        "type": "text",
+        "id": "slide_5_text",
+        "label": "IIIII B - Text",
+        "default": "NEW ARRIVAL"
+      },
+      {
+        "type": "select",
+        "id": "slide_5_textEffect",
+        "label": "IIIII B - Text Effect",
+        "options": [
+          {
+            "value": "sft",
+            "label": "Short from Top"
+          },
+          {
+            "value": "sfb",
+            "label": "Short from Bottom"
+          },
+          {
+            "value": "sfr",
+            "label": "Short from Right"
+          },
+          {
+            "value": "sfl",
+            "label": "Short from Left"
+          },
+          {
+            "value": "lft",
+            "label": "Long from Top"
+          },
+          {
+            "value": "lfb",
+            "label": "Long from Bottom"
+          },
+          {
+            "value": "lfr",
+            "label": "Long from Right"
+          },
+          {
+            "value": "lfl",
+            "label": "Long from Left"
+          },
+          {
+            "value": "skewfromright",
+            "label": "Skew from Right"
+          },
+          {
+            "value": "skewfromleft",
+            "label": "Skew from Left"
+          },
+          {
+            "value": "skewfromleftshort",
+            "label": "Skew from Left Short"
+          },
+          {
+            "value": "skewfromrightshort",
+            "label": "Skew from Right Short"
+          }
+        ],
+        "default": "sfb"
+      },
+      {
+        "type": "text",
+        "id": "slide_5_text_y",
+        "label": "IIIII B - Text top position",
+        "default": "150"
+      },
+      {
+        "type": "text",
+        "id": "slide_5_text_x",
+        "label": "IIIII B - Text left position",
+        "default": "center"
+      },
+      {
+        "type": "text",
+        "id": "slide_5_text_spacing",
+        "label": "IIIII B - Text letter spacing",
+        "default": "28px"
+      },
+      {
+        "type": "checkbox",
+        "id": "slide_5_show_category",
+        "label": "Show category button?"
+      },
+      {
+        "type": "text",
+        "id": "slide_5_category_y",
+        "label": "Category button top position",
+        "default": "450"
+      },
+      {
+        "type": "text",
+        "id": "slide_5_category_x",
+        "label": "Category button left position",
+        "default": "850"
+      },
+      {
+        "type": "text",
+        "id": "slide_5_button_category",
+        "label": "I C - Button text",
+        "default": "Browse category"
+      },
+      {
+        "type": "text",
+        "id": "slide_5_button_category_link",
+        "label": "Category url",
+        "default": "#"
+      },
+      {
+        "type": "text",
+        "id": "slide_5_button_text",
+        "label": "IIIII C - Button text",
+        "default": "Shop now"
+      },
+      {
+        "type": "select",
+        "id": "slide_5_buttonEffect",
+        "label": "IIIII C - Button Effect",
+        "options": [
+          {
+            "value": "sft",
+            "label": "Short from Top"
+          },
+          {
+            "value": "sfb",
+            "label": "Short from Bottom"
+          },
+          {
+            "value": "sfr",
+            "label": "Short from Right"
+          },
+          {
+            "value": "sfl",
+            "label": "Short from Left"
+          },
+          {
+            "value": "lft",
+            "label": "Long from Top"
+          },
+          {
+            "value": "lfb",
+            "label": "Long from Bottom"
+          },
+          {
+            "value": "lfr",
+            "label": "Long from Right"
+          },
+          {
+            "value": "lfl",
+            "label": "Long from Left"
+          },
+          {
+            "value": "skewfromright",
+            "label": "Skew from Right"
+          },
+          {
+            "value": "skewfromleft",
+            "label": "Skew from Left"
+          },
+          {
+            "value": "skewfromleftshort",
+            "label": "Skew from Left Short"
+          },
+          {
+            "value": "skewfromrightshort",
+            "label": "Skew from Right Short"
+          }
+        ],
+        "default": "sfb"
+      },
+      {
+        "type": "text",
+        "id": "slide_5_button_link",
+        "label": "IIIII C - Button link",
+        "default": "#"
+      },
+      {
+        "type": "text",
+        "id": "slide_5_button_y",
+        "label": "IIIII C - Button top position",
+        "default": "450"
+      },
+      {
+        "type": "text",
+        "id": "slide_5_button_x",
+        "label": "IIIII C - Button left position",
+        "default": "center"
+      },
+      {
+        "type": "color",
+        "id": "slide_5_heading_color",
+        "label": "IIIII A - Heading color",
+        "default": "#ffffff"
+      },
+      {
+        "type": "color",
+        "id": "slide_5_text_color",
+        "label": "IIIII B - Text color",
+        "default": "#ffffff"
+      },
+      {
+        "type": "color",
+        "id": "slide_5_button_color",
+        "label": "IIIII C - Button color",
+        "default": "#ffffff"
+      },
+      {
+        "type": "text",
+        "id": "slide_5_heading_font_size",
+        "label": "IIIII A - Heading font size",
+        "default": "20px"
+      },
+      {
+        "type": "text",
+        "id": "slide_5_text_font_size",
+        "label": "IIIII B - Text font size",
+        "default": "110px"
+      },
+      {
+        "type": "text",
+        "id": "slide_5_button_size",
+        "label": "IIIII C - Button font size",
+        "default": "14px"
+      }
+    ]
+  },
+  {
+    "name": "Home page - Banner top",
+    "settings": [
+      {
+        "type": "select",
+        "id": "select_effect_banner_2_0",
+        "label": "Select effect",
+        "options": [
+          {
+            "value": "",
+            "label": "None"
+          },
+          {
+            "value": "effect-v1",
+            "label": "Effect version 1"
+          },
+          {
+            "value": "effect-v2",
+            "label": "Effect version 2"
+          },
+          {
+            "value": "effect-v3",
+            "label": "Effect version 3"
+          },
+          {
+            "value": "effect-v4",
+            "label": "Effect version 4"
+          },
+          {
+            "value": "effect-v5",
+            "label": "Effect version 5"
+          },
+          {
+            "value": "effect-v6",
+            "label": "Effect version 6"
+          },
+          {
+            "value": "effect-v7",
+            "label": "Effect version 7"
+          },
+          {
+            "value": "effect-v8",
+            "label": "Effect version 8"
+          },
+          {
+            "value": "effect-v9",
+            "label": "Effect version 9"
+          },
+          {
+            "value": "effect-v10",
+            "label": "Effect version 10"
+          }
+        ]
+      },
+      {
+        "type": "header",
+        "content": "Image 1"
+      },
+      {
+        "type": "image",
+        "id": "banner_2_image_1_0.jpg",
+        "label": "Banner Image"
+      },
+      {
+        "type": "text",
+        "id": "banner_2_image_1_url_0",
+        "label": " Url",
+        "default": "#"
+      },
+      {
+        "type": "header",
+        "content": "Image 2"
+      },
+      {
+        "type": "image",
+        "id": "banner_2_image_2_0.jpg",
+        "label": "Banner Image"
+      },
+      {
+        "type": "text",
+        "id": "banner_2_image_2_url_0",
+        "label": " Url",
+        "default": "#"
+      }
+    ]
+  },
+  {
+    "name": "Home page - Top Seller",
+    "settings": [
+      {
+        "type": "header",
+        "content": "Settings"
+      },
+      {
+        "type": "checkbox",
+        "id": "new_owl_checked",
+        "label": "Use Owl Carousel",
+        "default": true
+      },
+      {
+        "type": "collection",
+        "id": "new_arrival_collection",
+        "label": "Select collection"
+      },
+      {
+        "type": "text",
+        "id": "new_arrival_title",
+        "label": "Title",
+        "default": "Featured Product"
+      },
+      {
+        "type": "select",
+        "id": "new_arrival_num",
+        "label": "Number of products per row",
+        "options": [
+          {
+            "value": "2",
+            "label": "2"
+          },
+          {
+            "value": "3",
+            "label": "3"
+          },
+          {
+            "value": "4",
+            "label": "4"
+          },
+          {
+            "value": "5",
+            "label": "5"
+          },
+          {
+            "value": "6",
+            "label": "6"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "id": "new_arrival_limit",
+        "label": "Limit product",
+        "default": "8"
+      }
+    ]
+  },
+  {
+    "name": "Home page - Featured products 2",
+    "settings": [
+      {
+        "type": "header",
+        "content": "Settings"
+      },
+      {
+        "type": "checkbox",
+        "id": "new_owl_checked2",
+        "label": "Use Owl Carousel",
+        "default": true
+      },
+      {
+        "type": "collection",
+        "id": "new_arrival_collection2",
+        "label": "Select collection"
+      },
+      {
+        "type": "text",
+        "id": "new_arrival_title2",
+        "label": "Title",
+        "default": "Featured Product"
+      },
+      {
+        "type": "select",
+        "id": "new_arrival_num2",
+        "label": "Number of products per row",
+        "options": [
+          {
+            "value": "2",
+            "label": "2"
+          },
+          {
+            "value": "3",
+            "label": "3"
+          },
+          {
+            "value": "4",
+            "label": "4"
+          },
+          {
+            "value": "5",
+            "label": "5"
+          },
+          {
+            "value": "6",
+            "label": "6"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "id": "new_arrival_limit2",
+        "label": "Limit product",
+        "default": "8"
+      }
+    ]
+  },
+  {
+    "name": "Home page - Banner bottom",
+    "settings": [
+      {
+        "type": "select",
+        "id": "select_effect_bannerv2",
+        "label": "Select effect",
+        "options": [
+          {
+            "value": "",
+            "label": "None"
+          },
+          {
+            "value": "effect-v1",
+            "label": "Effect version 1"
+          },
+          {
+            "value": "effect-v2",
+            "label": "Effect version 2"
+          },
+          {
+            "value": "effect-v3",
+            "label": "Effect version 3"
+          },
+          {
+            "value": "effect-v4",
+            "label": "Effect version 4"
+          },
+          {
+            "value": "effect-v5",
+            "label": "Effect version 5"
+          },
+          {
+            "value": "effect-v6",
+            "label": "Effect version 6"
+          },
+          {
+            "value": "effect-v7",
+            "label": "Effect version 7"
+          },
+          {
+            "value": "effect-v8",
+            "label": "Effect version 8"
+          },
+          {
+            "value": "effect-v9",
+            "label": "Effect version 9"
+          },
+          {
+            "value": "effect-v10",
+            "label": "Effect version 10"
+          }
+        ]
+      },
+      {
+        "type": "header",
+        "content": "Image 1"
+      },
+      {
+        "type": "image",
+        "id": "banner_3_image_1v2.jpg",
+        "label": "Banner Image"
+      },
+      {
+        "type": "text",
+        "id": "banner_3_image_1v2_url",
+        "label": " Url",
+        "default": "#"
+      },
+      {
+        "type": "header",
+        "content": "Image 2"
+      },
+      {
+        "type": "image",
+        "id": "banner_3_image_2v2.jpg",
+        "label": "Banner Image"
+      },
+      {
+        "type": "text",
+        "id": "banner_3_image_2v2_url",
+        "label": " Url",
+        "default": "#"
+      },
+      {
+        "type": "header",
+        "content": "Image 3"
+      },
+      {
+        "type": "image",
+        "id": "banner_3_image_3v2.jpg",
+        "label": "Banner Image"
+      },
+      {
+        "type": "text",
+        "id": "banner_3_image_3v2_url",
+        "label": " Url",
+        "default": "#"
+      }
+    ]
+  },
+  {
+    "name": "Feature box",
+    "settings": [
+      {
+        "type": "paragraph",
+        "content": "The element only display on homepage, and shop page"
+      },
+      {
+        "type": "header",
+        "content": "Box 1"
+      },
+      {
+        "type": "checkbox",
+        "id": "enable_box_1",
+        "label": "Enable Box 1"
+      },
+      {
+        "type": "image",
+        "id": "icon_1.png",
+        "label": "Icon",
+        "info": "Default: Image size: 50X50"
+      },
+      {
+        "type": "text",
+        "id": "title_services_1",
+        "label": "Title box 1"
+      },
+      {
+        "type": "textarea",
+        "id": "des_services_1",
+        "label": "Description box 1"
+      },
+      {
+        "type": "text",
+        "id": "feature_url_1",
+        "label": "Url"
+      },
+      {
+        "type": "header",
+        "content": "Box 2"
+      },
+      {
+        "type": "checkbox",
+        "id": "enable_box_2",
+        "label": "Enable Box 2"
+      },
+      {
+        "type": "image",
+        "id": "icon_2.png",
+        "label": "Icon",
+        "info": "Default: Image size: 50X50"
+      },
+      {
+        "type": "text",
+        "id": "title_services_2",
+        "label": "Title box 2"
+      },
+      {
+        "type": "textarea",
+        "id": "des_services_2",
+        "label": "Description box 2"
+      },
+      {
+        "type": "text",
+        "id": "feature_url_2",
+        "label": "Url"
+      },
+      {
+        "type": "header",
+        "content": "Box 3"
+      },
+      {
+        "type": "checkbox",
+        "id": "enable_box_3",
+        "label": "Enable Box 3"
+      },
+      {
+        "type": "image",
+        "id": "icon_3.png",
+        "label": "Icon",
+        "info": "Default: Image size: 50X50"
+      },
+      {
+        "type": "text",
+        "id": "title_services_3",
+        "label": "Title box 3"
+      },
+      {
+        "type": "textarea",
+        "id": "des_services_3",
+        "label": "Description box 3"
+      },
+      {
+        "type": "text",
+        "id": "feature_url_3",
+        "label": "Url"
+      },
+      {
+        "type": "header",
+        "content": "Box 4"
+      },
+      {
+        "type": "checkbox",
+        "id": "enable_box_4",
+        "label": "Enable Box 4"
+      },
+      {
+        "type": "image",
+        "id": "icon_4.png",
+        "label": "Icon",
+        "info": "Default: Image size: 50X50"
+      },
+      {
+        "type": "text",
+        "id": "title_services_4",
+        "label": "Title box 4"
+      },
+      {
+        "type": "textarea",
+        "id": "des_services_4",
+        "label": "Description box 4"
+      },
+      {
+        "type": "text",
+        "id": "feature_url_4",
+        "label": "Url"
+      }
+    ]
+  },
+  {
+    "name": "Collection page",
+    "settings": [
+      {
+        "type": "text",
+        "id": "nb_column",
+        "label": "Grid item",
+        "default": "3",
+        "info": "ex:2,3,4,5,6"
+      },
+      {
+        "type": "text",
+        "id": "nb_per_page",
+        "label": "Number Product Per Page",
+        "default": "12"
+      },
+      {
+        "type": "checkbox",
+        "id": "product_show_swatch",
+        "label": "Show product swatch ",
+        "default": true
+      }
+    ]
+  },
+  {
+    "name": "Product page",
+    "settings": [
+      {
+        "type": "text",
+        "id": "nb_thumbnail_visible",
+        "label": "Number thumbnail visible",
+        "default": "4",
+        "info": "ex:2,3,4,5,6"
+      },
+      {
+        "type": "checkbox",
+        "id": "display_sample_vendor",
+        "label": "Display Sample Vendor?",
+        "default": false
+      },
+      {
+        "type": "checkbox",
+        "id": "display_availability",
+        "label": "Display Availability?",
+        "default": false
+      },
+      {
+        "type": "checkbox",
+        "id": "display_product_type",
+        "label": "Display Product Type?",
+        "default": false
+      },
+      {
+        "type": "checkbox",
+        "id": "display_vendor",
+        "label": "Display Vendor?",
+        "default": false
+      },
+      {
+        "type": "radio",
+        "id": "show_desc",
+        "label": "Short description",
+        "options": [
+          {
+            "value": "no-show",
+            "label": "No"
+          },
+          {
+            "value": "short",
+            "label": "Yes"
+          },
+          {
+            "value": "full",
+            "label": "Show Full Description"
+          }
+        ],
+        "default": "short"
+      },
+      {
+        "type": "checkbox",
+        "id": "show_product_swatch",
+        "label": "Show product swatch",
+        "default": true
+      },
+      {
+        "type": "checkbox",
+        "id": "display_wishlist",
+        "label": "Display Wishlist?",
+        "default": true
+      },
+      {
+        "type": "checkbox",
+        "id": "display_category",
+        "label": "Display Categories?",
+        "default": true
+      },
+      {
+        "type": "checkbox",
+        "id": "display_tag",
+        "label": "Display Tags?",
+        "default": false
+      },
+      {
+        "type": "header",
+        "content": "Tab"
+      },
+      {
+        "type": "checkbox",
+        "id": "display_des",
+        "label": "Show Description?",
+        "default": true
+      },
+      {
+        "type": "checkbox",
+        "id": "show_shipping_tab",
+        "label": "Show shipping tab?",
+        "default": true
+      },
+      {
+        "type": "text",
+        "id": "shipping_tab_title",
+        "label": "Shipping Title",
+        "default": "Shipping and Return"
+      },
+      {
+        "type": "textarea",
+        "id": "shipping_tab_content",
+        "label": "Shipping Content"
+      },
+      {
+        "type": "checkbox",
+        "id": "show_size_chart_tab",
+        "label": "Show size chart tab?",
+        "default": false
+      },
+      {
+        "type": "text",
+        "id": "size_chart_tab_title",
+        "label": "Size Chart Tab Title",
+        "default": "Size Chart"
+      },
+      {
+        "type": "image",
+        "id": "size_chart_content.jpg",
+        "label": "Size Chart Image"
+      },
+      {
+        "type": "checkbox",
+        "id": "display_reviews",
+        "label": "Show Reviews?",
+        "default": true
+      },
+      {
+        "type": "checkbox",
+        "id": "display_prev_next_product",
+        "label": "Display Prev\/Next Product?",
+        "default": true
+      },
+      {
+        "type": "header",
+        "content": "Related Products"
+      },
+      {
+        "type": "checkbox",
+        "id": "display_relate_products",
+        "label": "Show Related Products?",
+        "default": true
+      },
+      {
+        "type": "text",
+        "id": "related_col",
+        "label": "Grid item",
+        "default": "4",
+        "info": "ex:2,3,4,5,6"
+      },
+      {
+        "type": "text",
+        "id": "related_limit",
+        "label": "Limit products",
+        "default": "12"
+      }
+    ]
+  },
+  {
+    "name": "Blog page",
+    "settings": [
+      {
+        "type": "text",
+        "id": "blog_per_page",
+        "label": "Blog per page",
+        "default": "6",
+        "info": "ex:6,8,12,24..."
+      },
+      {
+        "type": "header",
+        "content": "Blog Default Template"
+      },
+      {
+        "type": "select",
+        "id": "blog_per_row",
+        "label": "Number of posts per row",
+        "options": [
+          {
+            "value": "2",
+            "label": "2"
+          },
+          {
+            "value": "3",
+            "label": "3"
+          },
+          {
+            "value": "4",
+            "label": "4"
+          },
+          {
+            "value": "5",
+            "label": "5"
+          },
+          {
+            "value": "6",
+            "label": "6"
+          }
+        ],
+        "default": "2"
+      },
+      {
+        "type": "header",
+        "content": "Blog Nosidebar Template"
+      },
+      {
+        "type": "select",
+        "id": "blog_nosidebar_per_row",
+        "label": "Number of posts per row",
+        "options": [
+          {
+            "value": "2",
+            "label": "2"
+          },
+          {
+            "value": "3",
+            "label": "3"
+          },
+          {
+            "value": "4",
+            "label": "4"
+          },
+          {
+            "value": "5",
+            "label": "5"
+          },
+          {
+            "value": "6",
+            "label": "6"
+          }
+        ],
+        "default": "3"
+      },
+      {
+        "type": "header",
+        "content": "Blog Gallery Template"
+      },
+      {
+        "type": "select",
+        "id": "blog_gallery_per_row",
+        "label": "Number of posts per row",
+        "options": [
+          {
+            "value": "2",
+            "label": "2"
+          },
+          {
+            "value": "3",
+            "label": "3"
+          },
+          {
+            "value": "4",
+            "label": "4"
+          },
+          {
+            "value": "5",
+            "label": "5"
+          },
+          {
+            "value": "6",
+            "label": "6"
+          }
+        ],
+        "default": "4"
+      }
+    ]
+  },
+  {
+    "name": "Blog Sidebar",
+    "settings": [
+      {
+        "type": "checkbox",
+        "id": "enable_recent_article",
+        "label": "Enable Recent Articles"
+      },
+      {
+        "type": "checkbox",
+        "id": "enable_categories",
+        "label": "Enable Categories"
+      },
+      {
+        "type": "checkbox",
+        "id": "enable_tags",
+        "label": "Enable Tags"
+      },
+      {
+        "type": "checkbox",
+        "id": "enable_instagram",
+        "label": "Enable Instagram"
+      },
+      {
+        "type": "text",
+        "id": "instagram_title",
+        "label": "Instagram Title"
+      },
+      {
+        "type": "textarea",
+        "id": "instagram_content",
+        "label": "Code widget",
+        "info": "Please access https:\/\/snapwidget.com\/ to get code Instagram"
+      }
+    ]
+  },
+  {
+    "name": "Sidebar Filters",
+    "settings": [
+      {
+        "type": "checkbox",
+        "id": "filter_enable",
+        "label": "Enable Filters",
+        "default": true
+      },
+      {
+        "type": "text",
+        "id": "filter_title",
+        "label": "Title",
+        "default": "Filters By"
+      },
+      {
+        "type": "header",
+        "content": "Color"
+      },
+      {
+        "type": "checkbox",
+        "id": "enable_shop_by_tags_1",
+        "label": "Enable",
+        "default": true
+      },
+      {
+        "type": "text",
+        "id": "shop_by_tags_1_title",
+        "label": "Shop by tags 1 title",
+        "info": "i.e \"Color\"."
+      },
+      {
+        "type": "text",
+        "id": "shop_by_color_text_1",
+        "label": "Shop by color text 1",
+        "default": "Red",
+        "info": "i.e \"red\"."
+      },
+      {
+        "type": "text",
+        "id": "shop_by_color_text_2",
+        "label": "Shop by color text 2",
+        "default": "blue"
+      },
+      {
+        "type": "text",
+        "id": "shop_by_color_text_3",
+        "label": "Shop by color text 3",
+        "default": "white"
+      },
+      {
+        "type": "text",
+        "id": "shop_by_color_text_4",
+        "label": "Shop by color text 4",
+        "default": "pink"
+      },
+      {
+        "type": "text",
+        "id": "shop_by_color_text_5",
+        "label": "Shop by color text 5",
+        "default": "pink"
+      },
+      {
+        "type": "text",
+        "id": "shop_by_color_text_6",
+        "label": "Shop by color text 6",
+        "default": "pink"
+      },
+      {
+        "type": "text",
+        "id": "shop_by_color_text_7",
+        "label": "Shop by color text 7",
+        "default": "pink"
+      },
+      {
+        "type": "text",
+        "id": "shop_by_color_text_8",
+        "label": "Shop by color text 8",
+        "default": "pink"
+      },
+      {
+        "type": "text",
+        "id": "shop_by_color_text_9",
+        "label": "Shop by color text 9",
+        "default": "pink"
+      },
+      {
+        "type": "text",
+        "id": "shop_by_color_text_10",
+        "label": "Shop by color text 10",
+        "default": "pink"
+      },
+      {
+        "type": "header",
+        "content": "Price"
+      },
+      {
+        "type": "checkbox",
+        "id": "enable_shop_by_tags_2",
+        "label": "Enable",
+        "default": true
+      },
+      {
+        "type": "text",
+        "id": "shop_by_tags_2_title",
+        "label": "Shop by tags 2 title",
+        "info": "i.e \"Price\"."
+      },
+      {
+        "type": "textarea",
+        "id": "shop_by_tags_2_list_tags",
+        "label": "Shop by tags 2 list"
+      },
+      {
+        "type": "header",
+        "content": "Product Size"
+      },
+      {
+        "type": "checkbox",
+        "id": "enable_shop_by_tags_4",
+        "label": "Enable",
+        "default": true
+      },
+      {
+        "type": "text",
+        "id": "shop_by_tags_4_title",
+        "label": "Shop by tags 3 title",
+        "info": "i.e \"Product Type\"."
+      },
+      {
+        "type": "textarea",
+        "id": "shop_by_tags_4_list_tags",
+        "label": "Shop by tags 3 list",
+        "info": "Separate by a comma, i.e \"M, L ,XL ..\"."
+      },
+      {
+        "type": "header",
+        "content": "Brand"
+      },
+      {
+        "type": "checkbox",
+        "id": "enable_shop_by_tags_5",
+        "label": "Enable",
+        "default": true
+      },
+      {
+        "type": "text",
+        "id": "shop_by_tags_5_title",
+        "label": "Shop by tags 4 title",
+        "info": "i.e \"Brand\"."
+      },
+      {
+        "type": "textarea",
+        "id": "shop_by_tags_5_list_tags",
+        "label": "Shop by tags 4 list",
+        "info": "Separate by a comma, i.e \", Chanel ,Dior,Gap ..\"."
+      }
+    ]
+  },
+  {
+    "name": "Sidebar",
+    "settings": [
+      {
+        "type": "header",
+        "content": "Categories"
+      },
+      {
+        "type": "checkbox",
+        "id": "display_categories_sidebar",
+        "label": "Show Categories Sidebar?",
+        "default": true
+      },
+      {
+        "type": "text",
+        "id": "categories_title",
+        "label": "Title",
+        "default": "Categories"
+      },
+      {
+        "type": "radio",
+        "id": "categories_content",
+        "label": "Show categories",
+        "options": [
+          {
+            "value": "auto",
+            "label": "Auto"
+          },
+          {
+            "value": "custom",
+            "label": "Custom Categories"
+          }
+        ],
+        "default": "auto"
+      },
+      {
+        "type": "link_list",
+        "id": "categoies_menu",
+        "label": "Custom Categories",
+        "info": "Will not be used if set to None"
+      },
+      {
+        "type": "header",
+        "content": "Sidebar Filters",
+        "info": "Please access Customize theme page >  Sidebar Filters"
+      },
+      {
+        "type": "header",
+        "content": "Widget product"
+      },
+      {
+        "type": "checkbox",
+        "id": "widget_enable_1",
+        "label": "Enable Widget 1"
+      },
+      {
+        "type": "text",
+        "id": "widget_title_1",
+        "label": "Title"
+      },
+      {
+        "type": "collection",
+        "id": "widget_collection_1",
+        "label": "Products Collection"
+      },
+      {
+        "type": "text",
+        "id": "number_collection_1",
+        "label": "Number Product Show",
+        "info": "ex:2,3,4..",
+        "default": "3"
+      },
+      {
+        "type": "checkbox",
+        "id": "widget_enable_2",
+        "label": "Enable Widget 2"
+      },
+      {
+        "type": "text",
+        "id": "widget_title_2",
+        "label": "Title"
+      },
+      {
+        "type": "collection",
+        "id": "widget_collection_2",
+        "label": "Products Collection"
+      },
+      {
+        "type": "text",
+        "id": "number_collection_2",
+        "label": "Number Product Show",
+        "info": "ex:2,3,4..",
+        "default": "3"
+      },
+      {
+        "type": "header",
+        "content": "Brands"
+      },
+      {
+        "type": "checkbox",
+        "id": "brands_enable",
+        "label": "Enable Brands"
+      },
+      {
+        "type": "header",
+        "content": "Advertising"
+      },
+      {
+        "type": "checkbox",
+        "id": "ads_enable",
+        "label": "Enable Advertising"
+      },
+      {
+        "type": "image",
+        "id": "ads_block.jpg",
+        "label": "Ads Image"
+      },
+      {
+        "type": "text",
+        "id": "ads_block_url",
+        "label": "Ads Url",
+        "default": "#"
+      },
+      {
+        "type": "header",
+        "content": "Cms"
+      },
+      {
+        "type": "checkbox",
+        "id": "custom_cms_enable",
+        "label": "Enable CMS widget"
+      },
+      {
+        "type": "text",
+        "id": "custom_cms_title",
+        "label": "Title"
+      },
+      {
+        "type": "textarea",
+        "id": "custom_cms_content",
+        "label": "Content"
+      },
+      {
+        "type": "header",
+        "content": "Tags"
+      },
+      {
+        "type": "checkbox",
+        "id": "tags_enable",
+        "label": "Enable Tags"
+      }
+    ]
+  },
+  {
+    "name": "Contact us",
+    "settings": [
+      {
+        "type": "header",
+        "content": "Google Map"
+      },
+      {
+        "type": "checkbox",
+        "id": "contact_map",
+        "label": "Enable google map?"
+      },
+      {
+        "type": "textarea",
+        "id": "embed_code",
+        "label": "Embed code"
+      },
+      {
+        "type": "header",
+        "content": "Services"
+      },
+      {
+        "type": "text",
+        "id": "contact_box_1",
+        "label": "Box 1"
+      },
+      {
+        "type": "text",
+        "id": "contact_box_i1",
+        "label": "Box icon 1",
+        "info": "Get icon from https:\/\/fortawesome.github.io\/Font-Awesome\/icons\/"
+      },
+      {
+        "type": "text",
+        "id": "contact_box_2",
+        "label": "Box 2"
+      },
+      {
+        "type": "text",
+        "id": "contact_box_i2",
+        "label": "Box icon 2",
+        "info": "Get icon from https:\/\/fortawesome.github.io\/Font-Awesome\/icons\/"
+      },
+      {
+        "type": "text",
+        "id": "contact_box_3",
+        "label": "Box 3"
+      },
+      {
+        "type": "text",
+        "id": "contact_box_i3",
+        "label": "Box icon 3",
+        "info": "Get icon from https:\/\/fortawesome.github.io\/Font-Awesome\/icons\/"
+      }
+    ]
+  },
+  {
+    "name": "Currency",
+    "settings": [
+      {
+        "type": "paragraph",
+        "content": "To offer multiple currencies on your online store, you must first [edit your store's currency formatting](https:\/\/docs.shopify.com\/support\/settings\/general\/tell-my-script-where-to-find-money-formats)."
+      },
+      {
+        "type": "checkbox",
+        "id": "show_multiple_currencies",
+        "label": "Enable currency conversion",
+        "default": true,
+        "info": "Even though prices are displayed in different currencies, orders will still be processed in your store's currency."
+      },
+      {
+        "type": "select",
+        "id": "currency_format",
+        "label": "Format",
+        "options": [
+          {
+            "value": "money_format",
+            "label": "Without currency ($10.00)"
+          },
+          {
+            "value": "money_with_currency_format",
+            "label": "With currency ($10.00 CAD)"
+          }
+        ],
+        "default": "money_with_currency_format"
+      },
+      {
+        "type": "text",
+        "id": "supported_currencies",
+        "label": "Supported currencies",
+        "default": "INR GBP CAD USD AUD EUR JPY",
+        "info": "Use the country's ISO [currency code](http:\/\/www.xe.com\/iso4217.php). Separate your currency codes with a space."
+      },
+      {
+        "type": "text",
+        "id": "default_currency",
+        "label": "Default currency",
+        "default": "USD"
+      }
+    ]
+  }
+]

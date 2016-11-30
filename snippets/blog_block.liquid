@@ -1,0 +1,24 @@
+<!-- /templates/snippets/blog_block.liquid -->
+<div class="grid__item {{grid_item_width}}">
+  <div class="latest-posts-body">
+      {% if article.image %}
+      <div class="post-thumbnail">
+        <a href="{{ article.url }}" title="">
+          <img src="{{ article.image.src | img_url: 'original' }}" alt="" class="img-responsive">
+        </a>
+      </div>
+      {% endif %}
+      <div class="entry-meta">
+        <div class="entry-content clearfix">
+          <h4 class="entry-title">
+            <a href="{{ article.url }}" title="{{ article.title }}">{{ article.title }}</a>
+          </h4>
+          {% capture author %}<span>{{ article.author }} </span>{% endcapture %}
+          <div class="author left">{{ 'blogs.article.author_article' |  t}} {{author}}</div>
+          <div class="date right">
+            <i class="zmdi zmdi-time"></i><span>{{article.published_at | date: "%B %d, %Y" }}</span>
+          </div>
+        </div>       
+      </div>
+  </div>
+</div>

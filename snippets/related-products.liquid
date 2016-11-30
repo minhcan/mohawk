@@ -1,0 +1,31 @@
+<section class="related-products">
+<h2 class="title">{{ 'products.general.related_products' | t }}</h2>
+{% if collection == null or collection.handle == 'frontpage' or collection.handle == 'all' %}
+	{% assign found_a_collection = false %}
+	{% for c in product.collections %}
+		{% if found_a_collection == false and c.handle != 'frontpage' and c.handle != 'all' and c.all_products_count > 1 %}
+			{% assign found_a_collection = true %}
+			{% assign collection = c %}
+		{% endif %}
+	{% endfor %}
+{% endif %}
+<div class="owl-carousel-play">
+	<div class="products related-carousel owl-carousel owl-theme" data-items="{{settings.related_col}}" data-pagination="false" data-navigation="true" data-autoPlay="false">
+	{% if collection and collection.products_count > 1 %}
+		{% assign current_product = product %}
+		{% assign current_product_found = false %}
+		{% for product in collection.products limit: {{settings.related_limit}} %}
+			{% if product.handle == current_product.handle %}
+				{% assign current_product_found = true %}
+			{% else %}
+				{% unless current_product_found == false and forloop.last %}
+					{% include 'product-item' %}
+				{% endunless %}
+			{% endif %}
+		{% endfor %}
+	{% else %}
+		{% include 'onboarding-empty-collection' %}
+	{% endif %}
+	</div>
+</div>
+</section>

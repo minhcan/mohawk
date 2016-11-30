@@ -1,0 +1,19 @@
+<!-- /templates/snippets/section-product-bestseller.liquid -->
+
+{% capture banner %}bestseller_carousel_banner.jpg{% endcapture %}
+{% assign products_per_row = settings.bestseller_num %}
+{% assign products_limit = settings.bestseller_limit %}
+{% assign title = settings.bestseller_title %}
+{% assign col = settings.bestseller_collection %}
+{% assign url = settings.bestseller_item_url%}
+<div class="bestseller ">
+
+	<h2  class="title">{{title}}</h2>
+	<div class="products home-products bestseller-carousel owl-carousel owl-theme" data-items="{{products_per_row}}" data-pagination="false" data-navigation="true" data-autoPlay="false">
+		{% for product in collections[col].products limit: {{products_limit}} %}
+		{% include 'product-item' %}
+		{%else%}
+		{% include 'onboarding-empty-collection' %}
+		{% endfor %}
+	</div>
+</div>

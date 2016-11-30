@@ -1,0 +1,11 @@
+{% capture footer_menu_name %}{{ footer_menu }}{% endcapture %}
+ <div class="footer-menu" id="footer-menu-links-{{ block-footer-links }}">
+	{% if footer_menu_title != blank %}
+	<h4 class="">{{footer_menu_title}}</h4>
+	{% endif %}
+		 <ul class="children">
+			{% for link in linklists[footer_menu_name].links %}
+			<li><a href="{{ link.url }}">{{ link.title }}</a></li>
+			{% endfor %}
+		</ul>
+</div>	

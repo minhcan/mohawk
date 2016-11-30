@@ -1,0 +1,63 @@
+<!-- /templates/snippets/topbar.liquid -->
+<div class="topbar-head ">
+	  <div class="site-header__topbar clearfix">
+        <div class="site-header__account ultility-item medium--left small--hide large--left ">
+            <ul>
+              {% if customer %}
+                {% if customer.first_name != blank %}
+                  {% capture first_name %}<li><i class="fa fa-user"></i><a href="/account">{{ customer.first_name }}</a></li>{% endcapture %}
+                  {{first_name: first_name }}
+                {% else %}
+                  <li>
+                    <i class="fa fa-user"></i><a href="/account">{{ 'layout.customer.account' | t }}</a>
+                  </li>
+                {% endif %}
+                 <li><i class="fa fa-sign-out"></i></i><a href="/account/logout" class="customer_logout_link">{{ 'layout.customer.log_out' | t}}</a></li>
+              {% else %}
+                <li><i class="fa fa-sign-in"></i><a href="/account/login" class="customer_login_link">{{ 'layout.customer.log_in' | t }}</a></li>
+                {% if shop.customer_accounts_optional %}
+                  <li><i class="fa fa-key"></i><a href="/account/register" class="customer_register_link">{{ 'layout.customer.create_account' | t}}</a></li>
+                {% endif %}
+              {% endif %}
+              <li><i class="fa fa-heart-o"></i><a href="/pages/wish-list">{{ 'layout.customer.wishlist' | t }}</a></li>
+               <li><i class="fa fa-check-square-o"></i> <a href="/cart">{{ 'layout.customer.checkout' | t }}</a></li>
+            </ul>
+        </div><!-- end account -->
+        <div class="large--hide medium--hide left">
+            <div class="site-header__account ultility-item ">
+                    <span class="icon-ultility"><i class="zmdi zmdi-account"></i>{{ 'layout.customer.settings' | t}}</span>
+                    <ul>
+                      {% if customer %}
+                        {% if customer.first_name != blank %}
+                          {% capture first_name %}<li><i class="fa fa-user"></i><a href="/account">{{ customer.first_name }}</a></li>{% endcapture %}
+                          {{first_name: first_name }}
+                        {% else %}
+                          <li>
+                            <a href="/account">{{ 'layout.customer.account' | t }}</a>
+                          </li>
+                        {% endif %}
+                         <li><a href="/account/logout" class="customer_logout_link">{{ 'layout.customer.log_out' | t}}</a></li>
+                      {% else %}
+                        <li>
+                        <a href="/account/login" class="customer_login_link">{{ 'layout.customer.log_in' | t }}</a>
+                        </li>
+                        {% if shop.customer_accounts_optional %}
+                          <li>
+                          <a href="/account/register" class="customer_register_link">{{ 'layout.customer.create_account' | t}}</a>
+                          </li>
+                        {% endif %}
+                      {% endif %}
+                      <li>
+                      <a href="/pages/wish-list">{{ 'layout.customer.wishlist' | t }}</a></li>
+                       <li>
+                      <a href="/pages/checkout">{{ 'layout.customer.checkout' | t }}</a></li>
+                    </ul>
+                </div><!-- end account -->        
+        </div>
+        {% if settings.show_multiple_currencies %}
+         <div class="site-header__currency ultility-item right">
+          {% include 'currency-picker' %}
+         </div>
+        {% endif %} <!-- end currency -->
+    </div>
+</div>

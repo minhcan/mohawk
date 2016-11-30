@@ -1,0 +1,23 @@
+<!-- /templates/snippets/section-product-deal.liquid -->
+
+{% assign products_per_row = settings.product_deal_nb_column %}
+{% assign products_limit = settings.product_deal_limit %}
+{% assign title = settings.product_deal_title %}
+{% assign col = settings.product_deal_collection %}
+
+
+{% assign dealTime = true %}
+
+<div class="product-deal">
+
+	<h2  class="title">{{title}}</h2>
+	<div class="owl-carousel-play">
+		<div class="products home-products deal-carousel owl-carousel owl-theme" data-mobile="[479,1]" data-tabletsmall="[768,1]" data-desktopsmall="[979,1]" data-desktop="[1199,1]" data-items="{{products_per_row}}" data-pagination="false" data-navigation="true" data-autoPlay="false" data-items="1">
+			{% for product in collections[col].products limit: {{products_limit}} %}
+				{% include 'product-item-deal' %}
+			{%else%}
+				{% include 'onboarding-empty-collection' %}
+			{% endfor %}
+		</div>
+	</div>
+</div>

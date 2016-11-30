@@ -1,0 +1,20 @@
+<!-- /templates/snippets/section-product-featured.liquid -->
+
+{% capture right %}f_banner_right{% endcapture %}
+{% capture banner %}featured_carousel_banner.jpg{% endcapture %}
+{% assign products_per_row = settings.featured_num %}
+{% assign products_limit = settings.featured_limit %}
+{% assign title = settings.featured_title %}
+{% assign col = settings.featured_collection %}
+{% assign url = settings.featured_item_url%}
+<div class="featured ">
+
+	<h2  class="title">{{title}}</h2>
+	<div class="products home-products featured-carousel owl-carousel owl-theme" data-items="{{products_per_row}}" data-pagination="false" data-navigation="true" data-autoPlay="false">
+		{% for product in collections[col].products limit: {{products_limit}} %}
+		{% include 'product-item' %}
+		{%else%}
+		{% include 'onboarding-empty-collection' %}
+		{% endfor %}
+	</div>
+</div>

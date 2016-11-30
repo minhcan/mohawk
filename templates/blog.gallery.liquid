@@ -1,0 +1,44 @@
+<!-- /templates/blog.gallery.liquid -->
+
+{% assign _row = settings.blog_gallery_per_row%}
+{% assign _per_page = settings.blog_per_page | plus:0 %}
+
+{% case _row %}
+  {% when '2' %}
+     {% capture grid_item_width %} large--one-half medium--one-half {% endcapture %}
+  {% when '3' %}
+     {% capture grid_item_width %} large--one-third medium--one-half {% endcapture %}
+  {% when '4' %}
+     {% capture grid_item_width %} large--one-quarter medium--one-half {% endcapture %}
+  {% when '5' %}
+     {% capture grid_item_width %} large--one-fifth medium--one-half {% endcapture %}
+  {% when '6' %}
+     {% capture grid_item_width %} large--one-sixth medium--one-half {% endcapture %}
+  {% else %}
+     {% capture grid_item_width %} large--one-quarter medium--one-half {% endcapture %}
+{% endcase %}
+
+{% paginate blog.articles by {{_per_page}} %}
+
+
+<h3 class="page_name">{{ 'blogs.general.title' | t }}</h3>
+<div class="grid--rev">
+
+  <div class="grid__item">
+<div class="grid gallery_post">
+
+    {% for article in blog.articles %}
+      {% if article.image %}
+        <a href="{{ article.image.src | img_url: 'original' }}" title="" class="gallery_width {{grid_item_width}}">
+          <img src="{{ article.image.src | img_url: 'original' }}" alt="" class="img-responsive">
+        </a>
+      {% endif %}
+    {% endfor %}
+
+</div>
+    {% include 'pagination'%}
+  </div>
+
+</div>
+
+{% endpaginate %}

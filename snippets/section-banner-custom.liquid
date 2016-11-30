@@ -1,0 +1,30 @@
+<!-- /templates/snippets/section-banner-custom.liquid -->
+{% assign title = settings.banner_custom_title %}
+{% assign des = settings.banner_custom_des %}
+<div class="custom-top text-center ">
+		{% if title %}		
+			<h2 class="title">{{title}}</h2>
+		{% endif %}
+		{% if des %}
+			<div class="description">
+				{{des}}
+			</div>
+		{% endif %}
+		<div class="grid">	
+	 	  <div class="grid__item large--one-third medium--one-third small--one-whole">
+	        	<a href="{{settings.banner_3_image_1v2_url}}" class="{{settings.select_effect_bannerv2}} space-30  " title="banner"><img src="{{ '1.png' | asset_url }}" alt="static"></a>
+
+	        	<a href="{{settings.banner_3_image_1v2_url_2}}" class="{{settings.select_effect_bannerv2}} space-30  " title="banner"><img src="{{ '1_2.png' | asset_url }}" alt="static"></a>
+	      </div>
+	       <div class="grid__item large--one-third medium--one-third  small--one-whole">
+				<a href="{{settings.banner_3_image_2v2_url}}" class="{{settings.select_effect_bannerv2}} space-30 " title="banner"><img src="{{ '2.png' | asset_url }}" alt="static"></a>
+
+				<a href="{{settings.banner_3_image_2v2_url_2}}" class="{{settings.select_effect_bannerv2}} space-30 " title="banner"><img src="{{ '2_2.png' | asset_url }}" alt="static"></a>		
+	      </div>
+	       <div class="grid__item large--one-third medium--one-third small--one-whole">
+	        <a href="{{settings.banner_3_image_3v2_url}}" class="{{settings.select_effect_bannerv2}} space-30" title="banner"><img src="{{ '3.png' | asset_url }}" alt="static"></a>
+
+	         <a href="{{settings.banner_3_image_3v2_url_2}}" class="{{settings.select_effect_bannerv2}} space-30" title="banner"><img src="{{ '3_2.png' | asset_url }}" alt="static"></a>	
+	      </div>
+	    </div>  
+</div>

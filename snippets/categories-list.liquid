@@ -1,0 +1,58 @@
+<!-- /snippets/categories-list.liquid -->
+<ul class="mobile-nav menu">
+    {% for link in linklists.[categories_menu].links %}
+     {% if linklists[link.handle] == empty %}
+            <li class="mobile-nav__item{% if link.active %} mobile-nav__item--active{% endif %}">
+               <a href="{{ link.url }}" class="mobile-nav__link"><i class="fa fa-caret-right"></i> {{ link.title }}
+                {% for c in collections %}
+                  {% if c.title == link.title %} <span>({{ c.products_count }})</span> {% endif %}
+                {% endfor %}
+               </a>
+            </li>
+          {% else %}         
+         <!-- Menu level 1 --> 
+          <li class="mobile-nav__item{% if link.active %} mobile-nav__item--active{% endif %}">
+              <div class="mobile-nav__has-sublist">
+                 <a href="{{ link.url }}" class="mobile-nav__link"><i class="fa fa-caret-right"></i> {{ link.title }}</a>
+                <div class="mobile-nav__toggle">
+                  <button type="button" class="icon-fallback-text mobile-nav__toggle-open">
+                    <span class="icon icon-plus" aria-hidden="true"></span>
+                    <span class="fallback-text">See More</span>
+                  </button>
+                  <button type="button" class="icon-fallback-text mobile-nav__toggle-close">
+                    <span class="icon icon-minus" aria-hidden="true"></span>
+                    <span class="fallback-text">{{ 'cart.general.close_cart' | t | json }}</span>
+                  </button>
+                </div>
+              </div>
+            <!-- Menu level 2 -->
+            <ul class=" mobile-nav__sublist {{ link.title | downcase | handleize }}">
+              {% for l in linklists[link.handle].links %}
+              <li {% if linklists[l.handle] != empty %} class=""{% endif %}><a href="{{ l.url }}">{{ l.title | escape }}</a>
+                  {% if linklists[l.handle] != empty %}
+                 <!-- Menu level 3 -->    
+                  <ul>
+                     {% for child_l in linklists[l.handle].links %}
+                    <li {% if linklists[child_l.handle] != empty %} class=""{% endif %}><a href="{{ child_l.url }}">{{ child_l.title | escape }}</a>
+                    
+	                    {% if linklists[child_l.handle] != empty %}
+	                        <!-- Menu level 4 -->    
+	                        <ul class="">
+	                  
+	                           {% for child_child_l in linklists[child_l.handle].links %}
+	                           <li><a href="{{ child_child_l.url }}"  class="mobile-nav__link">{{ child_child_l.title | escape }}</a></li>                 
+	                           {% endfor %} 
+	               
+	                           </ul>
+	                    {% endif %}
+                    </li>                 
+                     {% endfor %} 
+                  </ul>
+                  {% endif %}
+              </li>
+              {% endfor %}  
+            </ul>
+          </li>  
+          {% endif %}                                    
+        {% endfor %}
+</ul>

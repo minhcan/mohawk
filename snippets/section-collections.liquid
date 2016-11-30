@@ -1,0 +1,20 @@
+<!-- /templates/snippets/section-collections.liquid -->
+
+<div class="collections-list">
+	<ul>
+	{% for i in (1..2) %}
+		{% capture _title %}collection_{{ i }}_title{% endcapture %}
+		{% capture _image %}collection_{{ i }}.jpg{% endcapture %}
+		{% capture _collection %}collection_{{ i }}_collection{% endcapture %}
+
+		{% assign col = settings[_collection] %}
+		<li>
+			<a href="{{ collections[col].url }}">
+				{{ _image | asset_url | img_tag }}
+				{{ settings[_title] }}
+				({{ collections[col].products_count }})
+			</a>
+		</li>
+	{% endfor %}
+	</ul>
+</div>

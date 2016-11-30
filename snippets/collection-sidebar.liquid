@@ -1,0 +1,146 @@
+<!-- /snippets/collection-sidebar.liquid -->
+{% assign on_sale = false %}
+{% if product.compare_at_price > product.price %}
+{% assign on_sale = true %}
+{% endif %}
+
+{% assign sold_out = true %}
+{% if product.available %}
+{% assign sold_out = false %}
+{% endif %}
+
+{% assign categories_content = settings.categories_content %}
+ {% assign categories_menu = settings.categoies_menu %}
+
+<div class="collection-sidebar">
+{%if settings.display_categories_sidebar%}
+<div class="widget-category widget">
+  <h4 class="widget__title">{{ settings.categories_title}}</h4>
+  <div class="widget__content">
+{% if categories_content == 'auto'%}
+  <ul class="menu">
+    {% capture collection_title %}{{ collection.title }}{% endcapture %}
+    {% for collection in collections %}
+    <li {% if collection_title == collection.title %}class="filter--active" {% endif %}> <a  href="{{ collection.url }}" title="{{ collection.title }}"><i class="fa fa-caret-right"></i>{{ collection.title }} <span>({{collection.products_count}})</span></a></li>
+    {% endfor %}
+  </ul>
+  {% elsif categories_content =='custom' %}
+  {% include 'categories-list'%}
+  {% endif %}
+  </div>
+</div><!-- end category sidebar -->
+{% endif %}
+{% include 'feature-box'%}
+	
+	{% if template contains 'collection' %}
+	{% if settings.filter_enable %}
+   <div class="filter-info widget">
+    <h4 class="widget__title">{{settings.filter_title }}</h4>
+    <div class="info-content">
+  	<div class="filter-blocks ">
+  	  <div class="widget__content">
+  	    {% include 'collection.shopby-color' %}
+  	    {% include 'collection.shopby-price' %}
+  	  </div>
+  	</div>
+    </div>
+     </div>
+	{% endif %}
+	{% endif %}
+
+{% if settings.widget_enable_1 %}
+<div class="widget-product widget">
+  <h4 class="widget__title">{{ settings.widget_title_1 }}</h4>
+  {% assign collection_1 = collections[settings.widget_collection_1] %}
+  <div class="widget__content">
+  {% for product in collection_1.products limit: settings.number_collection_1 %}
+    {% include 'widget-product' %}
+  {% endfor %}
+  </div>
+</div> <!-- end widget 1 -->
+{% endif %}
+
+{% if settings.widget_enable_2 %}
+<div class="widget-product widget">
+  <h4 class="widget__title">{{ settings.widget_title_2 }}</h4>
+  {% assign collection_2 = collections[settings.widget_collection_2] %}
+  <div class="widget__content">
+  {% for product in collection_2.products limit:settings.number_collection_2 %}
+    {% include 'widget-product' %}
+  {% endfor %}
+  </div>
+</div> <!-- end widget 2 -->
+{% endif %}
+
+{% if settings.ads_enable %}
+<div class="widget-ads widget">
+    <a href="{{settings.ads_block_url}}">{{ 'ads_block.jpg'| asset_url | img_tag}}</a>
+</div><!-- end advertising -->
+{% endif %}
+
+{% if settings.custom_cms_enable %}
+<div class="widget-cms widget">
+    {% if settings.custom_cms_title != "" %}
+        <h4 class="widget__title">{{ settings.custom_cms_title }}</h4>
+    {%endif%}
+    <div class="widget__content">
+    {{settings.custom_cms_content}}
+    </div>
+</div><!-- end advertising -->
+{% endif %}
+
+{% if template contains 'collection' %}
+  {% if settings.brands_enable %}
+  <div class="widget-brands widget">
+      <h4 class="widget__title">{{'collections.sidebar.brands'|t}}</h4>
+       <div class="widget__content">
+        <ul>
+          {% capture collection_title %}{{ collection.title }}{% endcapture %}
+          {% for product_vendor in collection.all_vendors %}
+          <li >{{ product_vendor | link_to_vendor }}</li>
+          {% endfor %}
+        </ul>
+       </div>
+  </div> <!-- end brand sidebar -->
+  {% endif %}
+{% endif %}
+
+{% if settings.tags_enable %}
+{% if collection.all_tags.size > 0 %}
+  <div class="widget-tags widget">
+    <h4 class="widget__title">{{ 'collections.sidebar.tags' | t }}</h4>
+    <ul class="widget__content clearfix">
+      <li {% unless current_tags %} class="filter--active"{% endunless %}>
+
+        {% if collection.handle %}
+          <a href="/collections/{{ collection.handle }}">
+            {{ 'collections.general.all_of_collection' | t: collection: collection.title }}
+          </a>
+        {% elsif collection.current_type %}
+          <a href="{{ collection.current_type | url_for_type }}">
+            {{ 'collections.general.all_of_collection' | t: collection: collection.title }}
+          </a>
+
+        {% elsif collection.current_vendor %}
+          <a href="{{ collection.current_vendor | url_for_vendor }}">
+            {{ 'collections.general.all_of_collection' | t: collection: collection.title }}
+          </a>
+        {% endif %}
+      </li>
+
+      {% for tag in collection.all_tags %}
+        {% if current_tags contains tag %}
+          <li class="filter--active">
+            {{ tag | link_to_remove_tag: tag }}
+          </li>
+        {% else %}
+          <li>
+            {{ tag | link_to_tag: tag }}
+          </li>
+        {% endif %}
+      {% endfor %}
+    </ul>
+  </div> <!-- end tags -->
+{% endif %}
+{% endif %}
+</div>

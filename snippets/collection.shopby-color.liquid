@@ -1,0 +1,30 @@
+{% if settings.enable_shop_by_tags_1 %}
+
+<div class="filter-block filter-custom filter-tag color">
+  {% assign tags = settings.shop_by_tags_1_list_tags | split: ',' %}
+  <h5 class="filter-title"><span> {{ settings.shop_by_tags_1_title }}</span><a href="javascript:void(0)" class="clear" style="display:none">x</a> </h5>
+
+  <div class="filter-content">
+   <ul class="box-grid-stype colors">
+      {% for i in (1..10) %}
+      {% capture shop_by_color_text %}shop_by_color_text_{{ i }}{% endcapture %}
+      {% if settings[shop_by_color_text] != blank %}
+      {% assign tag = settings[shop_by_color_text] | strip | downcase %} 
+       {% assign all_tag = collection.all_tags | downcase %} 
+      {% if all_tag contains tag %}
+        {% assign current = current_tags | downcase %}  
+      <li class="li-color{% if current contains tag %}  active{% endif %}">
+        {% assign tag_value = tag | handleize %}
+        <input type="checkbox" value="{{ tag_value }}" {% if current contains tag %}checked{% endif %}/>
+        <a href="javascript:void(0)" {% if current contains tag %} class="active" {% endif %} title="{{tag}}">
+          <span class="color {{tag_value}}">{{tag_value}}</span>
+        </a>
+      </li>
+      {% endif %}
+      {% endif %}
+      {% endfor %}
+    </ul>
+  </div>
+</div>
+{% endif %}
+

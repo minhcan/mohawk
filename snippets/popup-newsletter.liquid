@@ -1,0 +1,32 @@
+<!-- /templates/snippets/popup-newsletter.liquid -->
+
+{% capture _image %}popup_newsletter_image.jpg{% endcapture %}
+
+{% if settings.newsletter_form_action != blank %}
+    {% assign form_action = settings.newsletter_form_action %}
+{% else %}
+    {% assign form_action = '#' %}
+{% endif %}
+<div id="popup-newsletter" class="hide popup-newletter" style="background-image: url('{{ _image | asset_url }}');">
+    <div class="grid">
+        <div class="grid__item large--one-whole medium--one-whole text-left">
+            <div class="popup-info">
+              <p class="subtitle">{{settings.popup_newsletter_subtitle}}</p>
+              <h3 class="title">
+                  {{settings.popup_newsletter_title}}
+              </h3>
+              <div class="pnewle-message">
+                  {{settings.popup_newsletter_description}}
+              </div>
+              <div class="popup-form">
+                <form action="{{ form_action }}" method="post" target="_blank" class="input-group">
+                      <input type="email" value="{% if customer %}{{ customer.email }}{% endif %}" name="EMAIL" placeholder="{{ 'general.newsletter_form.newsletter_email' | t }}" class="newsletter-input input-group-field" aria-label="{{ 'general.newsletter_form.newsletter_email' | t }}" >
+                      <span class="input-group-btn">
+                      <input type="submit" class="button_mini btn btn-primary btn-inverse" value="{{ 'general.newsletter_form.submit' | t }}">
+                      </span>
+                  </form>
+              </div>
+            </div>
+        </div>
+    </div>
+</div>

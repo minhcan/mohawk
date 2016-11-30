@@ -1,0 +1,30 @@
+<!-- /snippets/menu.liquid -->
+<div class="main-nav">
+	<div class="inner main-menu clearfix">
+		{% include 'nav-menu'%}
+		<!-- //site-nav -->
+		<div class=" nav-mobile large--hide medium--hide small--show">
+			<div class="grid">
+				<div class="grid__item one-half text-left">
+					<div class="site-nav--mobile">
+						<button type="button" class="icon-fallback-text site-nav__link js-drawer-open-left" aria-controls="NavDrawer" aria-expanded="false">
+							<i class="zmdi zmdi-menu"></i>
+							<span class="fallback-text">{{ 'layout.navigation.menu' | t }}</span>
+						</button>
+					</div>
+				</div>
+				<div class="grid__item one-half text-right">
+					<div class="site-nav--mobile">
+						<a href="/cart" class="site-nav__link {% if settings.ajax_cart_method == "drawer" %} js-drawer-open-right {% endif %}" aria-controls="CartDrawer" aria-expanded="false">
+							<span class="icon-fallback-text">
+							  	<i class="zmdi zmdi-mall"></i>
+								<span class="fallback-text">{{ 'layout.cart.title' | t }}</span>
+							</span>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+

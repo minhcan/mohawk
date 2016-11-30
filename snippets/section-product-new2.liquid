@@ -1,0 +1,50 @@
+<!-- /templates/snippets/section-product-new2.liquid -->
+
+{% capture right %}n_banner_right{% endcapture %}
+{% capture banner %}new_carousel_banner.jpg{% endcapture %}
+{% assign products_per_row = settings.new_arrival_num2 %}
+{% assign products_limit = settings.new_arrival_limit2 %}
+{% assign title = settings.new_arrival_title2 %}
+{% assign col = settings.new_arrival_collection2 %}
+{% assign url = settings.new_arrival_url2 %}
+
+{% case settings.new_arrival_num %}
+	{% when '2' %}
+		 {% capture grid_item_width %} large--one-half medium--one-half {% endcapture %}
+	{% when '3' %}
+		 {% capture grid_item_width %} large--one-third medium--one-half {% endcapture %}
+	{% when '4' %}
+		 {% capture grid_item_width %} large--one-quarter medium--one-half {% endcapture %}
+	{% when '5' %}
+		 {% capture grid_item_width %} large--one-fifth medium--one-half {% endcapture %}
+	{% when '6' %}
+		 {% capture grid_item_width %} large--one-sixth medium--one-half {% endcapture %}
+	{% else %}
+		 {% capture grid_item_width %} large--one-quarter medium--one-half {% endcapture %}
+{% endcase %}
+
+<div class="arrivals ">
+
+	<h2 class="title">{{title}}</h2>
+
+	{% if settings.new_owl_checked2 %}
+	<div class="owl-carousel-play">
+		<div class="products home-products arrivals-carousel owl-carousel owl-theme" data-items="{{products_per_row}}" data-pagination="false" data-navigation="true" data-autoPlay="false">
+			{% for product in collections[col].products limit: {{products_limit}} %}
+				{% include 'product-item' %}
+			{%else%}
+				{% include 'onboarding-empty-collection' %}
+			{% endfor %}
+		</div>
+	</div>
+	{% else %}
+		<div class="grid grid-uniform">
+		{% for product in collections[col].products limit: {{products_limit}} %}
+			<div class="grid__item {{ grid_item_width }}">				
+				{% include 'product-item' %}
+			</div>
+		{% endfor %}
+		</div>
+	{% endif %}
+
+</div>

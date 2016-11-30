@@ -1,0 +1,43 @@
+<!-- /templates/blog.liquid -->
+
+{% assign _row = settings.blog_per_row%}
+{% assign _per_page = settings.blog_per_page | plus:0 %}
+
+{% case _row %}
+  {% when '2' %}
+     {% capture grid_item_width %} large--one-half medium--one-half {% endcapture %}
+  {% when '3' %}
+     {% capture grid_item_width %} large--one-third medium--one-half {% endcapture %}
+  {% when '4' %}
+     {% capture grid_item_width %} large--one-quarter medium--one-half {% endcapture %}
+  {% when '5' %}
+     {% capture grid_item_width %} large--one-fifth medium--one-half {% endcapture %}
+  {% when '6' %}
+     {% capture grid_item_width %} large--one-sixth medium--one-half {% endcapture %}
+  {% else %}
+     {% capture grid_item_width %} large--one-quarter medium--one-half {% endcapture %}
+{% endcase %}
+
+{% paginate blog.articles by {{_per_page}} %}
+
+
+<h3 class="page_name">{{ 'blogs.general.title' | t }}</h3>
+<div class="grid--rev">
+
+  <div class="grid__item large--three-quarters">
+<div class="grid">
+
+    {% for article in blog.articles %}
+       {% include "blog_block"  %}
+    {% endfor %}
+</div>
+  {% include 'pagination'%}
+  </div>
+
+  <div class="sidebar grid__item large--one-quarter">
+    {% include 'blog-sidebar' %}
+  </div>
+
+</div>
+
+{% endpaginate %}

@@ -1,0 +1,19 @@
+<!-- /templates/snippets/section-custom-center.liquid -->
+<div class="custom-center">
+	{% capture b5 %}b5.jpg{% endcapture %}
+	<div class="space-padding-t80">
+		<h2 class="title section-header">{{settings.custom_center_title}}</h2>
+		<div class="grid">
+		        {{ b5 | asset_url | img_tag }}
+		    <div class="grid__item large--one-half push--large--one-half">
+		        <div class="custom-content">
+		        <p>{{settings.custom_center_content}}</p>
+		        <br>
+		        <a class="btn btn--secondary" href="{{settings.custom_center_url}}">{{settings.custom_center_btn}}</a>
+		        </div>
+		    </div>
+
+		</div>
+
+	</div>
+</div>

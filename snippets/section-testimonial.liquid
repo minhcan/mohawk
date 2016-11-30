@@ -1,0 +1,28 @@
+<!-- /templates/snippets/section-testimonial.liquid -->
+{% capture background_enable %}testimonial_bg_img{% endcapture %}
+{% capture background_img %}testimonial_bg.jpg{% endcapture %}
+<div class="testimonials "{% if settings[background_enable] %} style="background-image: url({{background_img| asset_url}});"{% endif %} >
+
+	{% capture title %}testimonial_title{% endcapture %}
+
+	<div id="testimonials-carousel" class="owl-carousel owl-theme testimonials-carousel text-center" data-pagination="false" data-navigation="false" data-autoPlay="{{settings.auto_play_test}}" data-singleItem="true" data-mobile="[479,1]" data-tabletsmall="[768,1]" data-desktopsmall="[979,1]" data-desktop="[1199,1]"  data-items="1">
+		{% for i in (1..6) %}
+			{% capture enable %}testimonial_{{ i }}{% endcapture %}
+			{% capture des %}testimonial_des_{{ i }}{% endcapture %}
+			{% capture name %}testimonial_name_{{ i }}{% endcapture %}
+			{% capture author %}testimonial_img_{{ i }}.jpg{% endcapture %}
+			{% if settings[enable] %}
+			<div class="text-center">
+			<div class="testimonials-body">
+				<div class="testimonials-quote">
+					<p>{{settings[des]}}</p>
+				</div>
+				<div class="testimonials-profile">
+					<h4><span>{{settings[name]}}</span></h4>
+				</div>
+			</div>
+			</div>
+			{% endif %}
+		{% endfor %}
+	</div>
+</div>

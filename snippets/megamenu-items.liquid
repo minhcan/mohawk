@@ -1,0 +1,73 @@
+<!-- /templates/snippets/megamenu-items.liquid -->
+{% capture itemMega %}{{ itemMega }}{% endcapture %}
+
+{% capture widget_linklist_megamenu_1 %}widget_linklist_megamenu_1_{{ itemMega }}{% endcapture %}
+{% capture widget_linklist_megamenu_2 %}widget_linklist_megamenu_2_{{ itemMega }}{% endcapture %}
+{% capture widget_linklist_megamenu_3 %}widget_linklist_megamenu_3_{{ itemMega }}{% endcapture %}
+{% capture widget_linklist_megamenu_4 %}widget_linklist_megamenu_4_{{ itemMega }}{% endcapture %}
+{% capture widget_linklist_megamenu_5 %}widget_linklist_megamenu_5_{{ itemMega }}{% endcapture %}
+
+{% capture megamenu_col_link_1 %}menuitem_col_link_1_{{ itemMega }}{% endcapture %}
+{% capture megamenu_col_link_2 %}menuitem_col_link_2_{{ itemMega }}{% endcapture %}
+{% capture megamenu_col_link_3 %}menuitem_col_link_3_{{ itemMega }}{% endcapture %}
+{% capture megamenu_col_link_4 %}menuitem_col_link_4_{{ itemMega }}{% endcapture %}
+{% capture megamenu_col_link_5 %}menuitem_col_link_5_{{ itemMega }}{% endcapture %}
+{% capture megamenu_col_link_6 %}menuitem_col_link_6_{{ itemMega }}{% endcapture %}
+
+{% capture enable_custom_menu %}enable_custom_menu_{{ itemMega }}{% endcapture %}
+{% capture widget_custom_megamenu %}widget_custom_megamenu_{{ itemMega }}{% endcapture %}
+
+
+
+<li class="has-dropdown site-nav--has-dropdown{% if link.active %} site-nav--active{% endif %} megamenu-dropdown" aria-haspopup="true">
+  	<a href="{{ link.url }}" class="site-nav__link">
+        {{ link.title }}
+        <span class="fa fa-angle-down" aria-hidden="true"></span>
+  	</a>
+  	<ul class="site-nav__dropdown">
+			<li class="awemenu-megamenu-item">
+				{% if itemMega == '1' or itemMega == '2' or itemMega == '3' or itemMega == '4'  %}
+					<div class="grid">
+					  {% if settings[widget_linklist_megamenu_1] != blank %}
+	                    <div class="grid__item  has-dropdown-2 {{ settings[megamenu_col_link_1] }}">
+	                      {% include 'linklist-megamenu' with settings[widget_linklist_megamenu_1] %}
+	                    </div>
+                   	{% endif %}
+                   	{% if settings[widget_linklist_megamenu_2] != blank %}
+	                    <div class="grid__item has-dropdown-2 {{ settings[megamenu_col_link_2] }}">
+	                      {% include 'linklist-megamenu' with settings[widget_linklist_megamenu_2] %}
+	                    </div>
+                   	{% endif %}
+                   	{% if settings[widget_linklist_megamenu_3] != blank %}
+	                    <div class="grid__item has-dropdown-2 {{ settings[megamenu_col_link_3] }}">
+	                      {% include 'linklist-megamenu' with settings[widget_linklist_megamenu_3] %}
+	                    </div>
+                   	{% endif %}
+                   	{% if settings[widget_linklist_megamenu_4] != blank %}
+	                    <div class="grid__item has-dropdown-2 {{ settings[megamenu_col_link_4] }}">
+	                      {% include 'linklist-megamenu' with settings[widget_linklist_megamenu_4] %}
+	                    </div>
+                   	{% endif %}
+                   	{% if settings[widget_linklist_megamenu_5] != blank %}
+	                    <div class="grid__item has-dropdown-2 {{ settings[megamenu_col_link_5] }}">
+	                      {% include 'linklist-megamenu' with settings[widget_linklist_megamenu_5] %}
+	                    </div>
+                   	{% endif %}
+                   	{% if settings[enable_custom_menu] %}
+	                    <div class="grid__item {{ settings[megamenu_col_link_6] }}">
+	                    <div class="custom_html">
+	                    	{{settings[widget_custom_megamenu]}}
+	                    </div>
+	                    </div>
+                   	{% endif %}
+					</div>
+
+
+				{% elsif itemMega == '5'%}
+					{{settings.megamenu_custom_html_5}}
+				{% elsif itemMega == '6'%}
+					{{settings.megamenu_custom_html_6}}
+				{% endif %}
+			</li>
+	</ul>
+</li>			

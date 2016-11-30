@@ -1,0 +1,76 @@
+<!-- /templates/snippets/section-product-tab-3.liquid -->
+
+{% assign products_per_row = settings.tab_num_3 %}
+{% assign products_limit = settings.tab_limit_3 %}
+{% assign title = settings.product_tab_title_3 %}
+{% assign col1 = settings.tab_collection_1_3 %}
+{% assign col2 = settings.tab_collection_2_3 %}
+{% assign col3 = settings.tab_collection_3_3 %}
+{% assign col4 = settings.tab_collection_4_3 %}
+{% assign owl-check = settings.tab_owl_checked_3 %}
+
+{% case settings.tab_num_3 %}
+	{% when '2' %}
+		 {% capture grid_item_width %} large--one-half medium--one-half {% endcapture %}
+	{% when '3' %}
+		 {% capture grid_item_width %} large--one-third medium--one-half {% endcapture %}
+	{% when '4' %}
+		 {% capture grid_item_width %} large--one-quarter medium--one-half {% endcapture %}
+	{% when '5' %}
+		 {% capture grid_item_width %} large--one-fifth medium--one-half {% endcapture %}
+	{% when '6' %}
+		 {% capture grid_item_width %} large--one-sixth medium--one-half {% endcapture %}
+	{% else %}
+		 {% capture grid_item_width %} large--one-quarter medium--one-half {% endcapture %}
+{% endcase %}
+
+<div class="tab-products ">
+	<h2 class="title">{{title}}</h2>
+	<ul class="nav nav-tabs nav-tabs3 {% if owl-check == false %} no-owl {% endif %}">
+		{% for i in (1..4) %}
+			{% capture k %}tab_collection_{{ i }}_3{% endcapture %}
+			{% capture t %}tab_title_{{ i }}_3{% endcapture %}
+			{% if settings[k] != blank %}
+				<li ><a href="#tab3{{ i }}" aria-controls="tab3{{ i }}" data-toggle="tab">{{ settings[t] }}</a></li>
+			{% endif %}
+		{% endfor %}
+	</ul>
+
+		<div class="tab-content tab-content3">
+			{% for i in (1..4) %}
+				{% capture c %}tab_collection_{{ i }}_3{% endcapture %}
+				{% if settings[c] != blank %}
+				<div role="tabpanel" class="tab-pane" id="tab3{{ i }}">
+					{% if owl-check %}
+					<div class="owl-carousel-play">
+						<div class="products home-products tab-carousel owl-carousel owl-theme" data-items="{{products_per_row}}" data-pagination="false" data-navigation="true" data-autoPlay="false">
+							{% for product in collections[settings[c]].products limit: {{products_limit}} %}
+							{% include 'product-item' %}
+							{%else%}
+							{% include 'onboarding-empty-collection' %}
+							{% endfor %}
+						</div>
+					</div>
+					{% else %}
+						<div class="grid grid-uniform">
+						{% for product in collections[settings[c]].products limit: {{products_limit}} %}
+							<div class="grid__item {{ grid_item_width }}">
+								{% include 'product-item' %}
+							</div>
+						{% endfor %}
+						</div>
+					{% endif %}
+
+				</div>
+				{% endif %}
+			{% endfor %}
+
+		</div>
+</div>
+<script type="text/javascript" >
+	$(document).ready(function() {
+		$('.nav-tabs3 li:first').addClass('active');
+		$('.tab-content3 .tab-pane:first').addClass('active');
+	});
+</script>
+

@@ -1,0 +1,6 @@
+<!-- /snippets/pagination.liquid -->
+ <div class="pagination">
+    {% if paginate.pages > 1 %}
+        {{ paginate | default_pagination | replace: '&laquo; Previous', '&laquo;' | replace: 'Next &raquo;', '&raquo;' }}   
+    {% endif %}
+</div>

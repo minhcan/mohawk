@@ -1,0 +1,53 @@
+
+$(document).ready(function() {
+backtotop();
+
+
+
+
+ $('.gallery_post').each(function() { // the containers for all your galleries
+    $(this).magnificPopup({
+        delegate: 'a', // the selector for gallery item
+        type: 'image',
+        gallery: {
+          enabled:true
+        }
+    });
+  });
+});
+
+
+
+function backtotop(){$("#back-top").hide();$(function () {$(window).scroll(function () {if ($(this).scrollTop() > 100) {$('#back-top').fadeIn();} else {$('#back-top').fadeOut();}});$('#back-top a').click(function () {$('body,html').animate({scrollTop: 0}, 800);return false;});});}
+
+{% if settings.popup_newsletter_enable == true %}
+jQuery(window).load(function(){
+      setTimeout(function(){
+       
+        {% if settings.newsletter_popup_days != blank and settings.newsletter_popup_days != "0" %}
+         var hiddenmodal = getCookie('hiddenmodal');
+        {% else %}	
+         var hiddenmodal = "";
+         {% endif %}
+         if (hiddenmodal == "") {
+                      $.fancybox.open({
+                      padding: 0,
+                      overlayOpacity: 0.3,
+                      overlayColor: '#333333',
+                      'beforeLoad': function(){
+                          $("#popup-newsletter").removeClass('hide');
+                          var Form = $("mc-embedded-subscribe-form").clone();
+                      },
+                      href: "#popup-newsletter",
+                      helpers:  {
+                        overlay : true
+                      },
+                      afterClose : function(){
+                          $("#popup-newsletter").addClass('hide');
+                          setCookie('hiddenmodal', 1, {% if settings.newsletter_popup_days != blank and settings.newsletter_popup_days != "0" %}{{settings.newsletter_popup_days}}{% else %} 2 {% endif %});
+                      }
+                  });
+          }
+      }, {% if settings.newsletter_popup_seconds != blank %}{{ settings.newsletter_popup_seconds }}{% else %}2{% endif %}*1000);
+    });
+{% endif %}
