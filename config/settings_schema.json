@@ -5,7 +5,7 @@
     "settings": [
       {
         "type": "header",
-        "content": "Food Store Shopify Theme 1.0"
+        "content": "Mohawk Shopify Theme 1.0"
       },
       {
         "type": "paragraph",
@@ -32,7 +32,7 @@
         "type": "color",
         "id": "color_default",
         "label": "Default",
-        "default": "#c83a3a",
+        "default": "#e7c09c",
         "info": "Used for text links hover, and hover buttons"
       },
        {
@@ -46,13 +46,13 @@
         "type": "color",
         "id": "color_borders",
         "label": "Borders",
-        "default": "#e1e1e1"
+        "default": "#ebebeb"
       },
       {
         "type": "color",
         "id": "color_link",
         "label": "Links",
-        "default": "#000000"
+        "default": "#343434"
       },
       {
         "type": "header",
@@ -62,13 +62,13 @@
         "type": "color",
         "id": "color_heading_text",
         "label": "Heading",
-        "default": "#000000"
+        "default": "#343434"
       },
       {
         "type": "color",
         "id": "color_body_text",
         "label": "Text",
-        "default": "#666666"
+        "default": "#737373"
       },
       {
         "type": "header",
@@ -76,33 +76,9 @@
       },
       {
         "type": "color",
-        "id": "topbar_background_color",
-        "label": " Topbar Background",
-        "default": "#e4dcd2"
-      },
-      {
-        "type": "color",
-        "id": "header_background_color",
-        "label": " Header Background",
-        "default": "#f6eee3"
-      },
-      {
-        "type": "color",
-        "id": "menu_background_color",
-        "label": " Menu Background",
-        "default": "#b39770"
-      },
-      {
-        "type": "color",
-        "id": "color_topbar_text",
-        "label": "Topbar Text color",
-        "default": "#000000"
-      },
-      {
-        "type": "color",
         "id": "color_nav_text",
         "label": "Text Nav Menu",
-        "default": "#000"
+        "default": "#343434"
       },
       {
         "type": "color",
@@ -114,49 +90,29 @@
         "type": "color",
         "id": "color_sub_nav_text",
         "label": "Text Sub Nav",
-        "default": "#999999"
+        "default": "#343434"
       },
       {
         "type": "header",
         "content": "Footer"
       },
       {
-        "type": "paragraph",
-        "content": "Footer Top"
-      },
-      {
         "type": "color",
         "id": "color_footer_bg",
-        "label": "Background footer top",
-        "default": "#f9f9f9"
+        "label": "Background footer",
+        "default": "#573d39"
       },
       {
         "type": "color",
         "id": "color_footer_title_text",
         "label": "Title color",
-        "default": "#000"
+        "default": "#ffffff"
       },
       {
         "type": "color",
         "id": "color_footer_text",
         "label": "Text",
-        "default": "#666666"
-      },
-      {
-        "type": "paragraph",
-        "content": "Footer Bottom"
-      },
-      {
-        "type": "color",
-        "id": "color_footer_bg_bottom",
-        "label": "Background footer bottom",
-        "default": "#292929"
-      },
-      {
-        "type": "color",
-        "id": "copyright_text_color",
-        "label": "Copyright Text color",
-        "default": "#000000"
+        "default": "#ffffff"
       },
       {
         "type": "header",
@@ -170,15 +126,9 @@
       },
       {
         "type": "color",
-        "id": "color_support",
-        "label": "Color Header Icon Suport & Text",
-        "default": "#f84f4f"
-      },
-      {
-        "type": "color",
         "id": "color_price",
         "label": "Price Color",
-        "default": "#f94b4b"
+        "default": "#737373"
       },
       {
         "type": "color",
@@ -196,16 +146,16 @@
         "id": "body_font",
         "options": [
           {
-            "value": "Roboto Slab",
-            "label": "Roboto Slab"
+            "value": "Playfair Display",
+            "label": "Playfair Display"
           },
           {
-            "value": "Roboto",
-            "label": "Roboto"
+            "value": "Poppins",
+            "label": "Poppins"
           },
           {
-            "value": "Segoe UI Regular",
-            "label": "Segoe UI Regular"
+            "value": "Slabo 13px",
+            "label": "Slabo 13px"
           },
           {
             "value": "Work Sans",
@@ -217,23 +167,23 @@
           }
         ],
         "label": "Body Font Family",
-        "default": "Roboto Slab"
+        "default": "Playfair Display"
       },
       {
         "type": "select",
         "id": "heading_font",
         "options": [
           {
-            "value": "Roboto Slab",
-            "label": "Roboto Slab"
+            "value": "Playfair Display",
+            "label": "Playfair Display"
           },
           {
-            "value": "Roboto",
-            "label": "Roboto"
+            "value": "Poppins",
+            "label": "Poppins"
           },
           {
-            "value": "Segoe UI Regular",
-            "label": "Segoe UI Regular"
+            "value": "Slabo 13px",
+            "label": "Slabo 13px"
           },
           {
             "value": "Work Sans",
@@ -245,23 +195,23 @@
           }
         ],
         "label": "Heading Font Family",
-        "default": "Roboto Slab"
+        "default": "Playfair Display"
       },
       {
         "type": "select",
         "id": "menu_font",
         "options": [
           {
-            "value": "Roboto Slab",
-            "label": "Roboto Slab"
+            "value": "Playfair Display",
+            "label": "Playfair Display"
           },
           {
-            "value": "Roboto",
-            "label": "Roboto"
+            "value": "Poppins",
+            "label": "Poppins"
           },
           {
-            "value": "Segoe UI Regular",
-            "label": "Segoe UI Regular"
+            "value": "Slabo 13px",
+            "label": "Slabo 13px"
           },
           {
             "value": "Work Sans",
@@ -273,23 +223,23 @@
           }
         ],
         "label": "Menu Font Family",
-        "default": "Roboto Slab"
+        "default": "Poppins"
       },
       {
         "type": "select",
         "id": "product_font",
         "options": [
           {
-            "value": "Roboto Slab",
-            "label": "Roboto Slab"
+            "value": "Playfair Display",
+            "label": "Playfair Display"
           },
           {
-            "value": "Roboto",
-            "label": "Roboto"
+            "value": "Poppins",
+            "label": "Poppins"
           },
           {
-            "value": "Segoe UI Regular",
-            "label": "Segoe UI Regular"
+            "value": "Slabo 13px",
+            "label": "Slabo 13px"
           },
           {
             "value": "Work Sans",
@@ -301,23 +251,23 @@
           }
         ],
         "label": "Product Name Font Family",
-        "default": "Roboto Slab"
+        "default": "Playfair Display"
       },
       {
         "type": "select",
         "id": "button_font",
         "options": [
           {
-            "value": "Roboto Slab",
-            "label": "Roboto Slab"
+            "value": "Playfair Display",
+            "label": "Playfair Display"
           },
           {
-            "value": "Roboto",
-            "label": "Roboto"
+            "value": "Poppins",
+            "label": "Poppins"
           },
           {
-            "value": "Segoe UI Regular",
-            "label": "Segoe UI Regular"
+            "value": "Slabo 13px",
+            "label": "Slabo 13px"
           },
           {
             "value": "Work Sans",
@@ -329,7 +279,7 @@
           }
         ],
         "label": "Button Font Family",
-        "default": "Roboto Slab"
+        "default": "Poppins"
       }
     ]
   },
